@@ -31,7 +31,14 @@ namespace Exercise1
             Console.WriteLine("Press Enter Key To Exit..");
             Console.ReadLine();
 
-
+            /***************************/
+            
+            int w = 7;
+            int p = 4;
+            Console.WriteLine("the result of int/int is: " + w / p);
+            Console.WriteLine("The result of float/int is: " + (float)w / p);
+            Console.WriteLine("The resuly of int/float is: " + w / (float)p);
+            Console.WriteLine("The result of float/float is: " + (float)w / (float)p);
             
         }
     }
