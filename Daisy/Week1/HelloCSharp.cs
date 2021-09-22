@@ -16,6 +16,22 @@ namespace Exercise1
            
             /******************************/
 
+            int result;
+            int x = 50, y = 10;
+            result = (x + y);
+            Console.WriteLine("Addition Operator: " + result);
+            result = (x - y);
+            Console.WriteLine("Subtraction Operator: " + result);
+            result = (x * y);
+            Console.WriteLine("Multiplication Operator: " + result);
+            result = (x / y);
+            Console.WriteLine("Division Operator: " + result);
+            result = (x % y);
+            Console.WriteLine("Modulo Operator: " + result);
+            Console.WriteLine("Press Enter Key To Exit..");
+            Console.ReadLine();
+
+
             
         }
     }
