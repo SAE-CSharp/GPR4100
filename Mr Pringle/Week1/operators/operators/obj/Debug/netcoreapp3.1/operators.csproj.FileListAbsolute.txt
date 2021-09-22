@@ -1,0 +1,14 @@
+C:\Users\Student\source\repos\operators\operators\obj\Debug\netcoreapp3.1\operators.csproj.AssemblyReference.cache
+C:\Users\Student\source\repos\operators\operators\obj\Debug\netcoreapp3.1\operators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\source\repos\operators\operators\obj\Debug\netcoreapp3.1\operators.AssemblyInfoInputs.cache
+C:\Users\Student\source\repos\operators\operators\obj\Debug\netcoreapp3.1\operators.AssemblyInfo.cs
+C:\Users\Student\source\repos\operators\operators\obj\Debug\netcoreapp3.1\operators.csproj.CoreCompileInputs.cache
+C:\Users\Student\source\repos\operators\operators\bin\Debug\netcoreapp3.1\operators.exe
+C:\Users\Student\source\repos\operators\operators\bin\Debug\netcoreapp3.1\operators.deps.json
+C:\Users\Student\source\repos\operators\operators\bin\Debug\netcoreapp3.1\operators.runtimeconfig.json
+C:\Users\Student\source\repos\operators\operators\bin\Debug\netcoreapp3.1\operators.runtimeconfig.dev.json
+C:\Users\Student\source\repos\operators\operators\bin\Debug\netcoreapp3.1\operators.dll
+C:\Users\Student\source\repos\operators\operators\bin\Debug\netcoreapp3.1\operators.pdb
+C:\Users\Student\source\repos\operators\operators\obj\Debug\netcoreapp3.1\operators.dll
+C:\Users\Student\source\repos\operators\operators\obj\Debug\netcoreapp3.1\operators.pdb
+C:\Users\Student\source\repos\operators\operators\obj\Debug\netcoreapp3.1\operators.genruntimeconfig.cache
