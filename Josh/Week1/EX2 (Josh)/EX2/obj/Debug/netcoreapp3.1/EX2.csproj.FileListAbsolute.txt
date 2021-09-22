@@ -1,0 +1,14 @@
+C:\Users\Student\source\repos\EX2\EX2\obj\Debug\netcoreapp3.1\EX2.csproj.AssemblyReference.cache
+C:\Users\Student\source\repos\EX2\EX2\obj\Debug\netcoreapp3.1\EX2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\source\repos\EX2\EX2\obj\Debug\netcoreapp3.1\EX2.AssemblyInfoInputs.cache
+C:\Users\Student\source\repos\EX2\EX2\obj\Debug\netcoreapp3.1\EX2.AssemblyInfo.cs
+C:\Users\Student\source\repos\EX2\EX2\obj\Debug\netcoreapp3.1\EX2.csproj.CoreCompileInputs.cache
+C:\Users\Student\source\repos\EX2\EX2\bin\Debug\netcoreapp3.1\EX2.exe
+C:\Users\Student\source\repos\EX2\EX2\bin\Debug\netcoreapp3.1\EX2.deps.json
+C:\Users\Student\source\repos\EX2\EX2\bin\Debug\netcoreapp3.1\EX2.runtimeconfig.json
+C:\Users\Student\source\repos\EX2\EX2\bin\Debug\netcoreapp3.1\EX2.runtimeconfig.dev.json
+C:\Users\Student\source\repos\EX2\EX2\bin\Debug\netcoreapp3.1\EX2.dll
+C:\Users\Student\source\repos\EX2\EX2\bin\Debug\netcoreapp3.1\EX2.pdb
+C:\Users\Student\source\repos\EX2\EX2\obj\Debug\netcoreapp3.1\EX2.dll
+C:\Users\Student\source\repos\EX2\EX2\obj\Debug\netcoreapp3.1\EX2.pdb
+C:\Users\Student\source\repos\EX2\EX2\obj\Debug\netcoreapp3.1\EX2.genruntimeconfig.cache
