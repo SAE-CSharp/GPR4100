@@ -18,6 +18,7 @@ namespace excorcise1
             Console.WriteLine("who are you?");
             string peopleName = Console.ReadLine();
             Console.WriteLine("Hello "+peopleName+"\n\t\twhy did i wake up at "+time2+"\t\t\t\teverything hurts");
+            Console.WriteLine(f+" "+i+" "+n);
         }
     }
 }
