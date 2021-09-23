@@ -1,0 +1,57 @@
+using System;
+
+namespace A_Calculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("========================================================================================================================");
+            Console.WriteLine("");
+            Console.WriteLine(">>>>> PROGRAMMING A WORKING CALCULATOR <<<<<");
+            Console.WriteLine("");
+
+
+            float num1, num2, result; ;
+            char op;
+
+            Console.WriteLine("Welcome to the Calculator program.");
+            Console.WriteLine("Please input your first number.");
+            num1 = float.Parse(Console.ReadLine());
+            Console.WriteLine("Please input your second number.");
+            num2 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("What Operation would you like to use?");
+            Console.WriteLine("Enter \'+\' for addition.");
+            Console.WriteLine("Enter \'-\' for subtraction.");
+            Console.WriteLine("Enter \'*\' for multiplication.");
+            Console.WriteLine("Enter \'/\' for division.");
+            op = Convert.ToChar(Console.ReadLine());
+
+            if (op == '+')
+            {
+                result = num1 + num2;
+                Console.WriteLine("The sum of " + num1 + " and " + num2 + " is " + result + ".");
+            }
+            else if (op == '-')
+            {
+                result = num1 - num2;
+                Console.WriteLine("The result of " + num1 + " minus " + num2 + " is " + result + ".");
+            }
+            else if (op == '*')
+            {
+                result = num1 * num2;
+                Console.WriteLine("The result of " + num1 + " multiplied by " + num2 + " is " + result + ".");
+            }
+            else if (op == '/')
+            {
+                result = num1 / num2;
+                Console.WriteLine("The result of " + num1 + " divided by " + num2 + " is " + result + ".");
+            }
+            else
+            {
+                Console.WriteLine("That is an invalid input. Please restart the program/calculator.");
+            }
+        }
+    }
+}
