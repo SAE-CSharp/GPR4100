@@ -1,0 +1,29 @@
+using System;
+
+namespace Exercise2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string fullName;
+            
+
+            Console.WriteLine("Enter your full name");
+            fullName = Console.ReadLine();
+            Console.WriteLine("Your name is " + fullName);
+            Console.WriteLine("Are you sure you want to use that name? " +fullName + " Why don\'t you use another one");
+            Console.WriteLine("How old are you?");
+            int Age = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Are you " + Age + " years old?");
+            Console.WriteLine("How far is it from your home to the city?");
+            float distance = float.Parse(Console.ReadLine());
+            Console.WriteLine("The distance is: " + distance );
+            
+            Console.WriteLine("What is the first letter of your name?");
+            char firstLetter = Char.Parse(Console.ReadLine());
+            Console.WriteLine("The first letter of your name is " + firstLetter);
+
+        }
+    }
+}
