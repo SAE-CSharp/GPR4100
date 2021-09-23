@@ -1,0 +1,34 @@
+                int num1;
+                int num2;
+                char op;
+                Console.WriteLine("Enter the first number you want to calculate");
+                num1 = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Enter the second number you want to calculate");
+                num2= Int32.Parse(Console.ReadLine());
+
+                Console.WriteLine("Which operator do you need for your calculation?");
+                op = char.Parse(Console.ReadLine());
+                if (op == '+')
+                {
+                    int result = num1 + num2;
+                    Console.WriteLine(num1+ ""+op+""+num2+"="+result);
+
+                }
+                else if (op == '-')
+                {
+                    int result = num1 - num2;
+                    Console.WriteLine(num1 + "" + op + "" + num2 + "=" + result);
+
+                }
+                else if (op == '*')
+                {
+                    int result = num1 * num2;
+                    Console.WriteLine(num1 + "" + op + "" + num2 + "=" + result);
+
+                }
+                else if (op == '/')
+                {
+                    int result = num1 / num2;
+                    Console.WriteLine(num1 + "" + op + "" + num2 + "=" + result);
+
+                }
