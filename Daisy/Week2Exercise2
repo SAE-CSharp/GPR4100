@@ -1,0 +1,31 @@
+using System;
+
+namespace Exercise2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        
+
+            float exeT, diet, playerAge, DeathYears;
+
+            Console.WriteLine("How many hours a week do you exercise?");
+            exeT = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("How often do you eat vegetables?");
+            diet = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("How old are you?");
+            playerAge = float.Parse(Console.ReadLine());
+
+            DeathYears = playerAge * (exeT / diet);
+
+            Console.WriteLine("You have " + DeathYears + " years to live");
+
+
+       
+
+        }
+    }
+}
