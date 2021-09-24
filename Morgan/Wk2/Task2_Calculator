@@ -32,26 +32,31 @@ namespace MCarpenter_Wk2_CalculatorTask
             if (inputOp == '+')
             {
                 output = inputA + inputB;
+                output = MathF.Round(output, 2);
                 Console.WriteLine("\nResult = " + output);
             }
             else if (inputOp == '-')
             {
                 output = inputA - inputB;
+                output = MathF.Round(output, 2);
                 Console.WriteLine("\nResult = " + output);
             }
             else if (inputOp == '*')
             {
                 output = inputA * inputB;
+                output = MathF.Round(output, 2);
                 Console.WriteLine("\nResult = " + output);
             }
             else if (inputOp == '/')
             {
                 output = inputA / inputB;
+                output = MathF.Round(output, 2);
                 Console.WriteLine("\nResult = " + output);
             }
             else if (inputOp == '%')
             {
                 output = inputA % inputB;
+                output = MathF.Round(output, 2);
                 Console.WriteLine("\nResult = " + output);
             }
             else
