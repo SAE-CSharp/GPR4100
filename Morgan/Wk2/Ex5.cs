@@ -68,7 +68,7 @@ namespace MCarpenter_Wk2_Ex5
             confirmYN = "n";
 
             Console.WriteLine("-- USER INFORMATION --\n");
-            
+
             Console.WriteLine("Name:\n  " + userName + "\n");
             Console.WriteLine("Age:\n  " + userAge + "\n");
             Console.WriteLine("University:\n  " + userUni + "\n");
@@ -78,6 +78,8 @@ namespace MCarpenter_Wk2_Ex5
             
             Char firstLetter = Char.Parse(userName.Substring(0, 1));
             Console.WriteLine("First letter of your name:\n  " + firstLetter);
+            firstLetter = Char.Parse(userUni.Substring(0, 1));
+            Console.WriteLine("First letter of your university\'s name:\n  " + firstLetter);
         }
     }
 }
