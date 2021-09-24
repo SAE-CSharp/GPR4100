@@ -1,0 +1,60 @@
+// TASK AIMS
+// Allow the user to input operands and an operator, and display the result
+
+using System;
+
+namespace MCarpenter_Wk2_CalculatorTask
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            float inputA, inputB;
+            string inputOp;
+            
+            inputStart:
+
+            Console.WriteLine("Input your first operand:");
+            inputA = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("\nOperator options: +, -, *, /, %\nInput your operator:");
+            inputOp = Console.ReadLine();
+
+            Console.WriteLine("\nInput your second operand:");
+            inputB = float.Parse(Console.ReadLine());
+
+            float output;
+            if (inputOp == "+")
+            {
+                output = inputA + inputB;
+                Console.WriteLine("\nResult = " + output);
+            }
+            else if (inputOp == "-")
+            {
+                output = inputA - inputB;
+                Console.WriteLine("\nResult = " + output);
+            }
+            else if (inputOp == "*")
+            {
+                output = inputA * inputB;
+                Console.WriteLine("\nResult = " + output);
+            }
+            else if (inputOp == "/")
+            {
+                output = inputA / inputB;
+                Console.WriteLine("\nResult = " + output);
+            }
+            else if (inputOp == "%")
+            {
+                output = inputA % inputB;
+                Console.WriteLine("\nResult = " + output);
+            }
+            else
+            {
+                Console.WriteLine("\nError: invalid operator - please try again\n\n");
+                goto inputStart;
+            }
+
+        }
+    }
+}
