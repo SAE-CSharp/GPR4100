@@ -1,0 +1,38 @@
+using System;
+
+namespace Exe5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string fullName;
+            int Age;
+            float distance;
+            char ch;
+
+            // using string
+            Console.WriteLine("Enter your full name please!!!");
+            fullName = Console.ReadLine();
+            Console.WriteLine(" Your full name is " + fullName);
+            Console.WriteLine("Are you sure you want to use " + fullName + " as your name? ");
+            Console.WriteLine("Why don\'t you use another name?");
+            fullName = Console.ReadLine();
+            Console.WriteLine("That\'s much better!");
+
+            //using integer(int)
+            Console.WriteLine("How old are you?");
+            Age = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Your age is " + Age + " years ");
+
+            //Using float
+            Console.WriteLine("How far do you live from university?");
+            distance = float.Parse(Console.ReadLine());
+            Console.WriteLine("The distance is: " + distance+ "miles");
+            Console.WriteLine("What\'s the first letter of your institute's name?");
+            ch = char.Parse(Console.ReadLine());
+            Console.WriteLine("The first letter of your institute is " + ch);
+
+        }
+    }
+}
