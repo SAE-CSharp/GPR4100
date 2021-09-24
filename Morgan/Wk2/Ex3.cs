@@ -26,6 +26,24 @@ namespace MCarpenter_Wk2_Ex3
             Console.WriteLine("Division:\nWhen x is " + x + " and y is " + y + ", the result of (float)x / y is " + divA + ".");
             Console.WriteLine("When x is " + x + " and y is " + y + ", the result of x / (float)y is " + divB + ".");
             Console.WriteLine("When x is " + x + " and y is " + y + ", the result of (float)x / (float)y is " + divC + ".\n");
+
+            int incVal = 1;
+            Console.Write(incVal + " ");
+            for ( int i = 1; i < 10; i = i + 1) {
+                incVal++;
+                Console.Write(incVal + " ");
+            };
+            
+            Console.WriteLine("");
+            
+            Console.Write(incVal + " ");
+            for (int i = 1; i < 10; i = i + 1)
+            {
+                incVal--;
+                Console.Write(incVal + " ");
+            };
+
+            Console.WriteLine("");
         }
     }
 }
