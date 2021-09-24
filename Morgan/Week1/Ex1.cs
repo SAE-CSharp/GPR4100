@@ -16,7 +16,7 @@ namespace ConsoleAppStory_MCarpenter
             Console.WriteLine("I\'m "+studentAge+" years old, and I am a student at "+studentUni+"."); // Age + University
             Console.WriteLine("I live in "+studentLocation+",\nwhich is "+studentDistance+" miles away from my university.\n"); // Location + Distance to uni
 
-            string filePath = "C:\\Users\\Admin\\Documents"
+            string filePath = "C:\\Users\\Admin\\Documents";
 
             Console.WriteLine("Example filepath: "+filePath);
         }
