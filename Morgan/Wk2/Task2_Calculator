@@ -10,7 +10,12 @@ namespace MCarpenter_Wk2_CalculatorTask
         static void Main(string[] args)
         {
             float inputA, inputB;
-            string inputOp;
+            char inputOp;
+            /*char[] operatorChars = { "+", "-", "*", "/", "%" };
+            string inputCalc;
+            string inputSecA;
+            string inputSecB;
+            string inputSecC*/
             
             inputStart:
 
@@ -18,33 +23,33 @@ namespace MCarpenter_Wk2_CalculatorTask
             inputA = float.Parse(Console.ReadLine());
 
             Console.WriteLine("\nOperator options: +, -, *, /, %\nInput your operator:");
-            inputOp = Console.ReadLine();
+            inputOp = Char.Parse(Console.ReadLine());
 
             Console.WriteLine("\nInput your second operand:");
             inputB = float.Parse(Console.ReadLine());
 
             float output;
-            if (inputOp == "+")
+            if (inputOp == '+')
             {
                 output = inputA + inputB;
                 Console.WriteLine("\nResult = " + output);
             }
-            else if (inputOp == "-")
+            else if (inputOp == '-')
             {
                 output = inputA - inputB;
                 Console.WriteLine("\nResult = " + output);
             }
-            else if (inputOp == "*")
+            else if (inputOp == '*')
             {
                 output = inputA * inputB;
                 Console.WriteLine("\nResult = " + output);
             }
-            else if (inputOp == "/")
+            else if (inputOp == '/')
             {
                 output = inputA / inputB;
                 Console.WriteLine("\nResult = " + output);
             }
-            else if (inputOp == "%")
+            else if (inputOp == '%')
             {
                 output = inputA % inputB;
                 Console.WriteLine("\nResult = " + output);
