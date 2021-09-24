@@ -1,29 +1,32 @@
 using System;
 
-namespace exe2
+namespace Ex3
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string username = "Nico";
-            string uni = "SAE";
-            int age = 28;
-            float distance = 550.5f;
-            string station = "Haggerston";
-            string country = "Italy";
-            string city = "Milan";
-            string hobby = "cooking";
-            string exercise = "yoga";
-            char nameInital = 'N';
-            char surnameInital = 'C';
+            int x = 7;
+            int y = 4;
+            int addition = x + y;
+            int subtraction = x - y;
+            int multiplication = x * y;
+            int division = x / y;
+            int modulus = x % y;
+            int input;
 
-            Console.WriteLine("My name is "+username+" and my initals are"+nameInital+surnameInital);
-            Console.WriteLine("I\'m a student at "+uni+" and I\'m "+age+" years old.\n I\'m studying \"GPR4100\"");
-            Console.WriteLine("I live in "+station+", really close to SAE, just"+distance+"metres");
-            Console.WriteLine("I\'m from "+country+", from the city of "+city);
-            Console.WriteLine("I enjoy "+hobby+" and my favorite exercise is "+exercise);
-            Console.WriteLine("\\C:\\Users\\nicol\\source\\repos\\exe2");
+
+            Console.WriteLine("Addition " + addition);
+            Console.WriteLine("Subtraction " + subtraction);
+            Console.WriteLine("multiplication " + multiplication);
+            Console.WriteLine("division " + ((float)x / y));
+            Console.WriteLine("division " + (x / (float)y));
+            Console.WriteLine("division " + ((float)x / (float)y));
+            Console.WriteLine("Modulus " + modulus);
+
+            input = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("You have typed: " + input);
+
         }
     }
 }
