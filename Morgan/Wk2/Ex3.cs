@@ -21,7 +21,7 @@ namespace MCarpenter_Wk2_Ex3
 
             float div = (float)x / y;
 
-            Console.WriteLine("Division:\nWhen x is " + x + " and y is " + y + ", the result of x / y is " + div + ".\n");
+            Console.WriteLine("Division:\nWhen x is " + x + " and y is " + y + ", the result of (float)x / y is " + div + ".\n");
         }
     }
 }
