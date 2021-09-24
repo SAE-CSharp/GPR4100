@@ -1,0 +1,51 @@
+using System;
+
+namespace Week_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = 10;
+            int y = 69;
+            //int result = x + y;
+            //+addition
+
+            Console.WriteLine("the result of x+y operation is " + (x + y));
+            Console.WriteLine("the result of x+y operation is " + (x - y));
+            Console.WriteLine("the result of x+y operation is " + (x * y));
+            Console.WriteLine("the result of x+y operation is " + (x / y));
+            Console.WriteLine("the result of x+y operation is " + (x % y));
+            Console.WriteLine("*************************************************");
+
+            x = 7;
+            y = 4;
+            Console.WriteLine(" the result of x/y =" + (x / y));
+            Console.WriteLine(" the result of (float)x/y =" + (float)x / y);
+            Console.WriteLine(" the result of x/(float)y =" + (x /(float)y));
+            Console.WriteLine(" the result of (float)x /(float)y =" + (float)x / (float)y);
+
+            int a = 5;
+            int b = 4;
+            a++;
+            b++;
+            a--;
+            b--;
+            Console.WriteLine(" The increment of a is: " + (a));
+            Console.WriteLine(" The increment of b is: " + (b));
+            Console.WriteLine(" The increment of a is: " + (a--));
+            Console.WriteLine(" The increment of b is: " + (b--));
+
+            int z = 1;
+            int v = 3;
+
+            z += 5;  // z= z+5;
+            Console.WriteLine("z is : " + z);
+            v -= 2;  //v=v-2;
+            Console.WriteLine("v is : " + v);
+            z *= 2;   //z =z*2;
+            Console.WriteLine("z is : " + z);
+
+        }
+    }
+}
