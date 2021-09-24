@@ -68,6 +68,7 @@ namespace MCarpenter_Wk2_Ex5
             confirmYN = "n";
 
             Console.WriteLine("-- USER INFORMATION --\n");
+            
             Console.WriteLine("Name:\n  " + userName + "\n");
             Console.WriteLine("Age:\n  " + userAge + "\n");
             Console.WriteLine("University:\n  " + userUni + "\n");
