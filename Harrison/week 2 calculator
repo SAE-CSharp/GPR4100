@@ -1,0 +1,39 @@
+float num1;
+            float num2;
+            string fun;
+
+            Console.WriteLine("");
+            Console.WriteLine("****************************************************************************************************");
+            Console.WriteLine("");
+
+            Console.WriteLine("first number");
+            num1 = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("second number");
+            num2 = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("function ( + - * / )");
+            fun = Console.ReadLine();
+
+            if (fun == "+")
+            {
+                num1 += num2;
+            }
+            else if (fun == "-")
+            {
+                num1 -= num2;
+            }
+            else if (fun == "*")
+            {
+                num1 *= num2;
+            }
+            else if (fun == "/")
+            {
+                num1 /= num2;
+            }
+
+            Console.WriteLine("the answer is " + num1);
+
+            Console.WriteLine("");
+            Console.WriteLine("****************************************************************************************************");
+            Console.WriteLine("");
