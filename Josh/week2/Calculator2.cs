@@ -7,16 +7,16 @@ namespace Calculator2
         static void Main(string[] args)
         {
             string calculationType;
-            float x, y, result = 0;
+            float x, y, i, result = 0, flag = 0;
             char op;
-            
-            
+
+
 
             Console.WriteLine("Enter A, B or C (respectively) for the type of calulation you would like to use (Arithmatic, Even/odd, Prime):");
             calculationType = Console.ReadLine();
 
-            
-            
+
+
             if (calculationType == "A")
             {
                 Console.WriteLine("Enter first value: ");
@@ -28,8 +28,8 @@ namespace Calculator2
                 Console.WriteLine("What would you like to do with these numbers. (+ - * or / )");
                 op = char.Parse(Console.ReadLine());
 
-                
-                
+
+
                 if (op == '+')
                 {
                     result = x + y;
@@ -53,15 +53,15 @@ namespace Calculator2
                 Console.WriteLine(x + " " + op + " " + y + " = " + result);
             }
 
-            
-            
+
+
             else if (calculationType == "B")
             {
                 Console.WriteLine("Enter your value: ");
                 x = float.Parse(Console.ReadLine());
                 result = x % 2;
 
-                
+
                 if (result == 0)
                 {
                     Console.WriteLine(x + " is an even number!");
@@ -72,24 +72,23 @@ namespace Calculator2
                 }
             }
 
-            
-            
+
+
             else if (calculationType == "C")
             {
-                int x, i, flag=0;
                 Console.WriteLine("Enter a value:");
                 x = int.Parse(Console.ReadLine());
-                
-                if (x==0)
+
+                if (x == 0)
                 {
                     Console.WriteLine("This is a grey area");
                 }
-                
-                else if (x==1)
+
+                else if (x == 1)
                 {
                     Console.WriteLine("This is a grey area");
                 }
-                
+
                 else
                 {
                     for (i = 2; i == (x - 1);)
@@ -105,21 +104,23 @@ namespace Calculator2
                     if (flag == 0)
                     {
                         Console.WriteLine(x + " is a prime number");
-                    }  
+                    }
                 }
-                
-                
-                
-                
-                
-                
-             else
-             {
-                Console.WriteLine("Input Invalid");
-             }
-                
-                
             }
+
+
+
+
+
+
+
+            else
+            {
+                Console.WriteLine("Input Invalid");
+            }
+
+
+            
         }
     }
 }
