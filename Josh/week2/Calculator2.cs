@@ -11,7 +11,7 @@ namespace Calculator2
             char op;
 
 
-
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("Enter A, B or C (respectively) for the type of calulation you would like to use (Arithmatic, Even/odd, Prime):");
             calculationType = Console.ReadLine();
 
@@ -79,29 +79,26 @@ namespace Calculator2
                 Console.WriteLine("Enter a value:");
                 x = int.Parse(Console.ReadLine());
 
-                if (x == 0)
+                for (i = 2; i <= (x - 1); i++)
                 {
-                    Console.WriteLine("This is a grey area");
-                }
-
-                else if (x == 1)
-                {
-                    Console.WriteLine("This is a grey area");
-                }
-
-                else
-                {
-                    for (i = 2; i == (x - 1);)
+                    if (x % i == 0)
                     {
-                        i++;
-                        if (x % i == 0)
-                        {
-                            flag = 1;
-                            Console.WriteLine(x + " is not a prime number");
-                            break;
-                        }
+                        Console.WriteLine(x + " is not a prime number");
+                        flag = 1;
+                        break;
                     }
-                    if (flag == 0)
+                }
+                if (flag == 0)
+                {
+                    if (x == 0)
+                    {
+                        Console.WriteLine(x + " is not a prime number");
+                    }
+                    else if (x == 1)
+                    {
+                        Console.WriteLine(x + " is not a prime number");
+                    }
+                    else
                     {
                         Console.WriteLine(x + " is a prime number");
                     }
@@ -110,17 +107,8 @@ namespace Calculator2
 
 
 
-
-
-
-
-            else
-            {
-                Console.WriteLine("Input Invalid");
-            }
-
-
-            
+            Console.WriteLine("Press enter to exit");
+            Console.ReadLine();
         }
     }
 }
