@@ -92,7 +92,7 @@ namespace Calculator2
                 
                 else
                 {
-                    for (i = 0; i == (x - 1);)
+                    for (i = 2; i == (x - 1);)
                     {
                         i++;
                         if (x % i == 0)
