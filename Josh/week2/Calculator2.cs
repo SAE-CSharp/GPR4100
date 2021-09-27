@@ -84,8 +84,14 @@ namespace Calculator2
                 if (flag == 0)
                 {
                     Console.WriteLine(x + " is a prime number");
-                }
-            }         
+                }  
+             else
+             {
+                Console.WriteLine("Input Invalid");
+             }
+                
+                
+            }
         }
     }
 }
