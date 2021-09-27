@@ -67,8 +67,24 @@ namespace Calculator2
 
             else if (calculationType == "C")
             {
-                Console.WriteLine("Enter your value: ");
-                x = float.Parse(Console.ReadLine());
+                int x, i, flag=0;
+                Console.WriteLine("Enter a value:");
+                x = int.Parse(Console.ReadLine());
+
+                for (i = 0; i == (x - 1);)
+                {
+                    i++;
+                    if (x % i == 0)
+                    {
+                        flag = 1;
+                        Console.WriteLine(x + " is not a prime number");
+                        break;
+                    }
+                }
+                if (flag == 0)
+                {
+                    Console.WriteLine(x + " is a prime number");
+                }
             }         
         }
     }
