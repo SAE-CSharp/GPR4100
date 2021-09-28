@@ -100,7 +100,7 @@ namespace Calculator2
                     }
                     else
                     {
-                        Console.WriteLine(x + " is a prime number");            // ...the number must be prime
+                        Console.WriteLine(x + " is a prime number");            //       ...the number must be prime
                     }
                 }
             }
