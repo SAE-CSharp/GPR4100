@@ -1,0 +1,72 @@
+
+                int num1;
+                int num2;
+                char op;
+                int i;
+                Console.WriteLine("Enter the first number you want to calculate");
+                num1 = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Enter the second number you want to calculate");
+                num2= Int32.Parse(Console.ReadLine());
+
+                Console.WriteLine("Which operator do you need for your calculation?");
+                op = char.Parse(Console.ReadLine());
+                if (op == '+')
+                {
+                    int result = num1 + num2;
+                    Console.WriteLine(num1+ ""+op+""+num2+"="+result);
+
+                }
+                else if (op == '-')
+                {
+                    int result = num1 - num2;
+                    Console.WriteLine(num1 + "" + op + "" + num2 + "=" + result);
+
+                }
+                else if (op == '*')
+                {
+                    int result = num1 * num2;
+                    Console.WriteLine(num1 + "" + op + "" + num2 + "=" + result);
+
+                }
+                else if (op == '/')
+                {
+                    int result = num1 / num2;
+                    Console.WriteLine(num1 + "" + op + "" + num2 + "=" + result);
+
+                }
+               
+                
+                if (result == % 2)
+                {
+                    Console.Writeline("The number of your result is even");
+                }
+                else
+                {
+                    Console.Writeline("The number of your result is odd");
+                }
+                
+                for(i = 2; i <= (result / 2); i++)
+                {
+                    if (result % i == 0)
+                {
+                    Console.Writeline(result + " :This is not a prime number"); 
+                    flag = 1;
+                    break;
+                }
+                }
+                if (flag == 0)
+                {
+                    if (result == 0)
+                  {
+                    Console.Writeline(result + " :This is not a prime number");
+                  }
+                  else if (answer == 1)
+                  {
+                     Console.Writeline(result + " :This is not a prime number");
+                  }
+                  else
+                  {
+                    Console.Writeline(result + " :This is a prime number");
+                  }
+                }
+                
