@@ -76,31 +76,31 @@ namespace Calculator2
 
             else if (calculationType == "C")
             {
-                Console.WriteLine("Enter a value:");
+                Console.WriteLine("Enter a value:");                            
                 x = int.Parse(Console.ReadLine());
-
-                for (i = 2; i <= (x - 1); i++)
+                                                                                
+                for (i = 2; i <= (x - 1); i++)                                  //loop to check if the input by every value of i from 2 to one below the input
                 {
-                    if (x % i == 0)
+                    if (x % i == 0)                                             //If at any point the modulus calculation gives a result of 0 (i.e.doesn't give a remainder)
                     {
-                        Console.WriteLine(x + " is not a prime number");
-                        flag = 1;
+                        Console.WriteLine(x + " is not a prime number");        //...Then the number cannot be prime
+                        flag = 1;                                               //alter the flag value so the the programme can identify that it has gone down this path
                         break;
                     }
                 }
-                if (flag == 0)
-                {
+                if (flag == 0)                                                  //If the loop completes and the flag has not been changed then no condition has been met to
+                {                                                               //      show that the input is not prime then...
                     if (x == 0)
                     {
-                        Console.WriteLine(x + " is not a prime number");
-                    }
+                        Console.WriteLine(x + " is not a prime number"); //Both 0 and 1 are not prime numbers but will not meet the condition to alter the flag therfore need
+                    }                                                    //...their own path
                     else if (x == 1)
                     {
                         Console.WriteLine(x + " is not a prime number");
                     }
                     else
                     {
-                        Console.WriteLine(x + " is a prime number");
+                        Console.WriteLine(x + " is a prime number");            // ...the number must be prime
                     }
                 }
             }
