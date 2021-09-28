@@ -1,0 +1,155 @@
+using System;
+
+namespace Task_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*            string fullName;
+                        Console.WriteLine("Enter your Full name:");
+                        fullName = Console.ReadLine();
+                        Console.WriteLine("Your name is: " + fullName);
+                        Console.WriteLine("Are you sure you want to use that name " + fullName + "\n Why not use another one?");
+                        fullName = Console.ReadLine();
+
+                        Console.WriteLine("\nHow old are you?");
+                        int age = Int32.Parse(Console.ReadLine());
+                        Console.WriteLine("Your age is:" + age);
+
+                        Console.WriteLine("\nHow far is the distance between your house and your uni?");
+                        float distance = float.Parse(Console.ReadLine());
+                        Console.WriteLine("the distance is: " + distance);
+
+                        Console.WriteLine("\nWhat is the first letter of your name?");
+                        string firstLetter = (Console.ReadLine());
+                        Console.WriteLine("The first letter of your name is: " + firstLetter);*/
+
+            /*Console.WriteLine("*****************************************************************");
+
+            float exeT, diet, PlayerAge, DeathYears;
+            Console.WriteLine("How many hours of exercise have you done this week?");
+            exeT = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("How many days a week do you eat healthy?");
+            diet = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("How old are you?");
+            PlayerAge = Int32.Parse(Console.ReadLine());
+            DeathYears = PlayerAge * (exeT / diet);
+
+            Console.WriteLine("You have " + DeathYears + " years left");*/
+
+            Console.WriteLine("***********************************************************************");
+
+            /*            int playerSteps = 10;
+                        int enemySteps = 10;
+                        playerSteps++;
+                        enemySteps++;
+                        playerSteps += 1;
+                        enemySteps += 1;*/
+
+            /*            Console.WriteLine("************************************");
+                        Console.WriteLine("Pick a number..");
+                        int number;
+                        number = Int32.Parse(Console.ReadLine());
+                        if (number > 10)
+                        {
+                            Console.WriteLine("The value is greater than 10! \n");
+                        }
+                        else
+                        {
+                            Console.WriteLine("The value is not greater than 10! \n");
+                        }*/
+
+            /* You can do If, ElseIf and then Else if theres more than one condition. Opertors are; "> < <= >= == != === ! =="
+             * === is equal value and same type but ! == is not equal value or not same type. */
+            /*            Console.WriteLine("Enter a Player speed");
+                        int playerSpeed = Int32.Parse(Console.ReadLine());
+
+                        if(playerSpeed == 10)
+                        {
+                            Console.WriteLine("Value of Player Speed is 10");
+                        }
+                        else if(playerSpeed == 20)
+                        {
+                            Console.WriteLine("Value of Player Speed is 20");
+                        }
+                        else if(playerSpeed == 30)
+                        {
+                            Console.WriteLine("Value of Player speed is 30");
+                        }
+                        else
+                        {
+                            Console.WriteLine("This is not a valid number!!");
+                        }*/
+
+            float x, y, a, b, Result;
+            char op;
+            string Eq;
+
+            Console.WriteLine("Do you want to do an Arithmatic, Odd/Even or do you want a Prime equation?");
+            Eq = Console.ReadLine();
+            if (Eq == "Artihmatic")
+            {
+                Console.WriteLine("Enter your first number:");
+                x = float.Parse(Console.ReadLine());
+                Console.WriteLine("Enter your second number:");
+                y = float.Parse(Console.ReadLine());
+                Console.WriteLine("What operation would you like to do? Type one of the options: + (add) - (subtract) * (Times) / (Divide) or % (Remainder of a divide)");
+                op = char.Parse(Console.ReadLine());
+
+                if (op == '+')
+                {
+                    Result = x + y;
+                    Console.WriteLine("The answer is:" + Result);
+                }
+                else if (op == '-')
+                {
+                    Result = x - y;
+                    Console.WriteLine("The answer is:" + Result);
+                }
+                else if (op == '*')
+                {
+                    Result = x * y;
+                    Console.WriteLine("The answer is:" + Result);
+                }
+                else if (op == '/')
+                {
+                    Result = x / y;
+                    Console.WriteLine("The answer is:" + Result);
+                }
+
+                else if (op == '%')
+                {
+                    Result = x % y;
+                    Console.WriteLine("The answer is:" + Result);
+                }
+
+                else
+                {
+                    Console.WriteLine("This is not a valid Operator..");
+                }
+
+            }
+            if (Eq == "Odd/Even")
+            {
+                Console.WriteLine("Enter A number:");
+                a = float.Parse(Console.ReadLine());
+                Result = a % 2;
+                if (Result == 0)
+                {
+                    Console.WriteLine("This is an even number!");
+                }
+                else
+                {
+                    Console.WriteLine("This is an Odd number!");
+                }
+            }
+            if (Eq == "Prime")
+            {
+                Console.WriteLine("Enter the Number you want to check is Prime:");
+                b = float.Parse(Console.ReadLine());
+
+            }
+        }
+    }
+}
