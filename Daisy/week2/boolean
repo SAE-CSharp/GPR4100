@@ -1,0 +1,58 @@
+using System;
+
+namespace Boolean
+{
+    class Program
+    {
+        enum Materials { Gold=500, Silver=200, Copper=100, Bronze=50 };
+
+        static void Main(string[] args)
+        {
+            int materialValue;
+
+            Console.WriteLine("Welcome to the marketplace");
+            Console.WriteLine("Please choose your material");
+            string materialOfChoice = Console.ReadLine();
+            Console.WriteLine("Enter the quantity");
+            int quantityOfMaterial = Int32.Parse(Console.ReadLine());
+            bool materialChecked = false;
+
+            if (!materialChecked)
+            {
+                if (materialOfChoice == "Gold")
+                {
+                    int GoldValue = (int)Materials.Gold;
+                    Console.WriteLine(GoldValue);
+                    Console.WriteLine("My offer is $" + (int)Materials.Gold * quantityOfMaterial + "");
+
+                }
+
+                else if (materialOfChoice == "Silver")
+                {
+                    int SilverValue = (int)Materials.Silver;
+                    Console.WriteLine(SilverValue);
+                    Console.WriteLine("My offer is $" + (int)Materials.Silver * quantityOfMaterial + "");
+                }
+
+                else if (materialOfChoice == "Copper")
+                {
+                    int CopperValue = (int)Materials.Copper;
+                    Console.WriteLine(CopperValue);
+                    Console.WriteLine("My offer is $" + (int)Materials.Copper * quantityOfMaterial + "");
+                }
+                else if (materialOfChoice == "Bronze")
+                {
+                    int BronzeValue = (int)Materials.Bronze;
+                    Console.WriteLine(BronzeValue);
+                    Console.WriteLine("My offer is $" + (int)Materials.Bronze * quantityOfMaterial + "");
+                }
+
+                else
+                {
+                    Console.WriteLine("Material not in stock");
+                }
+            }
+
+        }
+    }
+}
