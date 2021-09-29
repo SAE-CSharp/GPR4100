@@ -1,0 +1,93 @@
+float num1;
+            float num2;
+            char opp;
+
+
+
+
+            Console.WriteLine("Enter the first number please?");
+            num1 = float.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the second number please?");
+            num2 = float.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the operator please?");
+            Console.WriteLine("You can choose between +, -, *, /, or %");
+            opp = char.Parse(Console.ReadLine());
+            if (opp == '+')
+            {
+                Console.WriteLine("The result of num1+num2 is " + (num1 + num2));
+
+
+            }
+            else if (opp == '-')
+            {
+                Console.WriteLine("The result of num1-num2 is " + (num1 - num2));
+
+            }
+            else if (opp == '*')
+            {
+                Console.WriteLine("The result of num1*num2 is " + (num1 * num2));
+            }
+            else if (opp == '/')
+            {
+                Console.WriteLine("The result of num1/num2 is " + (num1 / num2));
+
+            }
+            else if (opp == '%')
+            {
+                Console.WriteLine("The result of num1%num2 is " + (num1 % num2));
+
+
+
+
+
+            }
+            else
+            {
+                Console.WriteLine("Invalid charcter");
+
+            }
+            Console.WriteLine("**********");
+            Console.WriteLine("Check if a number is prime");
+            bool IsPrime(int n)
+            {
+                if (n == 2 || n == 3)
+                    return true;
+
+                if (n <= 1 || n % 2 == 0 || n % 3 == 0)
+                    return false;
+
+                for (int i = 5; i * i <= n; i += 6)
+                {
+                    if (n % i == 0 || n % (i + 2) == 0)
+                        return false;
+                }
+
+                return true;
+            }
+
+            int input = Int32.Parse(Console.ReadLine());
+
+            bool checkResult = IsPrime(input);
+
+            if (checkResult == true)
+            {
+                Console.WriteLine("\n" + input + " is prime");
+            }
+            else
+            {
+                Console.WriteLine("\n" + input + " is not prime");
+            }
+            Console.WriteLine("***************");
+            Console.WriteLine("Check if a number is odd or even");
+            int number, remainder;
+            number = Convert.ToInt32(Console.ReadLine());
+            remainder = number % 2;
+            if(remainder == 0)
+            {
+                Console.WriteLine("{0} is an even number", number);
+
+            }
+            else
+            {
+                Console.WriteLine("{0} is an odd number", number);
+            }
