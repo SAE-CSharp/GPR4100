@@ -1,0 +1,36 @@
+using System;
+
+namespace Enumeration_Angela
+{
+    class Program
+    {
+        // create enumeration
+        enum Level { Easy, Medium, Hard };
+        static void Main(string[] args)
+        {
+            
+            
+            Console.WriteLine("Which level would you like to play? \n 1. Easy \n 2.Medium \n 3. Hard");
+            int gameLevel = Int32.Parse(Console.ReadLine());
+            if (gameLevel ==1)
+            {
+                Console.WriteLine("your level is" + Level.Easy + " that's so easy");
+                //the value of the level elements
+                int eleValue = (int)Level.Easy;
+                Console.WriteLine("the value of the Easy level is " + eleValue);
+
+                if (gameLevel == 2)
+                    Console.WriteLine("your level is" + Level.Medium + " it is a little harder");
+                int eleValue1 = (int)Level.Medium;
+                Console.WriteLine("the value of the Medium level is " + eleValue1);
+
+
+                if (gameLevel == 3)
+                    Console.WriteLine("your level is " + Level.Hard + "that is difficult ");
+                int eleValue2 = (int)Level.Hard;
+                Console.WriteLine("the value of the Hard level is " + eleValue2);
+
+            }
+        }
+    }
+}
