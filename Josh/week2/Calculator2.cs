@@ -1,6 +1,6 @@
 using System;
 
-namespace ConsoleApp2
+namespace Calculator2
 {
     class Program
     {
