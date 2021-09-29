@@ -1,0 +1,43 @@
+using System;
+
+namespace Enumeration_Angela
+{
+    class Program
+    {
+        // create enumeration
+        
+        enum months {  January, February, March, April}
+        static void Main(string[] args)
+        {
+            
+            
+            Console.WriteLine("Which month have you born? \n 1. January \n 2. February \n 3. March \n 4. April");
+            int bornMonth = Int32.Parse(Console.ReadLine());
+            if (bornMonth == 1)
+            {
+                Console.WriteLine("you born in" + months.January);
+                //the value of the level elements
+                int eleValue = (int)months.January;
+                Console.WriteLine("the value of the Born Month January is " + eleValue);
+
+                if (bornMonth == 2)
+                    Console.WriteLine("you born in" + months.February);
+                int eleValue2 = (int)months.February;
+                Console.WriteLine("the value of Born Month February level is " + eleValue2);
+
+
+                if (bornMonth == 3)
+                    Console.WriteLine("you born in" + months.March);
+                int eleValue3 = (int)months.March;
+                Console.WriteLine("the value of Born Month March  level is " + eleValue3);
+
+                if (bornMonth == 4)
+                    Console.WriteLine("you born in" + months.April);
+                int eleValue4 = (int)months.April;
+                Console.WriteLine("the value of Born Month April  level is " + eleValue4);
+
+
+            }
+        }
+    }
+}
