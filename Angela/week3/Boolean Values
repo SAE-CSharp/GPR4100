@@ -1,0 +1,59 @@
+using System;
+
+namespace Boolean_Values
+{
+    class Program
+    {
+        enum Materials { Gold = 500, Silver = 200, Copper = 50, Bronze = 100 };
+        static void Main(string[] args)
+
+        {
+            bool materialChecked = false;
+            Console.WriteLine("Welcome to the marketplace");
+            Console.WriteLine("Choose your material");
+            string materialSelection = Console.ReadLine();
+            Console.WriteLine("enter the quantity");
+            int quantity = Int32.Parse(Console.ReadLine());
+
+
+            if (!materialChecked)
+            {
+
+
+                    if (materialSelection == "Gold")
+                    { 
+                    int GoldValue = (int)Materials.Gold;
+                    Console.WriteLine(GoldValue);
+                    Console.WriteLine("Your offer is $ " + (int)Materials.Gold * quantity);
+
+                     }   
+                    if (materialSelection == "Silver")
+
+                    {
+                    int SilverValue = (int)Materials.Silver;
+                    Console.WriteLine(SilverValue);
+                    
+                        Console.WriteLine("Your offer is $ " + (int)Materials.Silver * quantity );
+                    }
+
+                    if (materialSelection == "Copper")
+                    {
+                        int CopperValue = (int)Materials.Copper;
+                        Console.WriteLine("Your offer is $ " + (int)Materials.Copper * quantity );
+                    }
+
+                    if (materialSelection == "Bronze")
+                    {
+                        int BronzeValue = (int)Materials.Bronze;
+                        Console.WriteLine("Your offer is $ " + (int)Materials.Bronze * quantity );
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("You need to select material");
+                    }
+            }
+        }
+
+    }
+}   
