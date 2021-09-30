@@ -1,0 +1,30 @@
+
+            char again = 'y';
+            while (again == 'y')
+            {
+                Console.WriteLine("\n**Played and exciting game");
+                Console.WriteLine("\nDo you want to play again (y/n)");
+                again = char.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("\nOkay bye");
+
+
+
+
+            int count = 20;
+            while (count < 70)
+            {
+                count++;
+                Console.WriteLine("count is: " + count);
+               
+            }
+
+
+
+
+            int counter = 20;
+            while (counter > 10)
+            {
+                counter--;
+                Console.WriteLine("count is " + counter);
+            }
