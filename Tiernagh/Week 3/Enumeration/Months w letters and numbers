@@ -1,0 +1,73 @@
+namespace Enumeration // letters or numbers
+{
+    class Program
+    {
+        // creat enumeration
+        enum Month { January, Febuary, March, April, May, June, July, August };
+
+        static void Main(string[] args)
+        {
+           
+            Console.WriteLine("which month would you like the value of ? \n (A/1). January \n (B/2). Febuary \n (C/3). March \n (D/4). April \n (E/5.) May \n (F/6). June \n (G/7). July \n (H/8). August ");
+            char monthv = char.Parse(Console.ReadLine());
+            if (monthv == 'A' || monthv == '1')
+            {
+                Console.WriteLine("You have chosen " + Month.January);
+                // the value of the level elements
+                int eleValue = (int) Month.January;
+                Console.WriteLine("the value of this month is " + eleValue);
+            }
+            else if (monthv == 'B' || monthv == '2')
+            {
+                Console.WriteLine("You have chosen " + Month.Febuary);
+                // the value of the level elements
+                int eleValue = (int)Month.Febuary;
+                Console.WriteLine("the value of this month is " + eleValue);
+            }
+            else if (monthv == 'C' || monthv == '3')
+            {
+                Console.WriteLine("You have chosen " + Month.March);
+                // the value of the level elements
+                int eleValue = (int)Month.March;
+                Console.WriteLine("the value of this month is " + eleValue);
+            }
+            else if (monthv == 'D' || monthv == '4')
+            {
+                Console.WriteLine("You have chosen " + Month.April);
+                // the value of the level elements
+                int eleValue = (int)Month.April;
+                Console.WriteLine("the value of this month is " + eleValue);
+            }
+            else if (monthv == 'E' || monthv == '5')
+            {
+                Console.WriteLine("You have chosen " + Month.May);
+                // the value of the level elements
+                int eleValue = (int)Month.May;
+                Console.WriteLine("the value of this month is " + eleValue);
+            }
+            else if (monthv == 'F' || monthv == '6')
+            {
+                Console.WriteLine("You have chosen " + Month.June);
+                // the value of the level elements
+                int eleValue = (int)Month.June;
+                Console.WriteLine("the value of this month is " + eleValue);
+            }
+            else if (monthv == 'G' || monthv == '7')
+            {
+                Console.WriteLine("You have chosen " + Month.July);
+                // the value of the level elements
+                int eleValue = (int)Month.July;
+                Console.WriteLine("the value of this month is " + eleValue);
+            }
+            else if (monthv == 'H' || monthv == '8')
+            {
+                Console.WriteLine("You have chosen " + Month.August);
+                // the value of the level elements
+                int eleValue = (int)Month.August;
+                Console.WriteLine("the value of this month is " + eleValue);
+            }
+            
+
+        }
+    }
+}
