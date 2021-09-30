@@ -1,0 +1,14 @@
+C:\Users\djpmi\source\repos\w3 while loops\w3 while loops\bin\Debug\netcoreapp3.1\w3 while loops.exe
+C:\Users\djpmi\source\repos\w3 while loops\w3 while loops\bin\Debug\netcoreapp3.1\w3 while loops.deps.json
+C:\Users\djpmi\source\repos\w3 while loops\w3 while loops\bin\Debug\netcoreapp3.1\w3 while loops.runtimeconfig.json
+C:\Users\djpmi\source\repos\w3 while loops\w3 while loops\bin\Debug\netcoreapp3.1\w3 while loops.runtimeconfig.dev.json
+C:\Users\djpmi\source\repos\w3 while loops\w3 while loops\bin\Debug\netcoreapp3.1\w3 while loops.dll
+C:\Users\djpmi\source\repos\w3 while loops\w3 while loops\bin\Debug\netcoreapp3.1\w3 while loops.pdb
+C:\Users\djpmi\source\repos\w3 while loops\w3 while loops\obj\Debug\netcoreapp3.1\w3 while loops.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djpmi\source\repos\w3 while loops\w3 while loops\obj\Debug\netcoreapp3.1\w3 while loops.AssemblyInfoInputs.cache
+C:\Users\djpmi\source\repos\w3 while loops\w3 while loops\obj\Debug\netcoreapp3.1\w3 while loops.AssemblyInfo.cs
+C:\Users\djpmi\source\repos\w3 while loops\w3 while loops\obj\Debug\netcoreapp3.1\w3 while loops.csproj.CoreCompileInputs.cache
+C:\Users\djpmi\source\repos\w3 while loops\w3 while loops\obj\Debug\netcoreapp3.1\w3 while loops.dll
+C:\Users\djpmi\source\repos\w3 while loops\w3 while loops\obj\Debug\netcoreapp3.1\w3 while loops.pdb
+C:\Users\djpmi\source\repos\w3 while loops\w3 while loops\obj\Debug\netcoreapp3.1\w3 while loops.genruntimeconfig.cache
+C:\Users\djpmi\source\repos\w3 while loops\w3 while loops\obj\Debug\netcoreapp3.1\w3 while loops.csproj.AssemblyReference.cache
