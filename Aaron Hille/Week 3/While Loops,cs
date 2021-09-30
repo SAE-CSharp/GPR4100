@@ -1,0 +1,100 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace While_Loops
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //example of a while loop.
+            char again = 'y';
+
+            while (again == 'y')
+            {
+                Console.WriteLine("\n*Played an exciting game*");
+
+                Console.WriteLine("\nDo you want to play again? (y/n): ");
+                again = Convert.ToChar(Console.ReadLine());
+            }
+
+            Console.WriteLine("\nOkay, bye :)");
+            Console.WriteLine("");
+
+            //================================================================================================================================================//
+
+            int count = 0;
+
+            while (count < 5)
+            {
+                count++;
+                Console.WriteLine("Count is: " + count + ".");
+            }
+            Console.WriteLine("");
+
+
+            int bount = 10;
+
+            while (bount > 1)
+            {
+                bount--;
+                Console.WriteLine("Count is " + bount + ".");
+            }
+            Console.WriteLine("");
+
+
+            int lount = 0;
+
+            while (lount < 5)
+            {
+                lount++;
+
+                if (lount == 2)
+                {
+                    break;
+                }
+
+                Console.WriteLine("Count is " + lount + ".");
+            }
+
+            Console.WriteLine("");
+
+            int gount = 0;
+
+            while (gount < 5)
+            {
+                gount++;
+
+                if (gount == 2)
+                {
+                    continue;
+                }
+
+                Console.WriteLine("Count is " + gount + ".");
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("SHEEEEEEEEESH");
+
+            int sount = 20;
+
+            while (sount < 25)
+            {
+                sount++;
+
+                if (sount == 5)
+                {
+                    break;
+                }
+
+                Console.WriteLine("Count is " + sount + ".");
+            }
+                
+        
+            Console.ReadLine();
+        }
+    }
+}
