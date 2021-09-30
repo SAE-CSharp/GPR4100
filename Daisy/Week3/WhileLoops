@@ -1,0 +1,22 @@
+using System;
+
+namespace WhileLoops
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            char again = 'y';
+
+            while (again == 'y')
+            {
+                Console.WriteLine("\n **played an exciting game*");
+
+                Console.WriteLine("\n Do you want to play again? (y/n):");
+
+                again = Char.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("\n Ok, bye");
+        }
+    }
+}
