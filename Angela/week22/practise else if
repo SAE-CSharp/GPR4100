@@ -1,0 +1,26 @@
+using System;
+
+namespace If_statements_and_its_forms
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string input;
+            Console.WriteLine("Choose your letter: \n a \n b \n c");
+            input = Console.ReadLine();
+            if (input == "a")
+            {
+                Console.WriteLine("apple");
+            }
+            else if (input == "b")
+            {
+                Console.WriteLine("bravo");
+            }
+            else if (input == "c") 
+            {
+                Console.WriteLine("copper");
+            }
+        }
+    }
+}
