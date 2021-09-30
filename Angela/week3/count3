@@ -1,0 +1,27 @@
+using System;
+
+namespace count_project
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int score = 0;
+            while (score < 10)
+            {
+                score++; 
+                Console.WriteLine("Your scrore is " +score);
+                if (score == 5)
+                {
+                    break;
+                }
+                 
+
+                
+
+            }
+           
+
+        }
+    }
+}
