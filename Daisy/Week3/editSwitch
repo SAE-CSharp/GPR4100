@@ -1,0 +1,33 @@
+using System;
+
+namespace exe5_difficultyLevel
+{
+    class Program
+    {
+        enum difficulty { Easy='A', Medium='B', Hard='C' };
+
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Enter your chosen level \n A = Easy \n B = Medium \n C = Hard");
+            char level = char.Parse(Console.ReadLine());
+
+            switch(level)
+            {
+                case (char)difficulty.Easy:
+                    Console.WriteLine("You want to choose the easy level?");
+                    break;
+                case (char)difficulty.Medium:
+                    Console.WriteLine("You want to choose the medium level?");
+                    break;
+                case (char)difficulty.Hard:
+                    Console.WriteLine("You want to choose the hard level?");
+                    break;
+
+                default:
+                    Console.WriteLine("You must choose a level");
+                    break;
+            }
+        }
+    }
+}
