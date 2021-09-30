@@ -1,0 +1,36 @@
+namespace Enumeration
+{
+    class Program
+    {
+        // creat enumeration
+        enum Level { Easy, Medium, Hard };
+
+        static void Main(string[] args)
+        {
+           
+            Console.WriteLine("which level would you like to play?\n 1. Easy \n 2. Medium \n 3. Hard");
+            int gamelevel = Int32.Parse(Console.ReadLine());
+            if (gamelevel == 1)
+            {
+                Console.WriteLine("You have chosen " + Level.Easy + " that is so easy");
+                // the value of the level elements
+                int eleValue = (int) Level.Easy;
+                Console.WriteLine("the value of the easy level is " + eleValue);
+            }
+            else if (gamelevel == 2)
+            {
+                Console.WriteLine("You have chosen " + Level.Medium + " its a little harder");
+                int eleValue = (int)Level.Medium;
+                Console.WriteLine("the value of the medium level is " + eleValue);
+            }
+            else if (gamelevel == 3)
+            {
+                Console.WriteLine("You have chosen " + Level.Hard + " that is v difficult");
+                int eleValue = (int)Level.Hard;
+                Console.WriteLine("the value of the hard level is " + eleValue);
+            }
+
+
+        }
+    }
+}
