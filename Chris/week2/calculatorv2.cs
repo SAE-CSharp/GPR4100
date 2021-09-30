@@ -72,9 +72,9 @@ namespace ConsoleApp1
 
             remainder = number % 2;
             if (remainder == 0)
-                Console.WriteLine("this is a even number");
+                Console.WriteLine("this is a even number\nThanks for playing");
             else
-                Console.WriteLine("this is a odd number");
+                Console.WriteLine("this is a odd number\nThanks for playing");
 
 
 
