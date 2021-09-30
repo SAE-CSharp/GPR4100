@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Difficulty_Setting
+{
+    class Program
+    {
+        //enum dif { Easy = 1, Medium = 2, Hard = 3 };
+        enum dif { Easy = 'A', Medium = 'B', Hard = 'C' };
+        static void Main(string[] args)
+        {
+            Console.WriteLine("What difficulty setting would you like to play today?");
+            //Console.WriteLine("Enter \'1\' for Easy.");
+            //Console.WriteLine("Enter \'2\' for Medium.");
+            //Console.WriteLine("Enter \'3\' for Hard.");
+            Console.WriteLine("Enter \'A\' for Easy.");
+            Console.WriteLine("Enter \'B\' for Medium.");
+            Console.WriteLine("Enter \'C\' for Hard.");
+
+            //int playerDif = Convert.ToInt32(Console.ReadLine());
+            char playerDif = Convert.ToChar(Console.ReadLine());
+
+            switch (playerDif)
+            {
+                //case (int)dif.Easy:
+                case (char)dif.Easy:
+                    Console.WriteLine("You have chosen the easiest difficulty setting.");
+                    break;
+
+                //case (int)dif.Medium:
+                case (char)dif.Medium:
+                    Console.WriteLine("You have chosen the medium difficulty setting.");
+                    break;
+
+                //case (int)dif.Hard:
+                case (char)dif.Hard:
+                    Console.WriteLine("You have chosen the hardest difficulty setting.");
+                    break;
+
+                default:
+                    Console.WriteLine("Unknown level.");
+                    break;
+            }
+
+
+            Console.ReadLine();
+        }
+    }
+}
