@@ -1,0 +1,39 @@
+
+using System;
+
+namespace Enumeration_Angela
+{
+    class Program
+    {
+        // create enumeration
+        enum difficulty { Easy=1, Medium=2, Hard=3 };
+        static void Main(string[] args)
+        {
+
+
+            Console.WriteLine("Enter your game level! \n A. Easy \n B. Medium \n C. Hard");
+            char Level = char.Parse(Console.ReadLine());
+            switch(Level)
+            {
+                case 'A': // =1
+                Console.WriteLine("You have very basic level" );
+                break;
+               
+
+                case 'B': //2
+                    Console.WriteLine("You have medium level");
+                break;
+
+
+
+                case 'C': //3
+                    Console.WriteLine("You have hard level");
+                break;
+                default:
+                    Console.WriteLine("Unknown error");
+                    break;
+
+            }
+        }
+    }
+}
