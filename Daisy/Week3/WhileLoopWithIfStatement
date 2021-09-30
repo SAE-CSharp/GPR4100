@@ -1,0 +1,26 @@
+using System;
+
+namespace whileLoop
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+     
+
+            int counter = 20; // counter is equal to 20
+
+            while (counter > 10) // condition = true because counter is greater than 10
+            {
+                counter--; // decreases counter by one each time, until counter is equal to 10
+
+                if (counter == 13)
+                {
+                    break;
+
+                }
+                Console.WriteLine("the answer is " + counter);
+            }       
+        }
+    }
+}
