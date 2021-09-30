@@ -1,0 +1,30 @@
+namespace switch
+{
+    class Program
+    {
+        enum difficulty { Easy=1, Meduim=2, Hard=3}
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter your game level difficulty\n A. Easy \n B. Medium \n C. Hard");
+            char gamelevel = char.Parse(Console.ReadLine());                     ///or if using numbers use --- int gamelevel = Int32.Parse(Console.ReadLine());
+
+            switch (gamelevel)
+            {
+                case 'A':                                                       /// when uding numbers use --- case(int)difficulty.Easy:
+                    Console.WriteLine("You have chosen a basic level");
+                    
+                    break;
+                case 'B':
+                    Console.WriteLine("You have chosen a harder level");
+                    break;
+                case 'C':
+                    Console.WriteLine("You have chosen the harderst level there is");
+                    break;
+
+                default:
+                    Console.WriteLine("Unknown level");
+                    break;
+            }
+        }
+    }
+}
