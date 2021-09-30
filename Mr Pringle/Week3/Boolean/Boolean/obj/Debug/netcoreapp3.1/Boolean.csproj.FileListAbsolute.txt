@@ -1,0 +1,14 @@
+C:\Users\djpmi\source\repos\Boolean\Boolean\bin\Debug\netcoreapp3.1\Boolean.exe
+C:\Users\djpmi\source\repos\Boolean\Boolean\bin\Debug\netcoreapp3.1\Boolean.deps.json
+C:\Users\djpmi\source\repos\Boolean\Boolean\bin\Debug\netcoreapp3.1\Boolean.runtimeconfig.json
+C:\Users\djpmi\source\repos\Boolean\Boolean\bin\Debug\netcoreapp3.1\Boolean.runtimeconfig.dev.json
+C:\Users\djpmi\source\repos\Boolean\Boolean\bin\Debug\netcoreapp3.1\Boolean.dll
+C:\Users\djpmi\source\repos\Boolean\Boolean\bin\Debug\netcoreapp3.1\Boolean.pdb
+C:\Users\djpmi\source\repos\Boolean\Boolean\obj\Debug\netcoreapp3.1\Boolean.csproj.AssemblyReference.cache
+C:\Users\djpmi\source\repos\Boolean\Boolean\obj\Debug\netcoreapp3.1\Boolean.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djpmi\source\repos\Boolean\Boolean\obj\Debug\netcoreapp3.1\Boolean.AssemblyInfoInputs.cache
+C:\Users\djpmi\source\repos\Boolean\Boolean\obj\Debug\netcoreapp3.1\Boolean.AssemblyInfo.cs
+C:\Users\djpmi\source\repos\Boolean\Boolean\obj\Debug\netcoreapp3.1\Boolean.csproj.CoreCompileInputs.cache
+C:\Users\djpmi\source\repos\Boolean\Boolean\obj\Debug\netcoreapp3.1\Boolean.dll
+C:\Users\djpmi\source\repos\Boolean\Boolean\obj\Debug\netcoreapp3.1\Boolean.pdb
+C:\Users\djpmi\source\repos\Boolean\Boolean\obj\Debug\netcoreapp3.1\Boolean.genruntimeconfig.cache

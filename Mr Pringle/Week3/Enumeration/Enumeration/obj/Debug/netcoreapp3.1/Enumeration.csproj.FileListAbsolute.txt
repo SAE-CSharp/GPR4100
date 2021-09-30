@@ -1,0 +1,14 @@
+C:\Users\djpmi\source\repos\Enumeration\Enumeration\bin\Debug\netcoreapp3.1\Enumeration.exe
+C:\Users\djpmi\source\repos\Enumeration\Enumeration\bin\Debug\netcoreapp3.1\Enumeration.deps.json
+C:\Users\djpmi\source\repos\Enumeration\Enumeration\bin\Debug\netcoreapp3.1\Enumeration.runtimeconfig.json
+C:\Users\djpmi\source\repos\Enumeration\Enumeration\bin\Debug\netcoreapp3.1\Enumeration.runtimeconfig.dev.json
+C:\Users\djpmi\source\repos\Enumeration\Enumeration\bin\Debug\netcoreapp3.1\Enumeration.dll
+C:\Users\djpmi\source\repos\Enumeration\Enumeration\bin\Debug\netcoreapp3.1\Enumeration.pdb
+C:\Users\djpmi\source\repos\Enumeration\Enumeration\obj\Debug\netcoreapp3.1\Enumeration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djpmi\source\repos\Enumeration\Enumeration\obj\Debug\netcoreapp3.1\Enumeration.AssemblyInfoInputs.cache
+C:\Users\djpmi\source\repos\Enumeration\Enumeration\obj\Debug\netcoreapp3.1\Enumeration.AssemblyInfo.cs
+C:\Users\djpmi\source\repos\Enumeration\Enumeration\obj\Debug\netcoreapp3.1\Enumeration.csproj.CoreCompileInputs.cache
+C:\Users\djpmi\source\repos\Enumeration\Enumeration\obj\Debug\netcoreapp3.1\Enumeration.dll
+C:\Users\djpmi\source\repos\Enumeration\Enumeration\obj\Debug\netcoreapp3.1\Enumeration.pdb
+C:\Users\djpmi\source\repos\Enumeration\Enumeration\obj\Debug\netcoreapp3.1\Enumeration.genruntimeconfig.cache
+C:\Users\djpmi\source\repos\Enumeration\Enumeration\obj\Debug\netcoreapp3.1\Enumeration.csproj.AssemblyReference.cache
