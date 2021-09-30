@@ -1,0 +1,21 @@
+using System;
+
+namespace If_statements_and_its_forms
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //declare and assign value
+            int x = 5;
+            if (x > 10)
+            {
+                Console.WriteLine("X is greater than 10 !\n");
+            }
+            else
+            {
+                Console.WriteLine("X is not greater than 10!");
+            }
+        }
+    }
+}
