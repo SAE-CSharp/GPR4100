@@ -1,0 +1,14 @@
+C:\Users\djpmi\source\repos\w3 game difficulty\w3 game difficulty\bin\Debug\netcoreapp3.1\w3 game difficulty.exe
+C:\Users\djpmi\source\repos\w3 game difficulty\w3 game difficulty\bin\Debug\netcoreapp3.1\w3 game difficulty.deps.json
+C:\Users\djpmi\source\repos\w3 game difficulty\w3 game difficulty\bin\Debug\netcoreapp3.1\w3 game difficulty.runtimeconfig.json
+C:\Users\djpmi\source\repos\w3 game difficulty\w3 game difficulty\bin\Debug\netcoreapp3.1\w3 game difficulty.runtimeconfig.dev.json
+C:\Users\djpmi\source\repos\w3 game difficulty\w3 game difficulty\bin\Debug\netcoreapp3.1\w3 game difficulty.dll
+C:\Users\djpmi\source\repos\w3 game difficulty\w3 game difficulty\bin\Debug\netcoreapp3.1\w3 game difficulty.pdb
+C:\Users\djpmi\source\repos\w3 game difficulty\w3 game difficulty\obj\Debug\netcoreapp3.1\w3 game difficulty.csproj.AssemblyReference.cache
+C:\Users\djpmi\source\repos\w3 game difficulty\w3 game difficulty\obj\Debug\netcoreapp3.1\w3 game difficulty.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djpmi\source\repos\w3 game difficulty\w3 game difficulty\obj\Debug\netcoreapp3.1\w3 game difficulty.AssemblyInfoInputs.cache
+C:\Users\djpmi\source\repos\w3 game difficulty\w3 game difficulty\obj\Debug\netcoreapp3.1\w3 game difficulty.AssemblyInfo.cs
+C:\Users\djpmi\source\repos\w3 game difficulty\w3 game difficulty\obj\Debug\netcoreapp3.1\w3 game difficulty.csproj.CoreCompileInputs.cache
+C:\Users\djpmi\source\repos\w3 game difficulty\w3 game difficulty\obj\Debug\netcoreapp3.1\w3 game difficulty.dll
+C:\Users\djpmi\source\repos\w3 game difficulty\w3 game difficulty\obj\Debug\netcoreapp3.1\w3 game difficulty.pdb
+C:\Users\djpmi\source\repos\w3 game difficulty\w3 game difficulty\obj\Debug\netcoreapp3.1\w3 game difficulty.genruntimeconfig.cache
