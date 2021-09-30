@@ -15,7 +15,19 @@ namespace If_statements_and_its_forms
             else
             {
                 Console.WriteLine("X is not greater than 10!");
+
+            }
+            if (x < 10)
+            {
+                Console.WriteLine("X is greater than 10 !\n");
+            }
+            else
+            {
+                Console.WriteLine("X is not greater than 10!");
             }
         }
-    }
+    }      
+    
+            
+            
 }
