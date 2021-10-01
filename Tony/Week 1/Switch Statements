@@ -1,0 +1,40 @@
+using System;
+
+namespace Switch_Statement
+{
+    class Program
+    {
+        enum colours { Red, Green, Blue, Yellow}    
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter you favoraite colour \n A.Red \n B. Green \n C.Blue \n D. Yellow");
+            char favColour =char.Parse(Console.ReadLine());
+
+            switch (favColour)
+            {
+                case 'A':
+                    Console.WriteLine("Your favoraite colour is" + colours.Red);
+                break;
+                case 'B':
+                    Console.WriteLine("Your favoraite colour is" + colours.Green);
+                    break;
+
+                case 'C':
+                    Console.WriteLine("Your favoraite colour is" + colours.Blue);
+                    break;
+                case 'D':
+                    Console.WriteLine("Your favoraite colour is" + colours.Yellow);
+                    break;
+                default:
+                    Console.WriteLine("Unknown Colour");
+                    break;
+
+
+
+
+
+            }
+
+        }
+    }
+}
