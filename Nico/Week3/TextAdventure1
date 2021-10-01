@@ -1,0 +1,117 @@
+using System;
+
+namespace TextAdventure
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int firstAnswer;
+            int firstBonus;
+            int secondAnswer;
+            string thirdAnswer;
+            int score = 0;
+            bool isShark = false;
+
+            Console.WriteLine("Welcome to my Quiz!");
+        Question1:
+            Console.WriteLine("First Question: What is the Capital of italy?\n1.Milan\n2.Rome\n3.Florence");
+            firstAnswer = Int32.Parse(Console.ReadLine());
+
+            switch (firstAnswer)
+            {
+                case 1:
+                    Console.WriteLine("Incorrect! You have accumulated a total of " + score + " points");                                        
+                    Console.WriteLine("Bonus Question Time!");
+                    Console.WriteLine("What is the height of Big Ben in metres?");
+                    firstBonus = Int32.Parse(Console.ReadLine());
+
+                    if(firstBonus >= 200)
+                    {
+                    Console.WriteLine("Sorry that is way too tall! No points for you I'm afraid");
+
+                    }
+                    else if (firstBonus < 200 && firstBonus >= 150)
+                    {
+                        score++;
+                        Console.WriteLine("That is slightly too tall but you get 1 point");
+
+                    }
+                    else if (firstBonus < 150 && firstBonus >= 100)
+                    {
+                        score +=2;
+                        Console.WriteLine("That is slightly too tall but you get 2 point");
+
+                    }
+                    else if (firstBonus < 100 && firstBonus >= 90)
+                    {
+                        score += 10;
+                        Console.WriteLine("Spot on! 10 points!");
+
+                    }
+
+                    break;
+                case 2:
+                    score++;
+                    Console.WriteLine("Correct! You have accumulated a total of " + score + " points");
+                    break;
+                case 3:
+                    Console.WriteLine("Incorrect! You have accumulated a total of " + score + " points");
+                    break;
+                default:
+                    Console.WriteLine("Please insert a valid answer");
+                    goto Question1;
+            }
+            Question2:
+            Console.WriteLine("Second Question: What is the Capital of France?\n1.Marseilles\n2.Lyon\n3.Paris");
+            secondAnswer = Int32.Parse(Console.ReadLine());
+
+            if (secondAnswer == 1)
+            {
+                Console.WriteLine("Incorrect! You have accumulated a total of " + score + " points");
+            }
+
+
+            else if (secondAnswer == 2)
+            {
+                Console.WriteLine("Incorrect! You have accumulated a total of " + score + " points");
+
+            }
+            else if (secondAnswer == 3)
+            {
+                score++;
+                Console.WriteLine("Correct! You have accumulated a total of " + score + " points");
+
+            }
+            else
+            {
+                Console.WriteLine("Please insert a valid answer");
+                goto Question2;
+            }
+
+            Console.WriteLine("Third Question: Does a shark have 3,000 teeth? True or False");
+            thirdAnswer = Console.ReadLine();
+            
+
+            if(thirdAnswer == "True")
+            {
+                isShark = true;
+            }
+            else if (thirdAnswer == "False")
+            {
+                isShark = false;
+            }
+
+            if (isShark)
+            {
+                score += 5;
+                Console.WriteLine("Well done! this is worth 5 points! You have accumulated a total of " + score + " points!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong! No points on this one, you have accumulated a total of " + score + " points!");
+                
+            }
+        }
+    }
+}
