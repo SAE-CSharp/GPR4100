@@ -152,7 +152,7 @@ namespace Text_Adventure
                     Console.WriteLine("Seb: LETS GOOO!");
                 }
 
-                else if (response == "no")
+                else if (responsetwo == "no")
                 {
                     Console.WriteLine("Seb: Oh. You change your mind?");
                     for (int i = 0; i < 50; i++)
@@ -175,17 +175,27 @@ namespace Text_Adventure
                         Console.WriteLine("Seb: oh okay, i'll go on my own.");
                     }
 
-                    else if (response == "no")
+                    else if (responsethree == "no")
                     {
                         Console.WriteLine("Seb: Ok then. Lets GOOOO!");
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("Error");
                     }
                 }
             }
            
 
-            else if (response == "no")
+            else if(response == "no")
             {
                 Console.WriteLine("Seb: Oh. well, Sorry for bothering you :/");
+            }
+
+            else
+            {
+                Console.WriteLine("Error");
             }
         }
     }
