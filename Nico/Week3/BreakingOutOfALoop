@@ -1,0 +1,28 @@
+using System;
+
+namespace Loops
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Console.WriteLine("Input your score (1-5)");
+            int score = Int32.Parse(Console.ReadLine());
+
+            while (score<10)
+            {
+                score++;
+                Console.WriteLine("Your score is "+score);
+
+                if(score==8)
+                {
+                    break;
+                }
+            }
+                Console.WriteLine("Thanks for playing");
+
+
+        }
+    }
+}
