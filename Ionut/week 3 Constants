@@ -1,0 +1,16 @@
+using System;
+
+namespace Operators
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int carbons;
+            const double RATEOFCARBON = 0.2;
+            Console.WriteLine("How much carbon have you collected? ");
+            carbons = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Your carbon is worth $" + (carbons * RATEOFCARBON));
+        }
+    }
+}
