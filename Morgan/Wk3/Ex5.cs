@@ -36,18 +36,28 @@ namespace MCarpenter_Wk3_Ex5
             Console.WriteLine("");*/
 
             int selection = 0;
-            while (!(selection >= 1 && selection <= 4))
+            // while (!(selection >= 1 && selection <= 4))
+            while (true)
             {
-                Console.WriteLine("Please select an option:\n  [1] Option 1\n  [2] Option 2\n  [3] Option 3\n  [4] Option 4");
+                Console.WriteLine("Please select an option:\n  [1] Option 1\n  [2] Option 2\n  [3] Option 3\n  [4] Option 4\n  [5] Option 5");
                 selection = Int32.Parse(Console.ReadLine());
-                if (selection >= 1 && selection <= 4)
-                {
-                    break;
-                }
+                
                 Console.Clear();
-                Console.WriteLine("Error: invalid selection.\n");
+                if (selection >= 1 && selection <= 5)
+                {
+                    Console.WriteLine("You have selected Option " + selection + "\n");
+                    if (selection == 4)
+                    {
+                        Console.WriteLine("\nCongratulations, you exited the loop!\n");
+                        break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Error: invalid selection.\n");
+                }
             }
-            Console.WriteLine("\nYou have selected Option " + selection);
+            
 
 
 
