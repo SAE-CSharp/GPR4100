@@ -4,36 +4,36 @@ namespace MCarpenter_Wk3_Ex4
 {
     class Program
     {
-        enum colours {Red = 1, Green = 5, Blue = 7, Yellow = 10, Purple = 17, Orange = 19};
+        enum colours {Red, Green, Blue, Yellow, Purple, Orange};
         
         static void Main(string[] args)
         {
-            Console.WriteLine("Available colours:\n  [1] Blue\n  [2] Green\n  [3] Orange\n  [4] Purple\n  [5] Red\n  [6] Yellow\nPlease select a colour:");
-            int colourSel = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Available colours:\n  [B] Blue\n  [G] Green\n  [O] Orange\n  [P] Purple\n  [R] Red\n  [Y] Yellow\nPlease select a colour:");
+            char colourSel = Char.Parse(Console.ReadLine());
 
             switch (colourSel)
             {
-                case 1:
+                case 'B':
                     Console.WriteLine("\nYou have selected Blue. The ID of Blue is " + (int)colours.Blue + ".");
                     break;
 
-                case 2:
+                case 'G':
                     Console.WriteLine("\nYou have selected Green. The ID of Green is " + (int)colours.Green + ".");
                     break;
 
-                case 3:
+                case 'O':
                     Console.WriteLine("\nYou have selected Orange. The ID of Orange is " + (int)colours.Orange + ".");
                     break;
 
-                case 4:
+                case 'P':
                     Console.WriteLine("\nYou have selected Purple. The ID of Purple is " + (int)colours.Purple + ".");
                     break;
 
-                case 5:
+                case 'R':
                     Console.WriteLine("\nYou have selected Red. The ID of Red is " + (int)colours.Red + ".");
                     break;
 
-                case 6:
+                case 'Y':
                     Console.WriteLine("\nYou have selected Yellow. The ID of Yellow is " + (int)colours.Yellow + ".");
                     break;
 
