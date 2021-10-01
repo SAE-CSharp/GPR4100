@@ -1,0 +1,67 @@
+using System;
+
+namespace While_Loops
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int score;
+            Console.WriteLine("Please pick a number between 1-5");
+            score = Int32.Parse(Console.ReadLine());
+
+            while (score>=5)
+            {
+                score+=1;
+                Console.WriteLine("Your score is "+ score);
+
+            }
+
+
+            /*score = 20;
+            while (score>=1)
+            {
+                score--;
+                Console.WriteLine("Your score is " + score);
+                if(score == 10)
+                {
+                    continue;
+                }
+            }
+            Console.WriteLine("Select one of the operations!\n 1 Addition \n 2 Subtraction \n3 Division");
+            int Select = Int32.Parse(Console.ReadLine());
+
+            while (Select != 1 && Select != 2 && Select != 3)
+            {
+              
+
+                Console.WriteLine("You have to select one operation! \n 1. Addition \n 2. Subtraction \n3. Division");
+                Select = Int32.Parse(Console.ReadLine());
+
+            }
+            Console.WriteLine("Thats good you chose " + Select);
+            *//*char again = 'Y';
+
+            while(again == 'Y')
+            {
+                Console.WriteLine("\n**Played an Exciting game*");
+                Console.WriteLine("\nDo you want to play again?(y/n):");
+
+                again = char.Parse(Console.ReadLine());
+
+
+            }*/
+
+
+            Console.WriteLine("Please pick a number between 1-5");
+            score = Int32.Parse(Console.ReadLine());
+
+            while (score < 5)
+            {
+                score++;
+                Console.WriteLine("This is your score: " + score);
+            }
+        }       
+           
+    }
+}
