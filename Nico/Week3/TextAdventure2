@@ -1,0 +1,90 @@
+using System;
+
+namespace TextAdventure2
+{
+    class Program
+    {
+       
+        static void Main(string[] args)
+        {
+            int diceRoll;
+            int userInput;
+
+            Console.WriteLine("Welcome to Jumanji!");
+            Console.WriteLine("You throw the dice of fate, what have you rolled? (select 1-6)");
+
+            diceRoll = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("************************************************");
+            if (diceRoll > 4)
+            {
+                Console.WriteLine("You get transported to the lush forest.");
+                Console.WriteLine("A hunter approaches with a menacing look, what do you do?\n1.Run away!\n2.Try to befriend him\n3.Hit him with a stick you found on the floor!");
+
+                userInput = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("************************************************");
+                switch (userInput)
+                {
+                    case 1:
+                        Console.WriteLine("You trip and fall over");
+                        break;
+                    case 2:
+                        Console.WriteLine("You chat him up with your best bants");
+                        break;
+                    case 3:
+                        Console.WriteLine("You pick up the stick but the hunter brazenly swoops it out of your hands");
+                        break;
+                }
+
+                Console.WriteLine("The hunter looks at you and laughs");
+            }
+
+            if (diceRoll < 3)
+            {
+                Console.WriteLine("You get transported to the damp swamp");
+                Console.WriteLine("A talking frog approaches with whilst singing a tune, what do you do?:\n1.Run away!\n2.Try to befriend him\n3.Hit him with a stick you found on the floor!");
+                userInput = Int32.Parse(Console.ReadLine());
+
+                Console.WriteLine("************************************************");
+                switch (userInput)
+                {
+                    case 1:
+                        Console.WriteLine("You trip and fall over");
+                        break;
+                    case 2:
+                        Console.WriteLine("You chat him up with your best bants");
+                        break;
+                    case 3:
+                        Console.WriteLine("You pick up the stick but the frog uses his tongue to whip it out of your hands");
+                        break;
+                }
+
+                Console.WriteLine("The frog looks at you and laughs");
+            }
+
+            if (diceRoll > 2 && diceRoll < 5)
+            {
+                Console.WriteLine("You get transported to the scorching volcano");
+                Console.WriteLine("Lava is erupting everywhere, what do you do?:\n1.Run away!\n2.Try to call an eagle to fly away on\n3.Jump in and enjoy a hot bath!");
+                userInput = Int32.Parse(Console.ReadLine());
+
+                Console.WriteLine("************************************************");
+                switch (userInput)
+                {
+                    case 1:
+                        Console.WriteLine("You trip and fall over");
+                        break;
+                    case 2:
+                        Console.WriteLine("There are no eagles around");
+                        break;
+                    case 3:
+                        Console.WriteLine("Good choice!");
+                        break;
+                }
+
+                Console.WriteLine("The lava engulfs you as you burn to a crisp");
+            }
+        }
+    }
+}
