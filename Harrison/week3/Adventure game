@@ -1,0 +1,85 @@
+            bool key = false;
+            bool green = false;
+            bool soved = false;
+            Console.WriteLine("You have awoken in a square room with three doors infront of you");
+            while (soved == false)
+            {
+                Console.WriteLine("\nThere is a red door, a green door and a blue door.\nWhich do you go though?\n1. Red\n2. Green\n3. Blue");
+                int options = Int32.Parse(Console.ReadLine());
+
+                switch (options)
+                {
+                    case 1:
+                        if (key == false)
+                        {
+                            Console.WriteLine("\nYou try to open the Red door but it wont move.\n");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Whats the code?");
+                            options = Int32.Parse(Console.ReadLine());
+                            if (options == 4325)
+                            {
+                                soved = true;
+                                Console.WriteLine("Welldone you have escaped");
+                                Console.ReadLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine("\nLook for a code\n");
+                            }
+                        }
+                        break;
+
+                    case 2:
+                        Console.WriteLine("\nThe door opens and you walk through.\n");
+
+                        Console.WriteLine("\nThe romm has a desk with some paper\n1. look around the room \n2. read the paper on the table");
+                        options = Int32.Parse(Console.ReadLine());
+
+                        switch (options)
+                        {
+                            case 1:
+                                Console.WriteLine("\nYou find a code under the table 4325\nLook at the paper? \n1. Yes 2. No");
+                                options = Int32.Parse(Console.ReadLine());
+                                if (options == 1)
+                                {
+                                    green = true;
+                                    Console.WriteLine("The paper says the key is in the blue room.\nYou leave the room");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("You leave the room");
+                                }
+                                break;
+                            case 2:
+                                Console.WriteLine("\nYou fine the paper says that there is a key in the blue room.\nLook around the room?\n1. Yes 2. No");
+                                green = true;
+                                options = Int32.Parse(Console.ReadLine());
+                                if (options == 1)
+                                {
+                                    Console.WriteLine("under the table it says the code is 4325.\nYou leave the room");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("You leave the room");
+                                }
+                                break;
+                        }
+
+                        break;
+
+                    case 3:
+                        Console.WriteLine("\nThe door opens and you walk through.\n");
+                        if (green == true)
+                        {
+                            key = true;
+                            Console.WriteLine("You found a Red key");
+                        }
+                        else
+                        {
+                            Console.WriteLine("the room is empty");
+                        }
+                        break;
+                }
+            }
