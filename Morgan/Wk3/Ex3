@@ -24,9 +24,26 @@ namespace MCarpenter_Wk3_Ex3
                 Console.WriteLine("\nYou have not selected a valid option");
             }
 
+        select:
+            bool metalChecked = false;
             Console.WriteLine("\nAvailable metals:\n  - Copper\n  - Gold\n  - Iron\n  - Magnesium\n  - Zinc\nPlease select a metal:");
             string metalSel = Console.ReadLine();
 
+            if (metalSel == "Copper" || metalSel == "Gold" || metalSel == "Iron" || metalSel == "Magnesium" || metalSel == "Zinc")
+            {
+                metalChecked = true;
+            }
+            else
+            {
+                metalChecked = false;
+            }
+            
+            if (!metalChecked)
+            {
+                Console.WriteLine("\nError: invalid selection");
+                goto select;
+            }
+            
             Console.WriteLine("\nPlease enter a quantity in kg:");
             float metalQty = float.Parse(Console.ReadLine());
 
@@ -51,9 +68,13 @@ namespace MCarpenter_Wk3_Ex3
             {
                 metalCost = (int)metal.Zn;
             }
+            else
+            {
+
+            }
 
             Console.WriteLine("\n" + metalSel + " currently costs £" + metalCost + " per kg.");
-            Console.WriteLine(metalQty + "kg of " + metalSel + " would cost £" + ((float)metalCost * metalQty));
+            Console.WriteLine(metalQty + "kg of " + metalSel + " would cost £" + ((float)metalCost * metalQty) + ".");
 
             Console.WriteLine("\n");
         }
