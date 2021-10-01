@@ -23,23 +23,53 @@ namespace WhileLoop
 
             Console.WriteLine("*******************************************");
 
-            Console.WriteLine("Please enter a score between '2' and '20'");
-            int scoretwo = Int32.Parse(Console.ReadLine());
+            int scoretwo = 20;
 
-            if (scoretwo <= 20)
             while (scoretwo > 1)
             {
-                score--;
+                scoretwo--;
+
+                if (scoretwo == 10)
+                {
+                    continue;
+                }
                 Console.WriteLine("Your Score is now: " + scoretwo);
 
             }
 
-            else
+
+            Console.WriteLine("*******************************************");
+
+            Console.WriteLine("Select an operation: \n1. Addition\n2. Subtraction\n3. Devision\n4. Multiplication");
+            int selection = Int32.Parse(Console.ReadLine());
+
+            while (selection != 1 && selection != 2 && selection != 3 && selection != 4)
             {
-                Console.WriteLine("Sorry that number is too great!");
+                Console.WriteLine("You have to select one option!");
+                Console.WriteLine("Please select one of the following operations:");
+                Console.WriteLine("1. Addition\n2. Subtraction\n3. Devision\n4. Multiplication");
+                selection = Int32.Parse(Console.ReadLine());
+
             }
-        }
+
+            Console.WriteLine("That's a good choice!");
+
+            Console.WriteLine("Select a number between 1 and 5");
+            int selection2 = Int32.Parse(Console.ReadLine());
+
+            while (selection2 !>=6)
+            {
+                Console.WriteLine("You have to select one option!");
+                Console.WriteLine("Please select one of the following numbers:");
+                Console.WriteLine("1, 2, 3, 4, 5");
+                selection2 = Int32.Parse(Console.ReadLine());
+
+            }
+
+            Console.WriteLine("That's a good number!");
 
         }
+
     }
+}    
 
