@@ -1,0 +1,260 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Creative_Narrative___A_Simple_Maze_Game
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Welcome, player. Welcome to my simple maze game.");
+            Console.WriteLine("This is the first game that I have createad using C#, so please be nice  :)");
+
+            char again = 'y';
+
+            while (again == 'y')
+            {
+                Console.WriteLine("What would you like your username to be?");
+                string username = Console.ReadLine();
+                Console.WriteLine(username + " will be your username.");
+
+                int score = 0;
+
+                Console.WriteLine("START");
+                Console.WriteLine("");
+                Console.WriteLine("");
+                Console.WriteLine(username + " can go one of four ways. Enter \'w\' to move forward, \'s\' to move back, \'a\' to move left and \'d\' to move right.");
+                char move1 = Convert.ToChar(Console.ReadLine());
+
+                switch (move1)
+                {
+                    case 'w':
+                        Console.WriteLine(username + " got impaled by spikes.");
+                        Console.WriteLine("");
+                        Console.WriteLine("YOU DIED");
+                        Console.WriteLine("");
+
+                        score = score - 1;
+                        Console.WriteLine("Your total score for this run is " + score + ".");
+                        break;
+
+                    case 's':
+                        Console.WriteLine(username + " walks backwards and is presented with two ways: left or right.");
+                        Console.WriteLine("Which way will " + username + " go?");
+
+                        score = score + 2;
+
+                        char move2 = Convert.ToChar(Console.ReadLine());
+
+                        if (move2 == 'a')
+                        {
+                            Console.WriteLine("The floor opens up, revealing as massive pit of lava below. " + username + " falls, burning to");
+                            Console.WriteLine("death in the boiling pool of magma.");
+                            Console.WriteLine("");
+                            Console.WriteLine("YOU DIED");
+                            Console.WriteLine("");
+
+                            score = score - 1;
+                            Console.WriteLine("Your total score for this run is " + score + ".");
+                        }
+
+                        else if (move2 == 'd')
+                        {
+                            Console.WriteLine(username + " takes the corridor to the right, and is presented with either going right or");
+                            Console.WriteLine("forwards. What will they chose????????????");
+
+                            score = score + 2;
+
+                            char move2_2 = Convert.ToChar(Console.ReadLine());
+
+                            if (move2_2 == 'w')
+                            {
+                                Console.WriteLine(username + " walks forwards, and is presented with three directions: carry on moving forward, turning");
+                                Console.WriteLine("to the left, or making their way to the right. Which will " + username + " chose?");
+
+                                score = score + 2;
+
+                                char move2_3 = Convert.ToChar(Console.ReadLine());
+
+                                if (move2_3 == 'w')
+                                {
+                                    Console.WriteLine(username + " starts to walk forward, breraking into a sprint. Suddenly, that sprint comes to a halt.");
+                                    Console.WriteLine("A sharp, fast, quiet sound can be heard, and they feel a sudden rush of immense pain. " + username + " looks");
+                                    Console.WriteLine("down, and finds that their legs have been cut in two at the kneecaps, and " + username + " falls to the floor.");
+                                    Console.WriteLine(username + " slowly bleeds to death, and...");
+                                    Console.WriteLine("");
+                                    Console.WriteLine("YOU DIED");
+                                    Console.WriteLine("");
+
+                                    score = score - 1;
+                                    Console.WriteLine("Your total score for this run is " + score + ".");
+                                }
+
+                                else if (move2_3 == 'a')
+                                {
+                                    Console.WriteLine("Turning to the left, " + username + " makes their way down the corridor. At the end, they can only go left.");
+                                    Console.WriteLine("Do you wish to proceed? Enter \'y\' for YES or \'n\' for NO.");
+
+                                    score = score + 2;
+                                    char move2_4 = Convert.ToChar(Console.ReadLine());
+
+                                    if (move2_4 == 'y')
+                                    {
+                                        Console.WriteLine(username + " proceeds to the right. As they are moving down the corridor, they spot something at the end. Just before");
+                                        Console.WriteLine("they approach it, a nmetal ball slams into the side of their head, crushing the skull, killing " + username + ".");
+                                        Console.WriteLine("");
+                                        Console.WriteLine("YOU DIED");
+                                        Console.WriteLine("");
+
+                                        score = score - 1;
+                                        Console.WriteLine("Your total score for this run is " + score + ".");
+                                    }
+
+                                    else if (move2_4 == 'n')
+                                    {
+                                        Console.WriteLine("After deciding not to proceed right, " + username + "walks back to where they were prior.");
+                                        Console.WriteLine("Will " + username + " go either forwards or to the right?");
+
+                                        char move2_5 = Convert.ToChar(Console.ReadLine());
+
+                                        if (move2_5 == 'w')
+                                        {
+                                            Console.WriteLine(username + " starts to walk forward, breraking into a sprint. Suddenly, that sprint comes to a halt.");
+                                            Console.WriteLine("A sharp, fast, quiet sound can be heard, and they feel a sudden rush of immense pain. " + username + " looks");
+                                            Console.WriteLine("down, and finds that their legs have been cut in two at the kneecaps, and " + username + " falls to the floor.");
+                                            Console.WriteLine(username + " slowly bleeds to death, and...");
+                                            Console.WriteLine("");
+                                            Console.WriteLine("YOU DIED");
+                                            Console.WriteLine("");
+
+                                            score = score - 1;
+                                            Console.WriteLine("Your total score for this run is " + score + ".");
+                                        }
+
+                                        else if (move2_5 == 'd')
+                                        {
+                                            Console.WriteLine("As you turn the corner, a bullet fyls towards you, penetrating your skull and going straight through your brain.");
+                                            Console.WriteLine("");
+                                            Console.WriteLine("YOU DIED");
+                                            Console.WriteLine("");
+
+                                            score = score - 1;
+                                            Console.WriteLine("Your total score for this run is " + score + ".");
+                                        }
+                                    }
+                                }
+
+                                else if (move2_3 == 'd')
+                                {
+                                    Console.WriteLine(username + " walks down the right coriddor (wordplay haha) and comes to a junction; go either left or right. Which one?");
+
+                                    score = score + 2;
+
+                                    char movey = Convert.ToChar(Console.ReadLine());
+
+                                    if (movey == 'a')
+                                    {
+                                        Console.WriteLine("As " + username + " walks down the path, they see a junction ahead. Out of nowhere, a wall slams shut in fornt of");
+                                        Console.WriteLine(username + ", and one behind them shuts too. The walls to their left and to their right start to colse in, slowly but");
+                                        Console.WriteLine("painfully crushing " + username + "'s body. Blodd and guts fly everywhere, staining the walls for all eternity.");
+                                        Console.WriteLine("");
+                                        Console.WriteLine("YOU DIED");
+                                        Console.WriteLine("");
+
+                                        score = score - 1;
+                                        Console.WriteLine("Your total score for this run is " + score + ".");
+                                    }
+
+                                    else if (movey == 'd')
+                                    {
+                                        Console.WriteLine("As you turn the corner, a bullet fyls towards you, penetrating your skull and going straight through your brain.");
+                                        Console.WriteLine("");
+                                        Console.WriteLine("YOU DIED");
+                                        Console.WriteLine("");
+
+                                        score = score - 1;
+                                        Console.WriteLine("Your total score for this run is " + score + ".");
+                                    }
+
+                                    else if (move2_2 == 'd')
+                                    {
+                                        Console.WriteLine("Well done " + username + "; you completed the maze!!!");
+
+                                        score = score + 2;
+
+                                        Console.WriteLine("You scored a grand total of " + score + " points.");
+                                    }
+                                }
+
+                            }
+                        }
+                        break;
+
+                    case 'a':
+                        Console.WriteLine(username + " sets off the sensors in the corridor, and hundreds of arrows sprint towards " + username);
+                        Console.WriteLine("and kill them withing seconds.");
+                        Console.WriteLine("");
+                        Console.WriteLine("YOU DIED");
+                        Console.WriteLine("");
+
+                        score = score - 1;
+                        Console.WriteLine("Your total score for this run is " + score + ".");
+                        break;
+
+                    case 'd':
+                        Console.WriteLine(username + " turns right and walks down the hallway. " + username + " is presented with two ways");
+                        Console.WriteLine("to go; forwards or left. Which way will " + username + " go?");
+
+                        score = score + 2;
+
+                        char moveH = Convert.ToChar(Console.ReadLine());
+
+                        if (moveH == 'w')
+                        {
+                            Console.WriteLine("As " + username + " starts walking forward, the roof opens up, allowing your mum to fall down and land on top of");
+                            Console.WriteLine("you, sending " + username + " - quite literally - back where they came from; inside the fucking whom!");
+                            Console.WriteLine("");
+                            Console.WriteLine("YOU DIED");
+                            Console.WriteLine("");
+
+                            score = score - 1;
+                            Console.WriteLine("Your total score for this run is " + score + ".");
+                        }
+
+                        else if (moveH == 'a')
+                        {
+                            Console.WriteLine(username + " turns left and starts walking in that direction. In an instant, they explode, turning into a human salad.");
+                            Console.WriteLine("");
+                            Console.WriteLine("YOU DIED");
+                            Console.WriteLine("");
+
+                            score = score - 1;
+                            Console.WriteLine("Your total score for this run is " + score + ".");
+                        }
+
+                        break;
+
+                    default:
+                        Console.WriteLine("u stoopid");
+                        break;
+                }
+
+                Console.WriteLine("Do you want to play again? Enter \'y\' for YES or \'n\' for NO.");
+                again = Convert.ToChar(Console.ReadLine());
+            }
+
+            Console.WriteLine("Thanks for playing.");
+            Console.WriteLine("I hope that you enjoyed the text game.");
+            Console.WriteLine("Hopefully you will play it some more later down the line.   :3");
+
+
+            Console.ReadLine();
+        }
+    }
+}
