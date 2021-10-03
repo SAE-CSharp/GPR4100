@@ -1,0 +1,55 @@
+using System;
+
+namespace Week3Homework
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int randomNumber;
+            int guess = 0;
+            int amountOfAttempts = 0;
+
+            Random randm = new Random();
+            randomNumber = randm.Next(1, 100);
+            Console.WriteLine(randomNumber);
+
+            Console.WriteLine("Can you guess a number between 1 and 100?");
+
+            guess = Int32.Parse(Console.ReadLine());
+
+            while (amountOfAttempts < 3)
+            {
+
+                amountOfAttempts ++;
+
+                if (guess == randomNumber)
+                {
+                    Console.WriteLine("You guessed correctly!");
+                }
+                else if (guess > randomNumber)
+                {
+                    Console.WriteLine("You didn't get it this time, too high");
+                }
+                else if (guess < randomNumber)
+                {
+                    Console.WriteLine("You didn't get it this time, too low");
+                }
+                else
+                {
+                    Console.WriteLine("Better luck next time");
+                }
+
+                if (amountOfAttempts <= 3) 
+                {
+                    continue;
+                }
+                if (amountOfAttempts == 3)
+                {
+                    break;
+                }
+            }
+        }
+    }
+}
