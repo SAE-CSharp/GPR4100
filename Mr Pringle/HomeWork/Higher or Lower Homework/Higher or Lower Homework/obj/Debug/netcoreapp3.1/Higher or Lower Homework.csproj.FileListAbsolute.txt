@@ -1,0 +1,14 @@
+C:\Users\djpmi\source\repos\Higher or Lower Homework\Higher or Lower Homework\bin\Debug\netcoreapp3.1\Higher or Lower Homework.exe
+C:\Users\djpmi\source\repos\Higher or Lower Homework\Higher or Lower Homework\bin\Debug\netcoreapp3.1\Higher or Lower Homework.deps.json
+C:\Users\djpmi\source\repos\Higher or Lower Homework\Higher or Lower Homework\bin\Debug\netcoreapp3.1\Higher or Lower Homework.runtimeconfig.json
+C:\Users\djpmi\source\repos\Higher or Lower Homework\Higher or Lower Homework\bin\Debug\netcoreapp3.1\Higher or Lower Homework.runtimeconfig.dev.json
+C:\Users\djpmi\source\repos\Higher or Lower Homework\Higher or Lower Homework\bin\Debug\netcoreapp3.1\Higher or Lower Homework.dll
+C:\Users\djpmi\source\repos\Higher or Lower Homework\Higher or Lower Homework\bin\Debug\netcoreapp3.1\Higher or Lower Homework.pdb
+C:\Users\djpmi\source\repos\Higher or Lower Homework\Higher or Lower Homework\obj\Debug\netcoreapp3.1\Higher or Lower Homework.csproj.AssemblyReference.cache
+C:\Users\djpmi\source\repos\Higher or Lower Homework\Higher or Lower Homework\obj\Debug\netcoreapp3.1\Higher or Lower Homework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djpmi\source\repos\Higher or Lower Homework\Higher or Lower Homework\obj\Debug\netcoreapp3.1\Higher or Lower Homework.AssemblyInfoInputs.cache
+C:\Users\djpmi\source\repos\Higher or Lower Homework\Higher or Lower Homework\obj\Debug\netcoreapp3.1\Higher or Lower Homework.AssemblyInfo.cs
+C:\Users\djpmi\source\repos\Higher or Lower Homework\Higher or Lower Homework\obj\Debug\netcoreapp3.1\Higher or Lower Homework.csproj.CoreCompileInputs.cache
+C:\Users\djpmi\source\repos\Higher or Lower Homework\Higher or Lower Homework\obj\Debug\netcoreapp3.1\Higher or Lower Homework.dll
+C:\Users\djpmi\source\repos\Higher or Lower Homework\Higher or Lower Homework\obj\Debug\netcoreapp3.1\Higher or Lower Homework.pdb
+C:\Users\djpmi\source\repos\Higher or Lower Homework\Higher or Lower Homework\obj\Debug\netcoreapp3.1\Higher or Lower Homework.genruntimeconfig.cache
