@@ -1,0 +1,14 @@
+Guessing Game
+
+Create a number guessing program which allows the user to take a specific number of turns before terminating. Your program must tell the user whether they are too high or too low.
+Your program must incorporate the following methods:
+• while statement
+• if and if else statements
+• Integer data type
+• Arithmetic Operators
+• Comparative Operators
+• Logical Operators
+• Break or Continue (or Both)
+
+
+Submit your code as a repository post on GitHub under github.com/SAE-CSharp/GPR4100.
