@@ -1,0 +1,113 @@
+
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to the Apex Legends Text Edition!! " +
+                "\n Please select a character to start the game. " +
+                "\n 1.Pathfinder \n 2.Gibby \n 3.Lifeline");
+
+            int option = Int32.Parse(Console.ReadLine());
+            int character = 0;
+            int score = 0;
+                switch (option)
+            {
+                case 1:
+                    character += 1;
+                    Console.WriteLine("Amazing! We all love our friendly robot!");
+                    break;
+
+                case 2:
+                    character += 2;
+                    Console.WriteLine("Always the best team support!");
+                    break;
+
+                case 3:
+                    character += 3;
+                    Console.WriteLine("Ahh so you really love your squad? ");
+                     break;   
+                        
+                   
+
+                default:
+
+                    Console.WriteLine("\n Now lets start the game!");
+
+                    break;
+            }
+            Console.WriteLine("\n What is Pathfinder's ultimate ability called?" +
+                        "\n 1.Motherload \n 2. Zipline Gun \n 3.Decoy Dance");
+
+            { option = Int32.Parse(Console.ReadLine());
+
+                if (option == 2)
+                {
+                    score += 1;
+                    Console.WriteLine("You're right! Well done!!");
+                }
+
+                else if (option == 1 || option == 3)
+                {
+                    score -= 1;
+                    Console.WriteLine("Too bad! That's the wrong answer!");
+                }
+
+            }
+            if (score >=1)
+            {
+                Console.WriteLine("Well done! You go to the next level!");
+            }
+            Console.WriteLine("Now let's see how you do now!");
+            Console.WriteLine("In which season did apex launch Crypto the legend? " +
+                "\n 1.Season 5 \n 2.Season 1 \n 3. Season 3");
+
+            {
+                option = Int32.Parse(Console.ReadLine());
+
+                if (option == 3)
+                {
+                    score += 1;
+                    Console.WriteLine("Correct answer!! Looks like you really know the game!");
+                }
+
+                else if (option == 1 || option == 2)
+                {
+                    score -= 1;
+                    Console.WriteLine("Wrong answer! Better luck next time!");
+                }
+                else
+                    Console.WriteLine("Looks like you've selected the wrong input " +
+                            "\n please select an option");
+
+            }
+            if (score >= 2)
+            {
+                Console.WriteLine("Now tell us who is the fastest legend in the game! " +
+                    "\n 1. Wraith \n 2.Pathfinder \n 3.Octane");
+                {
+                    option = Int32.Parse(Console.ReadLine());
+
+                    if (option == 2)
+                    {
+                        score += 1;
+                        Console.WriteLine("Correct answer! Think we've got a Path main here!!");
+                    }
+
+                    else if (option == 1 || option == 3) ;
+                    { score -= 1;
+                        Console.WriteLine("Wrong!! even if you think octane or wraith are fast, " +
+                            "\n don't forget that Pathfinder can grapple hundreds of meters with his tactical!");
+                    }
+
+                    
+
+
+                    Console.WriteLine("That's it for this game! \n Thanks for playing!");
+                }
+                
+
+               
+            }
+
+        }
+    }
+}
