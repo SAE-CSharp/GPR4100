@@ -7,10 +7,10 @@ namespace GuessingGame
 
         static void Main(string[] args)
         {
-            int randomNumber=6, userInput = 100, i = 0;
+            Random randm = new Random();
+            int randomNumber, userInput = 100, i = 0;
 
-            //Random randm = new Random();
-            //randomNumber = (Int32)(randm.Next(1, 11));
+            randomNumber = randm.Next(1, 11);
 
             Console.WriteLine("You have 3 attempts to guess the chosen number between 1 and 10.\nWhat is your 1st guess?");
 
