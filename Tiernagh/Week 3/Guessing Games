@@ -1,0 +1,53 @@
+namespace guessinggame
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("This is called the Guessing game. \n I have a number somewhere between 1 and 100");
+            Console.WriteLine("You have 5 chances to guess which number it is");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            int turns = 3;
+            bool result = false;
+            Random rndm = new Random();
+            int rndmnum = rndm.Next(1, 100);
+
+            while (turns != 0)
+            {
+                if (num == rndmnum)
+                {
+                    result = true;
+                    Console.WriteLine("You were correct, the number was " + result);
+                    break;
+                }
+                else if (num != rndmnum)
+                {
+                    turns = turns - 1;
+                    result = false;
+                    if (num < rndmnum)
+                    {
+                        Console.WriteLine("Your guess was too low");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Your guess was too high");
+                    }
+
+                    Console.WriteLine("Please try again");
+                    num = Convert.ToInt32(Console.ReadLine());
+
+                    if (turns == 1)
+                    {
+                        Console.WriteLine("You have run out chances the number was " + rndmnum");
+                        break;
+                    }
+
+                }
+
+
+
+            }
+        }
+    }
+}
