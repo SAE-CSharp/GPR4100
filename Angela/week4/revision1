@@ -1,0 +1,68 @@
+using System;
+
+namespace revision1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string Myname = "Jurgita";
+            int myAge = 30;
+            Console.WriteLine("My name is " + Myname);
+            Console.WriteLine("and I am " + myAge + " years old");
+            Console.WriteLine("");
+            Myname = "Tom";
+            Console.WriteLine("I like the name " + Myname);
+            Console.WriteLine("but I don't like being " + myAge);
+            Console.WriteLine("**************************************************");
+
+            //datatypes
+            string campus = "Liverpool";
+            Console.WriteLine(campus.ToLower());
+            //Console.Writeline("sae liverpool");
+
+            Console.WriteLine("Enter your campus name");
+            string campus1 = Console.ReadLine();
+            Console.WriteLine(60 + 40);
+
+            int x = 60;
+            int y = 40;
+            int result = x + y;
+            Console.WriteLine("Your result is " + result);
+
+            //float 
+            float speed = 5.6f;
+            double playerSpeed = 9.3;
+
+
+            //char 
+            char grade = 'A';
+
+            //boolean
+            bool isAlive = true;
+            bool isDead = false;
+
+            int a = 20;
+            a++;
+            a += 1;
+
+            //if statements
+
+            int number;
+
+            Console.WriteLine("Please enter a number between 0 and 10");
+            number = Int32.Parse(Console.ReadLine());
+
+            if (number > 10)
+            {
+                Console.WriteLine("Your number should be 10 or less");
+
+            }
+            else if (number < 0)
+            {
+                Console.WriteLine("Your number should be more than 0");
+            }
+
+
+        }
+    } }
