@@ -2,50 +2,100 @@ using System;
 
 namespace GuessingGame
 {
-    class Program                                       // REVISION NOTES: Research how to check the validity of the datatype of inputted data
+    class Program                                      
     {
 
         static void Main(string[] args)
         {
             Random randm = new Random();
-            int randomNumber, userInput = 100, i = 0;
+            int randomNumber, usersNumber = 100, i = 0;
+            var userInput = "";
+            bool mainLoop = true;
 
             randomNumber = randm.Next(1, 11);
 
-            Console.WriteLine("You have 3 attempts to guess the chosen number between 1 and 10.\nWhat is your 1st guess?");
-
-            while (i < 3 && userInput != randomNumber)
+            Console.WriteLine("You have 3 attempts to guess the chosen number between 1 and 10.\n");
+            while (mainLoop)
             {
-                i++;
-                userInput = Int32.Parse(Console.ReadLine());
-
-                if (userInput != randomNumber)
+                while (i < 3 && usersNumber != randomNumber)
                 {
-                    Console.WriteLine("Your guess was incorrect!");
+                    Console.WriteLine("What is your guess?");
+                    userInput = Console.ReadLine();
 
-                    if (i == 3)
+                    //Validation (lines 24-27)
+                    if (int.TryParse(userInput, out usersNumber))
                     {
-                        Console.WriteLine("You are out of attempts.");
-                        break;
+                        if (usersNumber > 0 && usersNumber < 10)
+                        {
+                            //main code
+                            i++;
+
+                            if (usersNumber != randomNumber)
+                            {
+                                Console.WriteLine("\nYour guess was incorrect!");
+
+                                if (i == 3)
+                                {
+                                    Console.WriteLine("\nYou are out of attempts.");
+                                    break;
+                                }
+                                else if (usersNumber < randomNumber)
+                                {
+                                    Console.Write("My number is higher than yours.\n\nTry again\n");
+                                    continue;
+                                }
+                                else if (usersNumber > randomNumber)
+                                {
+                                    Console.Write("My number is lower than yours.\n\nTry again\n");
+                                    continue;
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("\nCongrats you guessed correctly!");
+                                break;
+                            }
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("\nInvalid input");
+                            continue;
+                        }
                     }
-                    else if (userInput < randomNumber)
+                    else
                     {
-                        Console.Write("My number is higher than yours.\nTry again\n");
+                        Console.WriteLine("\nInvalid input");
                         continue;
                     }
-                    else if (userInput > randomNumber)
-                    {
-                        Console.Write("My number is lower than yours.\nTry again\n");
-                        continue;
-                    }
+                }
+                Console.WriteLine("\nThe number was " + randomNumber);
+
+
+
+
+
+                //Repeat loop stuff
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                Console.WriteLine("Would you like to go again? (Y/N)");
+                userInput = Console.ReadLine().ToUpper();
+
+
+                if (userInput == "N" || userInput == "NO")
+                {
+                    mainLoop = false;
+                    break;
                 }
                 else
                 {
-                    Console.WriteLine("Congrats you guessed correctly!");
-                    break;
+                    Console.WriteLine("\n");
+                    usersNumber = 100;
+                    userInput = "";
+                    i = 0;
+                    continue;
                 }
             }
-            Console.WriteLine("The number was " + randomNumber);
+
         }
     }
 }
