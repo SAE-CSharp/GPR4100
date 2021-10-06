@@ -29,6 +29,7 @@ namespace MCarpenter_Wk3_NumGuessingGame
             int difficulty = 0, rangeMax;
 
         start:
+            Console.Clear();
 
             Console.WriteLine("Welcome to my number guessing game! To begin, please pick a difficulty:\n  [1] Standard (1-20)\n  [2] Increased (1-30)\n  [3] High (1-50)");
             while (difficulty < 1 || difficulty > 3)
@@ -111,12 +112,10 @@ namespace MCarpenter_Wk3_NumGuessingGame
                     guessCount++;
                     guessesLeft--;
                 }
-                else
-                {
-                    Console.WriteLine("You are out of guesses. The number to guess was: " + numToGuess + "\n");
-                    break;
-                }
-                
+
+                Console.Clear();
+                Console.WriteLine("Your " + guessOrdinal + " guess was " + numGuessed + ".");
+
                 if (numGuessed > numToGuess)
                 {
                     Console.WriteLine("\nIncorrect - " + numGuessed + " is higher than the number to guess.\nGuesses remaining: " + guessesLeft + "\n");
@@ -130,6 +129,36 @@ namespace MCarpenter_Wk3_NumGuessingGame
             if (numGuessed == numToGuess)
             {
                 Console.WriteLine("\nCongratulations! You guessed the number!\n");
+            }
+            else
+            {
+                Console.WriteLine("\nYou are out of guesses. The number to guess was: ");
+            }
+
+            char restartConfirm = ' ';
+
+            while(!(restartConfirm == 'y' || restartConfirm == 'n'))
+            {
+                Console.WriteLine("\nWould you like to play again? (y/n)");
+                restartConfirm = Char.Parse(Console.ReadLine());
+                if (restartConfirm == 'Y')
+                {
+                    restartConfirm = 'y';
+                    break;
+                }
+                else if (restartConfirm == 'N')
+                {
+                    restartConfirm = 'n';
+                    break;
+                }
+
+                Console.Clear();
+                Console.WriteLine("Error: invalid input");
+            }
+
+            if (restartConfirm == 'y')
+            {
+                goto start;
             }
         }
     }
