@@ -6,7 +6,7 @@ namespace MCarpenter_Wk3_NumGuessingGame
     {
         private static readonly Random getrandom = new Random();
 
-        public static int GetRanInt(int min, int max)
+        public static int GenRanInt(int min, int max)
         {
             lock (getrandom)
             {
@@ -69,7 +69,7 @@ namespace MCarpenter_Wk3_NumGuessingGame
             }
             Console.Write(" The number you are guessing is from 1 to " + rangeMax + " (inclusive). You have 5 guesses.\n");
 
-            int numToGuess = GetRanInt(1, rangeMax);
+            int numToGuess = GenRanInt(1, rangeMax);
             int numGuessed = 0;
             int guessCount = 0;
             int guessesLeft = 5;
