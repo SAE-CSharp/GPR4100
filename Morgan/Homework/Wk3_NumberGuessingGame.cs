@@ -8,7 +8,7 @@ namespace MCarpenter_Wk3_NumGuessingGame
 
         public static int GetRanInt(int min, int max)
         {
-            lock (getrandom) // synchronize
+            lock (getrandom)
             {
                 return getrandom.Next(min, max);
             }
