@@ -64,5 +64,135 @@ namespace revision1
             }
 
 
+
+            //modulus
+
+            Console.WriteLine(3 % 2);
+            Console.WriteLine(11 % 5);
+            Console.WriteLine(17 % 4);
+
+            Console.WriteLine("Enter an even number or an odd number");
+            int num = Int32.Parse(Console.ReadLine());
+
+            if (num % 2 == 0) //6/2 =0 
+            {
+                Console.WriteLine("this is an even number");
+
+            }
+            else
+            {
+                Console.WriteLine("this is an odd number");
+            }
+
+            
+
+            Console.WriteLine("Enter a number between 20 and 30");
+            int number4 = Int32.Parse(Console.ReadLine());
+            if (x == 10)
+            {
+
+                Console.WriteLine("Your number is exual to 10");
+            }
+            else if (x > 30)
+            {
+                Console.WriteLine("Your number is too high");
+
+            }
+            else if (x < 20)
+            {
+                Console.WriteLine("Your number is to low");
+            }
+            else
+            {
+                Console.WriteLine("Invalid number");
+            }
+
+            //switch
+            Console.WriteLine("********************************");
+
+            string today = "Wednesday";
+            switch (today)
+            {
+                case "Monday":
+                Console.WriteLine("Today is Monday");
+                break;
+
+                case "Tuesday":
+                Console.WriteLine("Today is Tuesday");
+                break;
+
+                case "Wednesday":
+                Console.WriteLine("Today is Wednesday");
+                break;
+
+                case "Thursday":
+                Console.WriteLine("Today is Thursday");
+                break;
+
+                case "Friday":
+                Console.WriteLine("Today is Friday");
+                break;
+
+                case "Saturday":
+                Console.WriteLine("Today is Saturday");
+                break;
+
+                case "Sunday":
+                Console.WriteLine("Today is Sunday");
+                break;
+
+                default:
+                Console.WriteLine("Invalid");
+                break;
+
+
+                char mygrade = 'A';
+                switch (mygrade)
+                {
+                        case 'A':
+                        Console.WriteLine("Excelent, you've got A");
+                        break;
+
+                        case 'B':
+                        case 'C':
+                        Console.WriteLine("Enter your grade");
+
+                        char option = char.Parse(Console.ReadLine());
+                            if (option == 'B')
+                            {
+                                Console.WriteLine("Well done, you've got B");
+                            }
+                            else if (option == 'C')
+                            {
+                                Console.WriteLine("Well done, you've got C");
+                            }
+                        break;
+
+                        default:
+                        
+                        Console.WriteLine("Invalid grade");
+                        break;
+                }
+
+                    //while loop
+
+                    int counter = 0; //initialization
+                    while (counter <= 10) //condition
+                    {
+                        Console.WriteLine("counter = ", counter);
+                        counter++; //increment
+                    }
+
+
+            }
+
+
         }
-    } }
+        
+
+
+            
+
+
+    }
+}
