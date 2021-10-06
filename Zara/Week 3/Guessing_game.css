@@ -1,0 +1,38 @@
+using System;
+
+namespace Task_5._3_Guessing_Game
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int secretNumber = 9;
+            int counter = 3;
+            while (counter > 0)
+            {
+                Console.WriteLine("i am thinking of number between 1 and 10\n " +
+                    "I'll give 3 turns to guess it");
+                int guess = Int32.Parse(Console.ReadLine());
+
+                if (guess == secretNumber)
+                {
+                    Console.WriteLine("well done you have guess it");
+                    break;
+                }
+                else if (guess < secretNumber )
+                {
+                    Console.WriteLine("Your number is too low!");
+                }
+                
+                else if (guess > secretNumber )
+                {
+                    Console.WriteLine("your number is too close!");
+
+                }
+
+                counter--;
+                Console.WriteLine("you have " + counter + " turns remaining");
+            }
+      }
+  }
+}
