@@ -4,6 +4,10 @@
 // series of right or wrong answers. If the questions asked need to change with previous answers,
 // that requires a different approach that I may explore another time.
 
+// NOTE: I'm not putting this here for you to copy-paste as-is! This is an example of how to
+// approach something like this, so that you can use it as a basis for making your own things!
+// Be creative - there are lots of ways this approach can be used!
+
 using System;
 
 namespace ExampleCode_SeriesOfQuestions
