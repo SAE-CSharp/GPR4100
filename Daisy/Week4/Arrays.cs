@@ -1,0 +1,116 @@
+using System;
+
+namespace LoopsArraysLoopCombinations
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /* Arrays
+             * An array is a collection of variables of the same type.
+
+             * They are referred to by a common name.
+
+             * Arrays organise data in such a way that it can be easily manipulated and stored.
+
+             * All variables stored in an array must be of the same data type (e.g. string, int, char).
+
+             * Stored in sequential and ordered manner.
+
+             * Square brackets [] after the variable decleration (e.g. int []) let the compiler know
+               that this is an array variable (instead of normal variable).
+
+             * Array index always starts at zero
+
+             * The difference between array and enumerator:
+                Array is a value
+                Enumeration is a type
+
+             * Once you specify size of array it can't be changed but you can change values of elements
+        */
+             
+
+            int[] numbers = { 2, 50, 3, 60, 10 };
+
+            numbers[4] = 100; // changes fourth index number from 10 to 100
+
+            Console.WriteLine(numbers[0]);
+            Console.WriteLine(numbers[4] + numbers[2]);
+            Console.WriteLine(numbers[4]);
+            Console.WriteLine(numbers[4] * numbers[2]);
+            Console.WriteLine(numbers[4] * numbers[4] - numbers[3] * numbers[4]);
+            //examples of mathematical equations using arrays
+
+            Console.WriteLine(numbers[0]);
+            Console.WriteLine(numbers[1]);
+            Console.WriteLine(numbers[2]);
+            Console.WriteLine(numbers[3]);
+            Console.WriteLine(numbers[4]);
+            //displays arrays seperately on each line 
+
+            Console.WriteLine("What value would you like to assign the first index to");
+            numbers[0] = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("The first value is now equal to " + numbers[0]);
+            //asks the user to change the value of the first index of array
+
+            Console.WriteLine(+numbers[0] + " " + numbers[1] + " " + numbers[2] + " " + numbers[3] + " " + numbers[4]);
+            //the above line of code displays all items of the array on one line
+
+            /*
+             * Arrays van be one-dimensional or multidimensional, there are:
+
+             * Static arrays these are fixed. size is determined at compile time
+             * length cannoy be chanfed for entirety of running the program
+             * length is known at compiler time
+             * 
+             * Dynamic Arrays
+             * more flexible, size can be altered during run time 
+           
+            
+
+            string[] cities = { "Mumbai", "London", "New York" };
+            Console.WriteLine("I live in " + cities[0] + " but before this I lived in " + cities[1] + " next I want to live in " + cities[2]);
+
+            Console.WriteLine("Where do you currently live?");
+            cities[0] = Console.ReadLine();
+            Console.WriteLine("Oh, so you live in " + cities[0]);
+
+            string[] students = { "Dalton", "James", "Brandon", "Daisy", "Alex", "Tiernaugh", "Jurgita", "Tom", "Josh" };
+            Console.WriteLine(students[0] + " " + students[1] + " " + students[2] + " " + students[3] + " " + students[4] + " " + students[5] + " " + students[6] + " " + students[7] + " " + students[8]);
+
+            string secondStudent = students[1];
+            //the above code stores the second value from the array into a string variable called second student
+             
+
+
+            int[] books = new int[4];
+            // declare array of integer type and specify the size of the array.
+            // the number of elements in the array is 4
+            // the last index number will be 3 because the index always begins at 0 
+            books[0] = 3;
+            books[1] = 7;
+            books[2] = 19;
+            books[3] = 77;
+
+            Console.WriteLine(books[3]);
+            //this will print the value of the fourth book in the array which is equal to 77
+
+            Console.WriteLine("What value would you like to set to the first value in the array of books?");
+            books[0] = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("The value of the first book is now " + books[0]);
+
+            int[] num = { 10, 20, 30, 40 };
+            int arrayLength = num.Length;
+            Console.WriteLine("The length of the num array is " +arrayLength);
+            
+
+            int[] numbers1 = new int[3] { 1, 2, 3 };
+
+
+
+            
+
+
+        }
+    }
+}
