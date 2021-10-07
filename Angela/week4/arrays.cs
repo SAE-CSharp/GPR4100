@@ -130,7 +130,7 @@ namespace arrays
 
                 if (i == 1)
                 {
-                     //skipping the Hello London
+                     //skipping the campus London just says hello london 
                     Console.WriteLine("Hello London");
                     continue;
                 }
