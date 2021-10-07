@@ -1,3 +1,6 @@
+// This code example is intended to demonstrate how to set up and use random number generation in C# in
+// a general way, so that it can be made use of anywhere it's needed in other code.
+
 using System;
 
 namespace CodeExamples_RNG
