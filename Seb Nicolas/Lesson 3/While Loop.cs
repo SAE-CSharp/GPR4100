@@ -43,7 +43,7 @@ namespace WhileLoop
             Console.WriteLine("Select an operation: \n1. Addition\n2. Subtraction\n3. Devision\n4. Multiplication");
             int selection = Int32.Parse(Console.ReadLine());
 
-            while (selection != 1 && selection != 2 && selection != 3 && selection != 4)
+            while (selection != 1 && selection != 2 && selection != 3 && selection != 4 && selection != 5)
             {
                 Console.WriteLine("You have to select one option!");
                 Console.WriteLine("Please select one of the following operations:");
@@ -57,7 +57,7 @@ namespace WhileLoop
             Console.WriteLine("Select a number between 1 and 5");
             int selection2 = Int32.Parse(Console.ReadLine());
 
-            while (selection2 !>=6)
+            while (selection2 !>=5)
             {
                 Console.WriteLine("You have to select one option!");
                 Console.WriteLine("Please select one of the following numbers:");
