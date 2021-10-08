@@ -33,11 +33,11 @@ namespace MCarpenter_Wk4_Ex2
 
             float[] floatSetA = {3.1f, 1.44f, 10.7f, 8.2f, 0.83f, 16.0f};
 
-            int i = 0;
-            while (i < floatSetA.Length)
+            int a = 0;
+            while (a < floatSetA.Length)
             {
-                Console.WriteLine(floatSetA[i]);
-                i++;
+                Console.WriteLine(floatSetA[a]);
+                a++;
             }
 
             // An array can be declared without elements, as long as the size is specificed:
@@ -48,14 +48,14 @@ namespace MCarpenter_Wk4_Ex2
 
             Console.WriteLine("\nEnter a floating point number.");
             floatSetB[0] = float.Parse(Console.ReadLine());
-            for (i = 1; i < floatSetB.Length; i++)
+            for (int i = 1; i < floatSetB.Length; i++)
             {
                 floatSetB[i] = floatSetB[0] * (i + 1);
             }
 
             Console.WriteLine("");
 
-            for (i = 0; i < floatSetB.Length; i++)
+            for (int i = 0; i < floatSetB.Length; i++)
             {
                 Console.WriteLine(floatSetB[i]);
             }
@@ -67,7 +67,7 @@ namespace MCarpenter_Wk4_Ex2
 
             Console.WriteLine("\nSearching...\n");
 
-            for (i = 0; i < colours.Length; i++)
+            for (int i = 0; i < colours.Length; i++)
             {
                 Console.WriteLine(colours[i]);
                 if (i == favColour)
@@ -76,6 +76,40 @@ namespace MCarpenter_Wk4_Ex2
                     break;
                 }
             }
+
+            Console.WriteLine("");
+
+            int[] numbers2 = new int[10];
+
+            for (int i = 0; i < numbers2.Length; i++)
+            {
+                numbers2[i] = (i + 1) * 3;
+            }
+
+            for (int i = 0; i < numbers2.Length; i++)
+            {
+                Console.WriteLine(numbers2[i]);
+            }
+
+            Console.WriteLine("");
+
+            int[,] intArray = new int[3, 2] {
+                {2, 2},
+                {3, 5},
+                {7, 4}
+            };
+
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write("\n");
+                for (int j = 0; j < 2; j++)
+                {
+                    Console.Write(intArray[i, j] + " ");
+                }
+            }
+
+            Console.WriteLine("");
+
         }
     }
 }
