@@ -1,0 +1,130 @@
+using System;
+
+namespace Revision3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int number2 = 12345;
+
+            float speed = 1.5f;
+            double speed2 = 2.24;
+            bool isAlive = true;
+            bool is Male = false;
+
+            string campus = "SAE London";
+            campus.ToLower();
+            Console.WriteLine(campus);
+            Console.WriteLine("Please enter your name");
+            string name = Console.ReadLine();
+            Console.WriteLine("***********************");
+            int x = 5;
+            x++;
+            x--;
+            x += 1;
+            x -= 2;
+
+            Console.WriteLine("***********if************");
+
+            Console.WriteLine("Enter a number between 0 and 10");
+            //int secretNumber = 8;
+            int number = Int32.Parse(Console.ReadLine());
+
+            if (number < 0)
+            {
+                Console.WriteLine("Your number is less than 0");
+            }
+
+            else if (number > 10)
+            {
+                Console.WriteLine("Your number is greater than 10");
+            }
+
+            else 
+            {
+                Console.WriteLine("Invalid input");
+            }
+
+
+            Console.WriteLine("**********Modulus*************");
+
+            Console.WriteLine(5 % 2);
+            Console.WriteLine(6 % 3);
+            Console.WriteLine(10 % 4);
+
+            Console.WriteLine("Enter today's day");
+            string today = Console.ReadLine();
+            switch (today)
+            {
+                case "Monday":
+
+                    Console.WriteLine("Today is Monday");
+                    break;
+
+                case "Tuesday":
+                case "Wednesday":
+
+                    Console.WriteLine("Select one day \n 1.Tuesday \n 2.Wednesdsay");
+                    int option = Int32.Parse(Console.ReadLine());
+                    if (option==1)
+                    {
+                        Console.WriteLine("You've selected Tuesday");
+                    }
+                    if (option==2)
+                    {
+                        Console.WriteLine("You've selected Wednesday");
+
+                    }
+                   
+                    break;
+
+                case "Thursday":
+                    Console.WriteLine("Today is Thursday");
+                    break;
+
+                case "Friday":
+                    Console.WriteLine("Today is Friday");
+                    break;
+
+                case "Saturday":
+                    Console.WriteLine("Today is Saturday");
+                    break;
+
+                case "Sunday":
+                    Console.WriteLine("Today is Sunday");
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid");
+                    break;
+
+                    
+            }
+
+            Console.WriteLine("Select a grade.");
+            char grade2 = 'A';
+            grade2 = char.Parse(Console.ReadLine());
+
+            
+
+
+                Console.WriteLine("***************************")
+
+                int a = 5;
+                int b = 2;
+            int result = 5 % 2;
+            Console.WriteLine(5 % 2);
+            Console.WriteLine(result);
+            Console.WriteLine(6 % 3);
+            Console.WriteLine(10 % 4);
+
+            
+
+
+
+                
+                
+        }
+    }
+}
