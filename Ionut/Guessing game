@@ -1,0 +1,47 @@
+using System;
+
+namespace Guessing_Game
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random x = new Random();
+            int num = x.Next(1, 10);
+            bool guess = false;
+            int guessnumber= 3;
+            while(guessnumber!=0)
+                while (guess == false) 
+                {
+                Console.WriteLine("Guess a number between 1 and 10\n You have three chances.");
+                string n = Console.ReadLine();
+                int y = Int32.Parse(n);
+                if (y > num)
+                {
+                        guessnumber--;
+                    Console.WriteLine("Your guess is too high\n Try a lower guess.");
+                        Console.WriteLine("You've got " + guessnumber + " chances left ");
+                }
+                else if (y < num)
+                {
+                        guessnumber--;
+                    Console.WriteLine("Too low, you need to go higher !");
+                        Console.WriteLine("You've got " + guessnumber + " chances left ");
+                }
+                else if (y == num)
+                {
+                        
+                    Console.WriteLine("You're guess is correct");
+                    guess = true;
+                    Console.WriteLine("WELL PLAYED \n I Hope you liked this game ");
+                    }
+                if (guessnumber==0)
+                    {
+                        Console.WriteLine("You failed :(\n GAME OVER ");
+                        break;
+                    }
+                } 
+            
+        }
+    }
+}
