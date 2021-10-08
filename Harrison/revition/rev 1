@@ -1,1 +1,147 @@
+using System;
 
+namespace revition
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name = "har";
+            int age = 18;
+
+            Console.WriteLine("name " + name);
+            Console.WriteLine("I am " + age + " years old");
+            Console.WriteLine("oonga boonga");
+            Console.WriteLine("me " + age);
+
+            char grade = 'A';
+            int numb1 = 12345;
+            int numb2 = 12345;
+
+            float speed1 = 1.5f;
+            double speed2 = 2.2;
+            bool isAlive = true;
+            bool isM = true;
+
+            string campus = "london";
+            campus.ToUpper();
+            Console.WriteLine(campus);
+            Console.WriteLine("Enter your name:  ");
+            string name2 = Console.ReadLine();
+
+            int x = 5;
+            x++;
+            x += 2;
+            x = x + 1;
+            x -= 2;
+            x--;
+            x = x - 1;
+
+            Console.WriteLine("*******************************************");
+
+            Console.WriteLine("put in a number bettween 1 and 10");
+            int numb3 = int.Parse(Console.ReadLine());
+
+            if (numb3 < 1 || numb3 > 10)
+            {
+                Console.WriteLine("your number is no in the guides");
+            }
+            else
+            {
+                Console.WriteLine("nice");
+            }
+
+            Console.WriteLine(5 % 2);
+            Console.ReadLine();
+
+            string today = Console.ReadLine();
+            switch (today)
+            {
+                case "1":
+                    {
+                        Console.WriteLine("mon");
+                        break;
+                    }
+                case "2":
+                    {
+                        Console.WriteLine("tue");
+                        break;
+                    }
+                case "3":
+                    {
+                        Console.WriteLine("wed");
+                        break;
+                    }
+                case "4":
+                    {
+                        Console.WriteLine("thu");
+                        break;
+                    }
+                case "5":
+                    {
+                        Console.WriteLine("fri");
+                        break;
+                    }
+                case "6":
+                    {
+                        Console.WriteLine("sat");
+                        break;
+                    }
+                case "7":
+                    {
+                        Console.WriteLine("sun");
+                        break;
+                    }
+            }
+
+            Console.WriteLine("grade");
+            grade = char.Parse(Console.ReadLine());
+
+            switch (grade)
+            {
+                case 'A':
+                    {
+                        Console.WriteLine("grade A");
+                        break;
+                    }
+                case 'B':
+                case 'C':
+                    {
+                        if (grade == 'B')
+                        {
+                            Console.WriteLine("welldone you got B");
+                        }
+                        else
+                        {
+                            Console.WriteLine("you got grade C");
+                        }
+                        break;
+                    }
+                case 'D':
+                    {
+                        Console.WriteLine("grade D");
+                        break;
+                    }
+                case 'E':
+                    {
+                        Console.WriteLine("grade E");
+                        break;
+                    }
+                case 'F':
+                    {
+                        Console.WriteLine("grade F");
+                        break;
+                    }
+            }
+            Console.ReadLine();
+
+
+            int count = 0;
+            while (count < 10) 
+            {
+                Console.WriteLine("count is " + count);
+                count++;
+            }
+        }
+    }
+}
