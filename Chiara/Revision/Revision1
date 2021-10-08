@@ -1,0 +1,123 @@
+string myName = "Chiara";
+            int Age = 22;
+
+            Console.WriteLine("My Name is " + myName);
+            Console.WriteLine("And I am " + Age +" years old.");
+            Console.WriteLine("I like the name " + myName);
+            Console.WriteLine("but I don't like to be" + Age +". ");
+            char grade = 'A';
+            int numbers = 12345;
+            int numbers2 = -12345;
+
+            float speed = 1.5f;
+            double speed2 = 2.24;
+            bool isAlive = true;
+            bool isMale = false;
+
+            string campus = "London";
+            campus.ToLower();
+            Console.WriteLine(campus);
+            Console.WriteLine("Enter your name please: ");
+            string name = Console.ReadLine();
+            Console.WriteLine("*****************");
+            int x = 5;
+            x++;
+            x += 1;
+            x--;
+            x -= 1;
+            Console.WriteLine("******If**********");
+            int number;
+            Console.WriteLine("Please enter a number between 0 and 10");
+            number = Int32.Parse(Console.ReadLine());
+
+            if (number < 0) 
+            {
+                Console.WriteLine("Your number is less than 0");
+            }
+
+            
+            else if (number > 10)
+            {
+                Console.WriteLine("Your number is greater than 10");
+
+            }
+            
+            
+
+           else
+            {
+                Console.WriteLine("Great!");
+            }
+            Console.WriteLine("********Modulus*********");
+            int a = 5;
+            int b = 2;
+            int result = 5 % 2;
+
+            Console.WriteLine(5 % 20);
+           Console.WriteLine(result); // 5 % 2
+            Console.WriteLine(6 % 3) ; //0
+                 Console.WriteLine(10 % 4); //2
+            Console.WriteLine("**********WhileLoop**********");
+            int counter = 0;
+
+            while (counter > 1)
+               // if (counter == 4)
+               // {
+                   // continue;
+               // }
+            {
+                Console.WriteLine("Counter is " + counter); //0
+                counter--; //
+               // counter++; //counter +=1;
+                //if(counter == 5)
+               // {
+                   // break;
+               // }
+            }
+
+
+
+
+
+
+            Console.WriteLine("Enter a day");
+            string today = Console.ReadLine();
+
+            switch(today)
+            {
+                case "Monday":
+                    Console.WriteLine("Today is Monday");
+                    break;
+                
+                case "Tuesday":
+                    
+                    
+                case "Wednesday":
+
+                    Console.WriteLine("Enter the day's name 1. Tuesday \n 2. Wednesday");
+                    int option = Int32.Parse(Console.ReadLine());
+                    if (option==1)
+                    {
+                        Console.WriteLine("Today is Tuesday");
+                    }
+                    if(option == 2)
+                    {
+                        Console.WriteLine("Today is Wednesday");
+                    }
+                    break;
+
+                    
+                    Console.WriteLine("Nice!");
+                case "Thursday":
+                    Console.WriteLine("today is Thursday");
+                    break;
+                case "Friday":
+                    Console.WriteLine("today is Friday");
+                    break;
+                        default:
+                    Console.WriteLine("Invalid");
+                    break;
+                
+                    
+
+            }
