@@ -1,0 +1,213 @@
+using System;
+
+namespace Revision
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            /*string myName = "Phil";
+            int Age = 24;
+            Console.WriteLine("My name is!" +myName);
+            Console.WriteLine("And I am " +Age+ " years old");
+            Console.WriteLine("I like the name" +myName);
+            Console.WriteLine("but i dont like being" +Age);
+            
+            char grade = 'A';
+            int number = 12345;
+            int number2 = -12345;
+
+            float speed = 1.5f;
+            double speed2 = 2.24;
+            bool isAlive = true;
+            bool isMale = false;
+
+            string campus = "London";
+            campus.ToUpper();
+            campus.ToLower();
+            Console.WriteLine(campus);
+            Console.WriteLine("London");
+            Console.WriteLine("Enter your name: ");
+            string name = Console.ReadLine();
+            Console.WriteLine("********************");
+            int x = 5;
+            x++;   // increase by 1
+            x--; // decrease the value by 1
+            x += 2;  // x =x+2
+            x -= 2;  // x =x-2
+
+            Console.WriteLine("********************");
+            Console.WriteLine("Please enter a number between 0 and 10");
+            //int secretnumber = 8;
+
+
+            int number3 = Int32.Parse(Console.ReadLine());
+
+            if (number3 <0)
+            {
+                Console.WriteLine("your number is less than 0");
+
+
+            }
+
+            else if (number3>10)
+            {
+                Console.WriteLine("your number is greater than 10");
+
+
+            }
+
+            else
+            {
+
+                Console.WriteLine("well done");
+
+            }
+
+
+            Console.WriteLine("***********Modulus*********");
+
+
+            Console.WriteLine(5 % 2);  //1
+            Console.WriteLine(6 % 3);  //0
+            Console.WriteLine(10 % 4);  //2
+
+
+
+
+            Console.WriteLine("enter todays name");
+            string today = Console.ReadLine();
+            switch (today)
+            {
+                case "monday":
+                    Console.WriteLine("today is monday");
+                    break;
+
+                case "tuesday":
+                    Console.WriteLine("today is tuesday");
+                    break;
+
+                case "wednesday":
+                    Console.WriteLine("today is wednesday");
+                    break;
+
+                case "thursday":
+                    Console.WriteLine("today is thursday");
+                    break;
+
+                case "friday":
+                    Console.WriteLine("today is friday");
+                    break;
+
+                case "saturday":
+                case "sunday":
+                    Console.WriteLine("enter the days name 1.saturday\n 2.sunday");
+                    int option = Int32.Parse(Console.ReadLine());
+                    if (option == 1)
+                    {
+                        Console.WriteLine("today is saturday");
+                    }
+                    if (option == 2)
+                    {
+                        Console.WriteLine("today is sunday");
+                    }
+
+                    break;
+
+                default:
+                    Console.WriteLine("invalid");
+                    break;
+
+            }
+
+
+            Console.WriteLine("grade");
+            grade = char.Parse(Console.ReadLine());
+            switch (grade)
+            {
+                case 'A':
+                    Console.WriteLine("A");
+                    break;
+
+                case 'B':
+                    Console.WriteLine("B");
+                    break;
+
+                case 'C':
+                    Console.WriteLine("C");
+                    break;
+
+                case 'D':
+                    Console.WriteLine("D");
+                    break;
+
+                case 'E':
+                    Console.WriteLine("E");
+                    break;
+
+                case 'F':
+                case 'G':
+                    Console.WriteLine("enter the grade 1.F\n 2.G");
+                    int option = Int32.Parse(Console.ReadLine());
+                    if (option == 1)
+                    {
+                        Console.WriteLine("u got F");
+                    }
+                    if (option == 2)
+                    {
+                        Console.WriteLine("u got G");
+                    }
+
+                    break;
+
+                default:
+                    Console.WriteLine("invalid");
+                    break;
+
+                    char grade2 = 'B';
+
+                    Console.WriteLine("*********************");
+
+                    int a = 5;
+                    int b = 2;
+                    int result = 5 % 2;
+                    Console.WriteLine(5 % 2);   // 1
+                    Console.WriteLine(result);    // 1
+                    Console.WriteLine(6 % 3);   //0
+                    Console.WriteLine(10 % 4);   //2*/
+
+
+                    Console.WriteLine("**********while loop************");
+
+                    int counter = 10;
+
+                    while (counter > 1)
+                    {
+                      /*Console.WriteLine("counter is " + counter);  //0
+                      counter++;  //counter +=1*/
+
+                      /*if (counter == 5)
+                     {
+                      break;
+
+                      }*/
+                     /*if (counter == 4)
+                     {
+                     continue;
+                     }
+
+                     Console.WriteLine("counter is " + counter);*/
+                     counter--;
+                         if (counter == 1)
+                         {
+                          break;
+                         }
+                     Console.WriteLine("counter is " + counter);
+                    }
+
+
+
+        }
+    }
+}
