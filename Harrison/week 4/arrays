@@ -1,0 +1,69 @@
+using System;
+
+namespace ex5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //static arrays
+            int[] numb = { 10, 20, 30, 40, 50 };
+            Console.WriteLine("which num");
+            int x = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("numb is " + numb[x - 1]);
+
+            //static array string
+            string[] loc = { "London", "Liverpool", "Oxford", "Edingbruh"};
+            Console.WriteLine("which loc");
+            int y = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("loc is " + loc[y - 1]);
+
+            //array length
+            int arraylength = numb.Length;
+            Console.WriteLine(arraylength);
+
+            //array length declair
+            int[] array1 = new int[20];
+            Console.WriteLine(array1.Length);
+
+            //float array
+            float[] maem = new float[300];
+            Console.WriteLine(maem.Length);
+
+            //repeating loop
+            for(int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Value of i is " + i);
+            }
+
+            //repeating loop break
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Value of i is " + i);
+                if (i == 5)
+                {
+                    break;
+                }
+            }
+
+            //combination
+            int[] intaray = { 1, 3, 4, 5, 2, 6, 32, 145, 241, 3 };
+            int arrlen = intaray.Length;
+
+            for(int i = 0; i < arrlen; i++)
+            {
+                if (i == 8)
+                {
+                    break;
+                }
+            }
+
+            //2d array
+            int[,] arr2 = new int[3,2];
+
+
+
+            Console.ReadLine();
+        }
+    }
+}
