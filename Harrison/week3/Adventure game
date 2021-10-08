@@ -1,5 +1,3 @@
-            //this is not the updated one yet
-            
             bool key = false;
             bool green = false;
             bool soved = false;
