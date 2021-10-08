@@ -11,8 +11,8 @@ namespace MCarpenter_Revision1_Variables
             // data of that type.
             
             int var_integer = 1;                    // Positive and negative whole numbers
-            string var_string = "Words go here";    // String of plaintext
-            char var_character = 'A';               // Single text character
+            string var_string = "Words go here";    // String of plaintext - contained in double quotes
+            char var_character = 'A';               // Single text character - contained in single quotes
             float var_floatingPoint = 0.5f;         // 32-bit decimal number
             double var_doublePrecision = 1.5;       // 64-bit decimal number
             bool var_boolean = true;                // True/false
