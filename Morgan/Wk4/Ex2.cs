@@ -65,13 +65,16 @@ namespace MCarpenter_Wk4_Ex2
 
             string[] colours = { "Red", "Green", "Blue", "Yellow" };
 
-            Console.WriteLine("");
+            Console.WriteLine("\nSearching...\n");
 
             for (i = 0; i < colours.Length; i++)
             {
                 Console.WriteLine(colours[i]);
                 if (i == favColour)
+                {
+                    Console.WriteLine("\nAh, there's your preferred colour - " + colours[i] + "!\n");
                     break;
+                }
             }
         }
     }
