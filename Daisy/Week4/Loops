@@ -1,0 +1,87 @@
+using System;
+
+namespace Loops
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+             * For loop 
+             * used to repeat the same part of code more than once to avoid repetition 
+             * 
+             * 
+             * 
+             * 
+             * 
+             * 
+             */
+
+            //example
+            // (initialistion; condition; incrementation)
+
+            
+            /* for (int i = 0; i < 10; i++) 
+            {
+                Console.WriteLine("The value of i:" +i);
+            }
+            
+
+            int[] myNumber = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
+            int arrayLength = myNumber.Length; //use myNumber.Length to store the length of the array into a variable for easy access 
+
+            for (int i = 0; i < arrayLength; i++)
+            {
+                Console.WriteLine("the index is " + i + " and the element is " + myNumber[i]);
+                // i now represents the index because we set "i < arrayLength"
+            }
+           
+
+            string[] favouriteAnimals = { "Sloth", "Girraffe", "Lema", "Orangutang", "Tiny Monkey", "Moth" };
+            int arrayNum = favouriteAnimals.Length; // even when array type is string we still need to set to int variable to get length
+
+            for (int i = 0; i < arrayNum; i++)
+            {
+                Console.WriteLine("The index is " + i + " and the element is " + favouriteAnimals[i]);
+            }
+             
+
+            float[] myfloat = { 2.3f, 4.6f, 3.8f, 9.9f, 1000.554f, 4954.4f, 1.1f };
+            int floatSize = myfloat.Length;
+
+            for (int i = 0; i < floatSize; i++) 
+            {
+                Console.WriteLine("The index is " + i + " and the element is " + myfloat[i]);
+            }
+            */
+
+            string[] saeCampus = { "Oxford", "Liverpool", "Glasgow", "London" };
+            int campusLength = saeCampus.Length;
+
+            for (int i = 0; i < campusLength; i++)
+            {
+                Console.WriteLine("The index is " + i + " and the element is " + saeCampus[i]);
+
+                if (i == 1)
+                {
+                    Console.WriteLine("Hello Liverpool");
+                    
+                }
+            }
+
+            for (int i = 0; i < campusLength; i++)
+            {
+
+
+                if (i == 1)
+                {
+                    continue;
+
+                }
+                Console.WriteLine("The index is " + i + " and the element is " + saeCampus[i]);
+
+            }
+
+        }
+    }
+}
