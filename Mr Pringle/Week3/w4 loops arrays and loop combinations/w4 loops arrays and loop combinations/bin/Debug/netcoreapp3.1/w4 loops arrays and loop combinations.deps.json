@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "w4 loops arrays and loop combinations/1.0.0": {
+        "runtime": {
+          "w4 loops arrays and loop combinations.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "w4 loops arrays and loop combinations/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

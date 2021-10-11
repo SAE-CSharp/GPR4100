@@ -1,0 +1,14 @@
+C:\Users\djpmi\source\repos\w4 loops arrays and loop combinations\w4 loops arrays and loop combinations\bin\Debug\netcoreapp3.1\w4 loops arrays and loop combinations.exe
+C:\Users\djpmi\source\repos\w4 loops arrays and loop combinations\w4 loops arrays and loop combinations\bin\Debug\netcoreapp3.1\w4 loops arrays and loop combinations.deps.json
+C:\Users\djpmi\source\repos\w4 loops arrays and loop combinations\w4 loops arrays and loop combinations\bin\Debug\netcoreapp3.1\w4 loops arrays and loop combinations.runtimeconfig.json
+C:\Users\djpmi\source\repos\w4 loops arrays and loop combinations\w4 loops arrays and loop combinations\bin\Debug\netcoreapp3.1\w4 loops arrays and loop combinations.runtimeconfig.dev.json
+C:\Users\djpmi\source\repos\w4 loops arrays and loop combinations\w4 loops arrays and loop combinations\bin\Debug\netcoreapp3.1\w4 loops arrays and loop combinations.dll
+C:\Users\djpmi\source\repos\w4 loops arrays and loop combinations\w4 loops arrays and loop combinations\bin\Debug\netcoreapp3.1\w4 loops arrays and loop combinations.pdb
+C:\Users\djpmi\source\repos\w4 loops arrays and loop combinations\w4 loops arrays and loop combinations\obj\Debug\netcoreapp3.1\w4 loops arrays and loop combinations.csproj.AssemblyReference.cache
+C:\Users\djpmi\source\repos\w4 loops arrays and loop combinations\w4 loops arrays and loop combinations\obj\Debug\netcoreapp3.1\w4 loops arrays and loop combinations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djpmi\source\repos\w4 loops arrays and loop combinations\w4 loops arrays and loop combinations\obj\Debug\netcoreapp3.1\w4 loops arrays and loop combinations.AssemblyInfoInputs.cache
+C:\Users\djpmi\source\repos\w4 loops arrays and loop combinations\w4 loops arrays and loop combinations\obj\Debug\netcoreapp3.1\w4 loops arrays and loop combinations.AssemblyInfo.cs
+C:\Users\djpmi\source\repos\w4 loops arrays and loop combinations\w4 loops arrays and loop combinations\obj\Debug\netcoreapp3.1\w4 loops arrays and loop combinations.csproj.CoreCompileInputs.cache
+C:\Users\djpmi\source\repos\w4 loops arrays and loop combinations\w4 loops arrays and loop combinations\obj\Debug\netcoreapp3.1\w4 loops arrays and loop combinations.dll
+C:\Users\djpmi\source\repos\w4 loops arrays and loop combinations\w4 loops arrays and loop combinations\obj\Debug\netcoreapp3.1\w4 loops arrays and loop combinations.pdb
+C:\Users\djpmi\source\repos\w4 loops arrays and loop combinations\w4 loops arrays and loop combinations\obj\Debug\netcoreapp3.1\w4 loops arrays and loop combinations.genruntimeconfig.cache
