@@ -1,9 +1,0 @@
-Homework 1 -  Is it even, odd or prime?
-
-Build upon your existing calculator so it can determine whether a number is even, odd or prime.
-In addition to the existing methods, your program must include:
-• Modulus operator
-• String data types(Calculation Type)
-
-
-Submit your code as a repository post on GitHub under github.com/SAE-CSharp/Yourname/Week2/calculatorv2.cs
