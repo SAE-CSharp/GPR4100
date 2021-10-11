@@ -1,0 +1,33 @@
+using System;
+
+namespace Homework_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+           
+
+            int[] players = new int[5];
+            Console.WriteLine("Hello, please enter the 1st player's scores from 10 to 50");
+            int playerScore1 = Int32.Parse(Console.ReadLine());
+            
+            for (int i = 10; i < players.Length; i++)
+            {
+                Console.WriteLine("the player is: " + (i+1) + " and his score is: " + playerScore1);
+                break;
+            }
+            Console.WriteLine("Hello, please enter the 2nd player's scores from 10 to 50");
+            int playerScore2 = Int32.Parse(Console.ReadLine());
+            for (int i = 10; i < playerScore1; i++);
+            {
+                Console.WriteLine("the player is: " + (i+1) + " and his score is " + playerScore1);
+                Console.WriteLine("the player is: " + (i+1) + " and his score is " + playerScore2);
+            }
+
+
+
+        }
+    }
+}
