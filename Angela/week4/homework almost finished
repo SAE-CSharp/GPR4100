@@ -1,0 +1,79 @@
+using System;
+
+namespace Homework2
+{
+    class Program
+    {
+        enum players { Kyle, Damon, Joan, Arthur, Jurgita }
+        static void Main()
+            
+        {
+            
+            int[] playScores = new int[5];
+            int arLength = playScores.Length;
+            int score1;
+            int score2;
+            int score3;
+            int score4;
+            int score5;
+            for (int i = 0; i < arLength; i++)
+            {
+               Console.WriteLine("**********PLAYERS SCORES**********");
+               Console.WriteLine("Please enter the Kyle's score");
+               score1 = Int32.Parse(Console.ReadLine());
+               playScores[0] = score1;
+               Console.WriteLine("==================================================================");
+               Console.WriteLine("Kyle's score is " +score1);
+               Console.WriteLine("==================================================================");
+
+               Console.WriteLine("Please enter the Damon's score");
+               score2 = Int32.Parse(Console.ReadLine());
+               playScores[1] = score2;
+               Console.WriteLine("==================================================================");
+               Console.WriteLine("Kyle's score is " + score1 + "\nDamon's score is " + score2);
+
+               Console.WriteLine("==================================================================");
+               Console.WriteLine("Please enter the Joan's's score");
+               score3 = Int32.Parse(Console.ReadLine());
+               playScores[2] = score3;
+               Console.WriteLine("==================================================================");
+               Console.WriteLine("Kyle's score is " + score1 + "\nDamon's score is " + score2 + "\nJoan's score is " + score3);
+               
+               Console.WriteLine("==================================================================");
+
+               Console.WriteLine("Please enter the Arthur's score");
+               score4 = Int32.Parse(Console.ReadLine());
+               playScores[3] = score4;
+               Console.WriteLine("==================================================================");
+               Console.WriteLine("Kyle's score is " + score1 + "\nDamon's score is " + score2 + "\nJoan's score is " + score3 + "\nArthur's score is " + score4);
+               
+               Console.WriteLine("==================================================================");
+
+               Console.WriteLine("Please enter the Jurgita's score");
+               score5 = Int32.Parse(Console.ReadLine());
+               playScores[4] = score5;
+               Console.WriteLine("==================================================================");
+               Console.WriteLine("Kyle's score is " + score1 + "\nDamon's score is " + score2 + "\nJoan's score is " + score3 + "\nArthur's score is " + score4 + "\nJurgita's score is " + score5);
+               
+               Console.WriteLine("**********LEADERBOAD**********");
+               
+               Program lead = new Program();
+               lead.Main(playScores, arLength);
+                int j;
+                for (j = i + 1; i < arLength; j++);
+                {
+                    if (playScores[i] <= playScores[j])
+                        break;
+                }
+                if (j == arLength)
+                    Console.Write(playScores[i] + " ");
+            }
+            
+        }
+
+        private void Main(int[] playScores, int arLength)
+        {
+            
+        }
+    }
+}
