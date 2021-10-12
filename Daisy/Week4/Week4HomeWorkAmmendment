@@ -1,0 +1,30 @@
+using System;
+
+namespace Wk4HwkAmmendment
+{
+    class Program
+    {
+        enum Players { PlayerOne, PlayerTwo, PlayerThree, PlayerFour, PlayerFive };
+        static void Main(string[] args)
+        {
+            int[] playerScore = new int[5];
+
+            
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("What score did each player get? Enter a value between 0 and 50...");
+                playerScore[0] = Int32.Parse(Console.ReadLine());
+                playerScore[1] = Int32.Parse(Console.ReadLine());
+                playerScore[2] = Int32.Parse(Console.ReadLine());
+                playerScore[3] = Int32.Parse(Console.ReadLine());
+                playerScore[4] = Int32.Parse(Console.ReadLine());
+
+                Console.WriteLine(Players.PlayerOne + " scored " +playerScore[0] + " \n" + Players.PlayerTwo + " scored " + playerScore[1] + " \n" + Players.PlayerThree + " scored " + playerScore[2] + " \n" + Players.PlayerFour + " scored " + playerScore[3] + " \n" + Players.PlayerFive + " scored " + playerScore[4]);
+                break;
+            }
+
+           
+        }
+    }
+}
