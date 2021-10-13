@@ -1,0 +1,14 @@
+C:\Users\djpmi\source\repos\RandomNumber\RandomNumber\bin\Debug\netcoreapp3.1\RandomNumber.exe
+C:\Users\djpmi\source\repos\RandomNumber\RandomNumber\bin\Debug\netcoreapp3.1\RandomNumber.deps.json
+C:\Users\djpmi\source\repos\RandomNumber\RandomNumber\bin\Debug\netcoreapp3.1\RandomNumber.runtimeconfig.json
+C:\Users\djpmi\source\repos\RandomNumber\RandomNumber\bin\Debug\netcoreapp3.1\RandomNumber.runtimeconfig.dev.json
+C:\Users\djpmi\source\repos\RandomNumber\RandomNumber\bin\Debug\netcoreapp3.1\RandomNumber.dll
+C:\Users\djpmi\source\repos\RandomNumber\RandomNumber\bin\Debug\netcoreapp3.1\RandomNumber.pdb
+C:\Users\djpmi\source\repos\RandomNumber\RandomNumber\obj\Debug\netcoreapp3.1\RandomNumber.csproj.AssemblyReference.cache
+C:\Users\djpmi\source\repos\RandomNumber\RandomNumber\obj\Debug\netcoreapp3.1\RandomNumber.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djpmi\source\repos\RandomNumber\RandomNumber\obj\Debug\netcoreapp3.1\RandomNumber.AssemblyInfoInputs.cache
+C:\Users\djpmi\source\repos\RandomNumber\RandomNumber\obj\Debug\netcoreapp3.1\RandomNumber.AssemblyInfo.cs
+C:\Users\djpmi\source\repos\RandomNumber\RandomNumber\obj\Debug\netcoreapp3.1\RandomNumber.csproj.CoreCompileInputs.cache
+C:\Users\djpmi\source\repos\RandomNumber\RandomNumber\obj\Debug\netcoreapp3.1\RandomNumber.dll
+C:\Users\djpmi\source\repos\RandomNumber\RandomNumber\obj\Debug\netcoreapp3.1\RandomNumber.pdb
+C:\Users\djpmi\source\repos\RandomNumber\RandomNumber\obj\Debug\netcoreapp3.1\RandomNumber.genruntimeconfig.cache

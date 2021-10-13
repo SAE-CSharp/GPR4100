@@ -1,0 +1,14 @@
+C:\Users\djpmi\source\repos\2 dim array\2 dim array\bin\Debug\netcoreapp3.1\2 dim array.exe
+C:\Users\djpmi\source\repos\2 dim array\2 dim array\bin\Debug\netcoreapp3.1\2 dim array.deps.json
+C:\Users\djpmi\source\repos\2 dim array\2 dim array\bin\Debug\netcoreapp3.1\2 dim array.runtimeconfig.json
+C:\Users\djpmi\source\repos\2 dim array\2 dim array\bin\Debug\netcoreapp3.1\2 dim array.runtimeconfig.dev.json
+C:\Users\djpmi\source\repos\2 dim array\2 dim array\bin\Debug\netcoreapp3.1\2 dim array.dll
+C:\Users\djpmi\source\repos\2 dim array\2 dim array\bin\Debug\netcoreapp3.1\2 dim array.pdb
+C:\Users\djpmi\source\repos\2 dim array\2 dim array\obj\Debug\netcoreapp3.1\2 dim array.csproj.AssemblyReference.cache
+C:\Users\djpmi\source\repos\2 dim array\2 dim array\obj\Debug\netcoreapp3.1\2 dim array.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djpmi\source\repos\2 dim array\2 dim array\obj\Debug\netcoreapp3.1\2 dim array.AssemblyInfoInputs.cache
+C:\Users\djpmi\source\repos\2 dim array\2 dim array\obj\Debug\netcoreapp3.1\2 dim array.AssemblyInfo.cs
+C:\Users\djpmi\source\repos\2 dim array\2 dim array\obj\Debug\netcoreapp3.1\2 dim array.csproj.CoreCompileInputs.cache
+C:\Users\djpmi\source\repos\2 dim array\2 dim array\obj\Debug\netcoreapp3.1\2 dim array.dll
+C:\Users\djpmi\source\repos\2 dim array\2 dim array\obj\Debug\netcoreapp3.1\2 dim array.pdb
+C:\Users\djpmi\source\repos\2 dim array\2 dim array\obj\Debug\netcoreapp3.1\2 dim array.genruntimeconfig.cache
