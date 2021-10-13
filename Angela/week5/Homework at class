@@ -1,0 +1,83 @@
+using System;
+
+namespace Homework_at__class
+{
+    class Program
+    {
+        enum player_names
+        {
+            Steph = 1, //1
+            Tom, //2
+            Dan, //3
+            Jack
+        }; //4
+        static void Main(string[] args)
+        {
+            int JackVal = (int)player_names.Jack;
+            int[] player_sores = new int[JackVal];
+            int first_player_score;
+            int second_player_score;
+            int third_player_score;
+            int fourth_player_score;
+            int arrayLen = player_sores.Length;
+            Console.WriteLine("//==========LEADERBOARD==========//");
+            Console.WriteLine("//Player 1//=====================//" + 0);
+            Console.WriteLine("//Player 2//=====================//" + 0);
+            Console.WriteLine("//Player 3//=====================//" + 0);
+            Console.WriteLine("//Player 4//=====================//" + 0);
+
+            for (int i = 0; i < arrayLen; i++)
+            {
+                if (i == 0)
+                {
+                    Console.WriteLine("Choose the first player score: ");
+                    first_player_score = Int32.Parse(Console.ReadLine());
+                    player_sores[0] = first_player_score;
+                    Console.WriteLine("//==========LEADERBOARD==========//");
+                    Console.WriteLine("//Player 1//=====================//" + player_sores[0]);
+                    Console.WriteLine("//Player 2//=====================//" + player_sores[1]);
+                    Console.WriteLine("//Player 3//=====================//" + player_sores[2]);
+                    Console.WriteLine("//Player 4//=====================//" + player_sores[3]);
+                }
+                if (i == 1)
+                    
+                {
+                    Console.WriteLine("Choose the second player score: ");
+                    second_player_score = Int32.Parse(Console.ReadLine());
+                    player_sores[1] = second_player_score;
+                    Console.WriteLine("//==========LEADERBOARD==========//");
+                    Console.WriteLine("//Player 1//=====================//" + player_sores[0]);
+                    Console.WriteLine("//Player 2//=====================//" + player_sores[1]);
+                    Console.WriteLine("//Player 3//=====================//" + player_sores[2]);
+                    Console.WriteLine("//Player 4//=====================//" + player_sores[3]);
+                }
+                if (i == 2)
+                    
+                {
+                    Console.WriteLine("Choose the third player score: ");
+                    third_player_score = Int32.Parse(Console.ReadLine());
+                    player_sores[2] = third_player_score;
+                    Console.WriteLine("//==========LEADERBOARD==========//");
+                    Console.WriteLine("//Player 1//=====================//" + player_sores[0]);
+                    Console.WriteLine("//Player 2//=====================//" + player_sores[1]);
+                    Console.WriteLine("//Player 3//=====================//" + player_sores[2]);
+                    Console.WriteLine("//Player 4//=====================//" + player_sores[3]);
+
+                }
+                if (i == 3)
+                {
+                    Console.WriteLine("Choose the fourth player score: ");
+                    fourth_player_score = Int32.Parse(Console.ReadLine());
+                    player_sores[3] = fourth_player_score;
+                
+                    Console.WriteLine("//==========LEADERBOARD==========//");
+                    Console.WriteLine("//Player 1//=====================//" + player_sores[0]);
+                    Console.WriteLine("//Player 2//=====================//" + player_sores[1]);
+                    Console.WriteLine("//Player 3//=====================//" + player_sores[2]);
+                    Console.WriteLine("//Player 4//=====================//" + player_sores[3]);
+                    
+                }
+                
+            }
+        }
+    }   }      
