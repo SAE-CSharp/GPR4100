@@ -1,0 +1,14 @@
+C:\Users\djpmi\source\repos\five player quiz\five player quiz\bin\Debug\netcoreapp3.1\five player quiz.exe
+C:\Users\djpmi\source\repos\five player quiz\five player quiz\bin\Debug\netcoreapp3.1\five player quiz.deps.json
+C:\Users\djpmi\source\repos\five player quiz\five player quiz\bin\Debug\netcoreapp3.1\five player quiz.runtimeconfig.json
+C:\Users\djpmi\source\repos\five player quiz\five player quiz\bin\Debug\netcoreapp3.1\five player quiz.runtimeconfig.dev.json
+C:\Users\djpmi\source\repos\five player quiz\five player quiz\bin\Debug\netcoreapp3.1\five player quiz.dll
+C:\Users\djpmi\source\repos\five player quiz\five player quiz\bin\Debug\netcoreapp3.1\five player quiz.pdb
+C:\Users\djpmi\source\repos\five player quiz\five player quiz\obj\Debug\netcoreapp3.1\five player quiz.csproj.AssemblyReference.cache
+C:\Users\djpmi\source\repos\five player quiz\five player quiz\obj\Debug\netcoreapp3.1\five player quiz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djpmi\source\repos\five player quiz\five player quiz\obj\Debug\netcoreapp3.1\five player quiz.AssemblyInfoInputs.cache
+C:\Users\djpmi\source\repos\five player quiz\five player quiz\obj\Debug\netcoreapp3.1\five player quiz.AssemblyInfo.cs
+C:\Users\djpmi\source\repos\five player quiz\five player quiz\obj\Debug\netcoreapp3.1\five player quiz.csproj.CoreCompileInputs.cache
+C:\Users\djpmi\source\repos\five player quiz\five player quiz\obj\Debug\netcoreapp3.1\five player quiz.dll
+C:\Users\djpmi\source\repos\five player quiz\five player quiz\obj\Debug\netcoreapp3.1\five player quiz.pdb
+C:\Users\djpmi\source\repos\five player quiz\five player quiz\obj\Debug\netcoreapp3.1\five player quiz.genruntimeconfig.cache
