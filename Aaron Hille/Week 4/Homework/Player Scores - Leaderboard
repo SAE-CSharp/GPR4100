@@ -1,0 +1,41 @@
+using System;
+
+namespace Player_Scores
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] scores = new string[5]; //creating an array.
+
+            for (int i = 0; i < scores.Length; i++)
+            {
+                Console.WriteLine("Please enter your username:");
+                string userName = Console.ReadLine();
+                Console.WriteLine("Please enter your score:");
+                int userScore = Convert.ToInt32(Console.ReadLine());
+
+                string entry = userName + ": " + userScore;
+
+                scores[i] = entry;
+
+                Array.Sort(scores);
+                Array.Reverse(scores); // if you do not include this line, it only keeps the outputted array as 3 elements long, and unorganised. they
+                                       // remove the name and score inputted before the current one. its wierd, but quite cool and good to know.
+
+                for (int o = 0; o < scores.Length; o++)
+                {
+                    Console.WriteLine(scores[o]);
+                }
+            }
+
+
+
+
+
+
+
+            Console.ReadLine();
+        }
+    }
+}
