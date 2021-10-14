@@ -1,0 +1,124 @@
+using System;
+
+namespace _5PLAYER_QUIZ
+{
+    class Program
+    {
+        enum people {a=0,b=0,c=0,d=0,e=0}
+
+        static void Main(string[] args)
+        {
+            string[] names = {"1","2","3","4","5"};
+            string ver;
+            int num = 0;
+            int[] score = { 0, 0, 0, 0, 0 };
+            bool done = false;
+            bool name_input = false;
+
+            while (done == false)
+            {
+                while (name_input == false)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("****************************************");
+                    Console.WriteLine();
+
+                    Console.WriteLine("Please input a name.");
+                    names[num] = Console.ReadLine();
+
+                    Console.WriteLine();
+                    Console.WriteLine("Is " + names[num] + " correct?   N or Y");
+                    ver = Console.ReadLine();
+
+                    if (ver == "y")
+                    {
+                        Console.WriteLine("Lets start");
+                        name_input = true;
+                    }
+                }
+                Console.WriteLine();
+                Console.WriteLine("****************************************");
+                Console.WriteLine();
+
+                Console.WriteLine("What is the capital of Thailand?");
+                ver = Console.ReadLine();
+
+
+                if (ver == "bangkok")
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Well done");
+                    score[num]++;
+                }
+                else
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Incorrect");
+                }
+                Console.WriteLine();
+                Console.WriteLine("****************************************");
+                Console.WriteLine();
+
+                Console.WriteLine("What can a spider make?");
+                ver = Console.ReadLine();
+
+
+                if (ver == "web")
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Well done");
+                    score[num]++;
+                }
+                else
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Incorrect");
+                }
+                Console.WriteLine();
+                Console.WriteLine("****************************************");
+                Console.WriteLine();
+
+                Console.WriteLine("What is 9 + 10");
+                ver = Console.ReadLine();
+
+
+                if (ver == "19")
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Well done");
+                    score[num]++;
+                }
+                else
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Incorrect");
+                }
+
+
+                Console.WriteLine();
+                Console.WriteLine(names[num] + " you got a score of " + score[num] + "!");
+                Console.WriteLine();
+
+                Console.WriteLine();
+                Console.WriteLine("****************************************");
+                Console.WriteLine();
+
+                Console.WriteLine("Would you like to see the sores?");
+                ver = Console.ReadLine();
+                Console.WriteLine();
+
+                if (ver == "y")
+                {
+                    int dis = 0;
+                    for (int i=0; i < 5; i++)
+                    {
+                        Console.WriteLine(names[dis] + " with " + score[dis]);
+                        dis++;
+                    }
+                }
+
+                num++;
+            }
+        }
+    }
+}
