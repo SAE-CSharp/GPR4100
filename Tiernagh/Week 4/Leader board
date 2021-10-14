@@ -1,0 +1,106 @@
+namespace ConsoleApp3
+{
+    class Program
+    {
+        enum player { Player1, Player2, Player3, Player4, Player5 };
+        static void Main(string[] args)
+        {
+            int playernum = 0;
+            int[] playerScore = new int[5];
+            Console.WriteLine("Please enter the number of players...");
+            playernum = Int32.Parse(Console.ReadLine());
+
+            if (playernum == 2)
+            {
+                for (int count = 0; count < 5; count++)
+                {
+                    Console.WriteLine("What score did each player achieve?");
+                    Console.WriteLine("What did Player One score?");
+                    playerScore[0] = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("What did Player 2 get?");
+                    playerScore[1] = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("Your Leaderboard");
+                    Console.WriteLine(player.Player1 + " scored " + playerScore[0] + " \n" + player.Player2 + " scored " + playerScore[1]);
+
+                    break;
+                }
+
+            }
+            else if (playernum == 3)
+            {
+                for (int count = 0; count < 5; count++)
+                {
+                    Console.WriteLine("What score did each player achieve?");
+                    Console.WriteLine("Enter Player 1's score");
+                    playerScore[0] = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter Player 2's score");
+                    playerScore[1] = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter Player 3's score");
+                    playerScore[2] = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("Your Leaderboard");
+                    Console.WriteLine(player.Player1 + " scored " + playerScore[0] + " \n" + player.Player2 + " scored " + playerScore[1] +
+                        "\n " + player.Player3 + " scored " + playerScore[2]);
+                    break;
+                }
+
+
+            }
+            else if (playernum == 4)
+            {
+                for (int count = 0; count < 5; count++)
+                {
+                    Console.WriteLine("What score did each player achieve?");
+                    Console.WriteLine("Enter Player 1's score");
+                    playerScore[0] = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter Player 2's score");
+                    playerScore[1] = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter Player 3's score");
+                    playerScore[2] = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter Player 4's score");
+                    playerScore[3] = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("Your Leaderboard");
+                    Console.WriteLine(player.Player1 + " scored " + playerScore[0] + " \n" + player.Player2 + " scored " + playerScore[1] +
+                        "\n " + player.Player3 + " scored " + playerScore[2] + "\n " + player.Player4 + " scored " + playerScore[3]);
+                    break;
+                }
+
+
+            }
+            else if (playernum == 5)
+            {
+
+                for (int count = 0; count < 5; count++)
+                {
+                    Console.WriteLine("What score did each player achieve?");
+                    Console.WriteLine("Enter Player 1's score");
+                    playerScore[0] = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter Player 2's score");
+                    playerScore[1] = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter Player 3's score");
+                    playerScore[2] = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter Player 4's score");
+                    playerScore[3] = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter Player 5's score");
+                    playerScore[4] = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("Your Leaderboard");
+                    Console.WriteLine(player.Player1 + " scored " + playerScore[0] + " \n" + player.Player2 + " scored " + playerScore[1] +
+                        "\n " + player.Player3 + " scored " + playerScore[2] + "\n " + player.Player4 + " scored " + playerScore[3]
+                        + "\n " + player.Player5 + " scored " + playerScore[4]);
+                    break;
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("Submission invalid");
+
+
+
+            }
+
+
+
+
+        }
+    }
+}
