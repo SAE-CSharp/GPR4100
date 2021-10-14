@@ -1,0 +1,56 @@
+using System;
+
+namespace MethodPractice
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            
+            Introduction(); //if you ask the user to provide information to print back then you don't need to pass arguments
+
+            /*
+            SayHello("Rosa", 25); //WHEN CALLING THE FUNCTION YOU PASS THROUGH ARGUMENT(S), NOT PARAMETERS 
+            SayHello("Ruth", 51);
+            SayHello("Chelsea", 34);
+            SayHello("Dave", 46);
+            SayHello("Sue", 51);
+            
+            
+
+            */
+            
+
+            FavouriteWord();
+        }
+
+
+
+
+        static void SayHello(string name, int age)
+            // !!!!!!!!!!PASS PARAMETERS THROUGH THE METHOD, NOT ARGUMENTS!!!!!!!!!! //
+            // void means there is no data type with the functon
+            //if you give two peramaters then you have to include them both, else an error will occur (e.g. if you put string and int you have to include both
+        {   
+            Console.WriteLine("Hello " +name + ", are you " + age + " years old?");
+        }
+
+        static void FavouriteWord()
+        {
+            Console.WriteLine("What's your favourite word?");
+            string word = Console.ReadLine();
+            Console.WriteLine("Nice one, your favourite word is: " + word);
+        }
+
+        static void Introduction()
+        {
+            Console.WriteLine("What is your name?");
+            string yourname = Console.ReadLine();
+            Console.WriteLine("how old are you?");
+            int age = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("Hello " + yourname + ", are you " + age + " years old?");
+        }
+    }
+}
