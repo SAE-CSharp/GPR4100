@@ -1,0 +1,48 @@
+using System;
+
+namespace CreatingAn_Array
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //single array
+            int[] numbers = { 11, 22, 33, 44 };
+            int arrayL = numbers.Length;
+            Console.WriteLine(numbers[0]);
+            Console.WriteLine(numbers[1]);
+            Console.WriteLine(numbers[2]);
+            Console.WriteLine(numbers[3]);
+
+            for (int i = 0; i < arrayL; i++)
+            {
+                Console.WriteLine("the index is: " + i + " and the element is: " + numbers[i]);
+            }
+            //2d array
+            int[,] intArray = new int[3, 3] {
+                {3,5,6}, //first row = 0
+                {7,8,9}, //second row = 1
+                {11,16, 18} //third row = 2
+
+            };
+            Console.WriteLine(intArray[0, 0]);
+            Console.WriteLine(intArray[0, 1]);
+            Console.WriteLine(intArray[0, 2]);
+            Console.WriteLine(intArray[1, 0]);
+            Console.WriteLine(intArray[1, 1]);
+            Console.WriteLine(intArray[1, 2]);
+            Console.WriteLine(intArray[2, 0]);
+            Console.WriteLine(intArray[2, 1]);
+            Console.WriteLine(intArray[2, 2]);
+
+            for(int i = 0; i<3; i++)
+            {
+                for (int j = 0; j <3; j++)
+                {
+
+                }
+            }
+        }
+
+    }
+}
