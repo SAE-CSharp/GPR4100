@@ -1,0 +1,29 @@
+using System;
+
+namespace ReturnStatement
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Console.WriteLine("Please enter the first number");
+            int x = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the second number");
+            int y = Int32.Parse(Console.ReadLine());
+            int userResult = userMath(x, y);
+
+            Console.WriteLine(x + " multiplied by " + y + " equals " +userResult);
+
+        }
+
+
+        static int userMath (int x, int y)
+        {
+           
+            int result = x * y;
+
+            return result;
+        }
+    }
+}
