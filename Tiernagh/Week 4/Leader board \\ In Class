@@ -1,0 +1,97 @@
+namespace ConsoleApp3
+{
+    class Program
+    {
+        enum player { Player1, Player2, Player3, Player4, Player5 };
+        static void Main(string[] args)
+        {
+            int playerval = (int) player.Player5;
+            int[] playerScore = new int[playerval];
+            int player1score;
+            int player2score;
+            int player3score;
+            int player4score;
+            int player5score;
+
+            int arrayLen = playerScore.Length;
+            Console.WriteLine("Leaderboard");
+            Console.WriteLine("Player 1 // " + 0); 
+            Console.WriteLine("Player 2 // " + 0);
+            Console.WriteLine("Player 3 // " + 0);
+            Console.WriteLine("Player 4 // " + 0);
+            Console.WriteLine("Player 5 // " + 0);
+
+            for (int i=0;i<arrayLen;i++)
+            {
+                if (i == 0)
+                {
+                    Console.WriteLine("Choose player 1's score");
+                    player1score = Convert.ToInt32(Console.ReadLine());
+                    playerScore[0] = player1score;
+                    Console.WriteLine("Leaderboard");
+                    Console.WriteLine("Player 1 // " + playerScore[0]);
+                    Console.WriteLine("Player 2 // " + 0);
+                    Console.WriteLine("Player 3 // " + 0);
+                    Console.WriteLine("Player 4 // " + 0);
+                    Console.WriteLine("Player 5 // " + 0);
+                }
+
+                else if (i == 1)
+                {
+                    Console.WriteLine("Choose player 2's score");
+                    player2score = Convert.ToInt32(Console.ReadLine());
+                    playerScore[1] = player2score;
+                    Console.WriteLine("Leaderboard");
+                    Console.WriteLine("Player 1 // " + playerScore[0]);
+                    Console.WriteLine("Player 2 // " + playerScore[1]);
+                    Console.WriteLine("Player 3 // " + 0);
+                    Console.WriteLine("Player 4 // " + 0);
+                    Console.WriteLine("Player 5 // " + 0);
+                }
+
+                else if (i == 2)
+                {
+                    Console.WriteLine("Choose player 3's score");
+                    player3score = Convert.ToInt32(Console.ReadLine());
+                    playerScore[2] = player3score;
+                    Console.WriteLine("Leaderboard");
+                    Console.WriteLine("Player 1 // " + playerScore[0]);
+                    Console.WriteLine("Player 2 // " + playerScore[1]);
+                    Console.WriteLine("Player 3 // " + playerScore[2]);
+                    Console.WriteLine("Player 4 // " + 0);
+                    Console.WriteLine("Player 5 // " + 0);
+                }
+
+                else if (i == 3)
+                {
+                    Console.WriteLine("Choose player 4's score");
+                    player4score = Convert.ToInt32(Console.ReadLine());
+                    playerScore[3] = player4score;
+                    Console.WriteLine("Leaderboard");
+                    Console.WriteLine("Player 1 // " + playerScore[0]);
+                    Console.WriteLine("Player 2 // " + playerScore[1]);
+                    Console.WriteLine("Player 3 // " + playerScore[2]);
+                    Console.WriteLine("Player 4 // " + playerScore[3]);
+                    Console.WriteLine("Player 5 // " + 0);
+                }
+
+                else if (i == 4)
+                {
+                    Console.WriteLine("Choose player 5's score");
+                    player5score = Convert.ToInt32(Console.ReadLine());
+                    playerScore[4] = player5score;
+                    Console.WriteLine("Leaderboard");
+                    Console.WriteLine("Player 1 // " + playerScore[0]);
+                    Console.WriteLine("Player 2 // " + playerScore[1]);
+                    Console.WriteLine("Player 3 // " + playerScore[2]);
+                    Console.WriteLine("Player 4 // " + playerScore[3]);
+                    Console.WriteLine("Player 5 // " + playerScore[4]);
+                }
+               
+            }
+
+
+
+        }
+    }
+}
