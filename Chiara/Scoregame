@@ -1,0 +1,43 @@
+enum Players { playerOne, playerTwo, playerThree, playerFour, playerFive };
+        static void Main(string[] args)
+        {
+            int[] playerScore = new int[5];
+
+            Console.WriteLine("What score did " + Players.playerOne + " get? Enter a value between 0 and 50...");
+            playerScore[0] = Int32.Parse(Console.ReadLine());
+
+            for (int i = 0; i < 1; i++)
+            {
+                Console.WriteLine(Players.playerOne + " scored " + playerScore[0]);
+            }
+
+            Console.WriteLine("What score did " + Players.playerTwo + " get? Enter a value between 0 and 50...");
+            playerScore[1] = Int32.Parse(Console.ReadLine());
+
+            for (int i = 0; i < 1; i++)
+            {
+                Console.WriteLine(Players.playerTwo + " scored " + playerScore[1]);
+            }
+
+            Console.WriteLine("What score did " + Players.playerThree + " get? Enter a value between 0 and 50...");
+            playerScore[2] = Int32.Parse(Console.ReadLine());
+
+            for (int i = 0; i < 1; i++)
+            {
+                Console.WriteLine(Players.playerThree + " scored " + playerScore[2]);
+            }
+
+            Console.WriteLine("What score did " + Players.playerFour + " get? Enter a value between 0 and 50...");
+            playerScore[3] = Int32.Parse(Console.ReadLine());
+
+            for (int i = 0; i < 1; i++)
+            {
+                Console.WriteLine(Players.playerFour + " scored " + playerScore[3]);
+            }
+
+            Console.WriteLine("What score did " + Players.playerFive + " get? Enter a value between 0 and 50...");
+            playerScore[4] = Int32.Parse(Console.ReadLine());
+
+            for (int i = 0; i < 1; i++)
+            {
+                Console.WriteLine(Players.playerFive + " scored " + playerScore[4]);
