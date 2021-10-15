@@ -1,0 +1,26 @@
+using System;
+
+namespace ex5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] input = new int[3];
+            for (int i = 0; i < input.Length; i++)
+            {
+                input[i] = Int32.Parse(Console.ReadLine());
+            }
+            // can be repeated for other variables such as
+            // |int ans2 = Cube1(x,y,z);|
+            int ans = Cube1(input[0], input[1], input[2]);
+            Console.WriteLine(ans);
+        }
+
+        static int Cube1(int x,int y,int z)
+        {
+            int ans = x * y * z;
+            return ans;
+        }
+    }
+}
