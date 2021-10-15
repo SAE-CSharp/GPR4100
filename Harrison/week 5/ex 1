@@ -1,0 +1,73 @@
+using System;
+
+namespace ex1
+{
+    class Program
+    {
+        //enum ropresent the players name
+        enum player_names { tom=1, alex=2, steph=3, lee=4 };
+        static void Main(string[] args)
+        {
+            //rep array scores
+            int leeval = (int)player_names.lee;
+            int[] scores = new int[(int)player_names.lee];
+
+            int arraylength = scores.Length;
+
+            Console.WriteLine(leeval);
+
+            Console.WriteLine("p1 = " + scores[0]);
+            Console.WriteLine("p2 = " + scores[1]);
+            Console.WriteLine("p3 = " + scores[2]);
+            Console.WriteLine("p4 = " + scores[3]);
+            int first;
+            int second;
+            int third;
+            int fourth;
+
+            for (int i = 0; i < arraylength; i++)
+            {
+                if (i == 0)
+                {
+                    Console.WriteLine("enter score 1");
+                    first = Int32.Parse(Console.ReadLine());
+                    scores[0] = first;
+                    Console.WriteLine("p1 = " + scores[0]);
+                    Console.WriteLine("p2 = " + scores[1]);
+                    Console.WriteLine("p3 = " + scores[2]);
+                    Console.WriteLine("p4 = " + scores[3]);
+                }
+                else if (i == 1)
+                {
+                    Console.WriteLine("enter score 2");
+                    second = Int32.Parse(Console.ReadLine());
+                    scores[1] = second;
+                    Console.WriteLine("p1 = " + scores[0]);
+                    Console.WriteLine("p2 = " + scores[1]);
+                    Console.WriteLine("p3 = " + scores[2]);
+                    Console.WriteLine("p4 = " + scores[3]);
+                }
+                else if (i == 2)
+                {
+                    Console.WriteLine("enter score 3");
+                    third = Int32.Parse(Console.ReadLine());
+                    scores[2] = third;
+                    Console.WriteLine("p1 = " + scores[0]);
+                    Console.WriteLine("p2 = " + scores[1]);
+                    Console.WriteLine("p3 = " + scores[2]);
+                    Console.WriteLine("p4 = " + scores[3]);
+                }
+                else if (i == 3)
+                {
+                    Console.WriteLine("enter score 4");
+                    fourth = Int32.Parse(Console.ReadLine());
+                    scores[3] = fourth;
+                    Console.WriteLine("p1 = " + scores[0]);
+                    Console.WriteLine("p2 = " + scores[1]);
+                    Console.WriteLine("p3 = " + scores[2]);
+                    Console.WriteLine("p4 = " + scores[3]);
+                }
+            }
+        }
+    }
+}
