@@ -46,6 +46,15 @@ namespace MCarpenter_Wk5_Ex4
             return x * x;
         }
 
+        static void PrintArray(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.Write(array[i] + " ");
+            }
+            Console.Write("\n");
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Please enter your name.");
@@ -75,6 +84,12 @@ namespace MCarpenter_Wk5_Ex4
 
             Console.WriteLine(aIn + "^2 is " + Square(aIn) + "\n");
             Console.WriteLine(bIn + "^2 is " + Square(bIn) + "\n");
+
+            int[] array1 = {1, 3, 5, 7, 9};
+            int[] array2 = {1, 1, 2, 3, 5, 8, 13, 21, 34, 55};
+
+            PrintArray(array1);
+            PrintArray(array2);
         }
     }
 }
