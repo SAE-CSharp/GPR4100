@@ -1,0 +1,34 @@
+//create  an int array with 6 elements
+            // for loop to display the array's elements
+
+            int[] myArray = new int[4] { 1, 2, 3, 4 };
+
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                Console.WriteLine("the array elements are: " + myArray[i]);
+
+            }
+
+
+
+            //create a 2D dimensional array with 3 rows and 2 columns
+            //each element in the  2D dimensional array is an array
+            int[,] twoDimensionalArray = new int[3, 2] {
+                {5, 6 },// =0 represents the first row in the 2D array
+                {10, 0 },//=1 represent the second row in the 2D array
+                {11, 3 } //=2
+
+             };
+
+            //nested for loop
+
+            //outer loop
+            for (int i = 0; i < 3; i++)
+            {
+
+                for (int j = 0; j < 2; j++)
+                {
+                    Console.WriteLine("the i = :" +i+"the j= "+ j +"the array elements are: " + twoDimensionalArray[i, j]);
+
+                }
+            }
