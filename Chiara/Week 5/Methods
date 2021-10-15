@@ -1,0 +1,85 @@
+using System;
+
+namespace Week4Revision
+{
+    class Program
+    {
+        static void Main(string[] args) //static method only works with static methods
+        {
+            SayHello("Tom", 20); //argument //you may have an error because you'll have to insert the same number of paramiters
+            SayHello("Alex",30);
+            SayHello("John",17);
+            SayHello("Lee",21);
+            SayHello("Dan",40);
+            HelloSAE();
+            getInfo();
+            AddTwoNumbers(3,5);
+           
+           int z = AddTwoNumber(5, 8); //it will store the result in the z variable
+            int a = z + 15;
+            SayHello("Tom", z);
+
+            int A = square(12);
+            Console.WriteLine("A = "+ A);
+
+            int B = square(A * 2);
+            Console.WriteLine("B = " + B);
+
+            int C = square(B * A);
+            Console.WriteLine("C = " + C);
+
+            Console.WriteLine("Enter a number please"); //always in the Main method when you want the user to choose a number to be used
+            int toSqaure = Convert.ToInt32(Console.ReadLine());
+            int result = Cube1(toSqaure);
+            Console.WriteLine(result);
+
+            int[] array1 = new int[4];
+            printarray(array1);
+           
+        }
+         static void SayHello(string name, int age) //parameters //, to separate the variables
+        {
+            Console.WriteLine("Hello " +name);
+            Console.WriteLine("Hello! I'm " + name + "and I'm " + age);
+
+        }   
+        static void HelloSAE()
+        {
+            Console.WriteLine("Hello SAE!"); //have to write HelloSAE(); in the Main method or it won't work
+        }
+        static void getInfo()
+        {
+            Console.WriteLine("Enter your name please : ");
+            string name =(Console.ReadLine());
+            Console.WriteLine("Enter you age plaese : ");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Hello " + name + " your age is " + age);
+        }
+
+        static void AddTwoNumbers(int x, int y)
+        {
+            int z = x + y;
+            Console.WriteLine("The result of adding x+y is: " + z);
+        }
+        static int AddTwoNumber (int x, int y)
+        {
+            int z = x + y;
+            return z; //anything after the return will be considered an error
+        }
+
+        static int Cube1(int num)
+        {
+            return num * num* num;
+        }
+
+        static int square(int x)
+        {
+            int i = x * x; //i
+            return i; //can also say return x * x;
+                      
+        }
+        static void printarray(int[] newarray)
+        {
+            for (int c= 0; c < newarray.Length;c++) //always add the .Length size
+            {
+                Console.Write("The array element is " + newarray[c]);
