@@ -1,0 +1,20 @@
+using System;
+
+namespace ex3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //use random class
+
+            Random rand = new Random();
+
+            Console.WriteLine(rand.Next());// masive
+            Console.WriteLine();
+            Console.WriteLine(rand.Next(5));//positive num less than 5
+            Console.WriteLine();
+            Console.WriteLine(rand.Next(6, 15));//between 6 and 15
+        }
+    }
+}
