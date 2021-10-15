@@ -22,7 +22,9 @@ namespace CodeExamples_RNG
         // ----------------------------------------------------- //
 
         // The code between the lines is the important part for allowing you to generate random numbers.
-        // Make sure that it is within the curly brackets {} for "class Program", but NOT for "static void Main()"
+        // Make sure that it is within the curly brackets {} for "class Program", but NOT for
+        // "static void Main()". The point to using this approach is consistency and reliability - it
+        // ensures that the method won't generate the same number too many times in a row.
 
         static void Main(string[] args)
         {
@@ -42,9 +44,11 @@ namespace CodeExamples_RNG
 
             for (int i = 0; i < rngCount; i++)
             {
-                Console.WriteLine(GenRanInt(rngMin, rngMax));
+                Console.WriteLine(GenRanInt(rngMin, rngMax + 1));
             }
             // Generates a random number and prints it to the console as many times as the user requested
+            // If you want the RNG to include the maximum value, you'll need to add 1 whne putting valued into the
+            // method, as Next(int, int)
         }
     }
 }
