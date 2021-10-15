@@ -1,0 +1,43 @@
+using System;
+
+namespace ex_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //create an array with 6 elements
+            // for loop to display the array elements
+
+            int[] num = new int[6];
+            for (int i = 0; i < 6; i++)
+            {
+                num[i] = Int32.Parse(Console.ReadLine());
+
+                Console.WriteLine();
+                Console.WriteLine(num[0]);
+                Console.WriteLine(num[1]);
+                Console.WriteLine(num[2]);
+                Console.WriteLine(num[3]);
+                Console.WriteLine(num[4]);
+                Console.WriteLine(num[5]);
+            }
+            //create 2D array 3 row 2 collum
+            int[,] dimen = new int[3, 2]
+            {
+                { 5 , 6 },//=0
+                { 10 , 0 },//=1
+                { 32 , 2 }//=2
+            };
+            //nested for loop
+
+            for (int i = 0; i < 3; i++)
+            {
+                for(int j = 0; j < 2; j++)
+                {
+                    Console.WriteLine(dimen[i, j]);
+                }
+            }
+        }
+    }
+}
