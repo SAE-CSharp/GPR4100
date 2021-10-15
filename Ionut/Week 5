@@ -1,0 +1,94 @@
+using System;
+
+namespace Methods
+{
+    class Program
+    {
+        static void Main(string[] args)//
+        {
+            int[] array1 = new int[4] { 11, 33, 12, 4 };
+            printArray(array1);
+
+            string[] names = new string[3] { "Alice", "George", "Alex" };
+            printNames(names);
+
+            SayHello("Alex ", 20);// use the method + new parameter . argument
+            getInfo();
+            AddTwoNumbers(3, 11);
+            int z = AddTwoNumber(5, 6);
+            int a = z + 15;
+            SayHello("Alex ", z);
+            Cube1(3);
+            
+            int A = square(13);
+            Console.WriteLine("A= " + A);
+            int B = square(A * 2);
+            Console.WriteLine("B= " + B);
+            int C = square(B * A);
+            Console.WriteLine("C= " + C);
+        }
+
+        static void SayHello(string name, int age)// input parameter in method
+        {
+            Console.WriteLine("Hello "+name+"\nYour age is: "+age);
+        }
+        static void getInfo()
+        {
+            Console.WriteLine("Enter your name please ");
+            string name =(Console.ReadLine());
+            Console.WriteLine("Enter your age please ");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Hello " + name + "\nYour age is: " + age);
+        }
+
+        static void AddTwoNumbers(int x, int y)
+        {
+            int z = x + y;
+            Console.WriteLine(" The result of adding x+y is: " + z);
+        }
+        static int AddTwoNumber(int x, int y)
+        {
+            int z = x + y;
+            return z;
+        }
+
+        static int Cube1(int q)
+        {
+           
+            int result = q * q * q;
+            Console.WriteLine("Check a numbers cube: ");
+            q = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("The cube of your number is: "+q * q * q);
+
+            return result;
+            
+        }
+
+        static int square(int x) 
+        {
+            int i = x * x;//
+            return i;//could say: return x*x :) 
+        }
+
+        static void printArray(int[] array1)
+        {
+            
+            for(int i=0;i<array1.Length;i++)
+            {
+                Console.WriteLine(" The array element is: " + array1[i]);
+            }
+        }
+        // create amethod to pass a string array as a parameter your method
+
+        static void printNames(string[]names)
+        {
+            for(int i=0;i<names.Length;i++)
+            {
+                Console.WriteLine(" The array elements is: " + names[i]);
+            }
+
+        }
+
+
+    }
+}
