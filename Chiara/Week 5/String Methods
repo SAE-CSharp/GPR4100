@@ -1,0 +1,15 @@
+ static void Main(string[] args)
+        {
+            //create a method to pass a string array as a parameter of your method
+            string[] array1 = new string[5] { "Red", "Yellow", "Green", "Blue", "Purple" };
+            namearray(array1);
+            
+        }
+        static void namearray(String[] stringarray)
+        {
+            int colorsarray = stringarray.Length;
+            for (int i = 0; i < stringarray.Length; i++)
+            {
+                Console.WriteLine("the string array is " + stringarray[i]); //always add [i]  next to the array's name or it won't show the array's elements
+            }
+        }
