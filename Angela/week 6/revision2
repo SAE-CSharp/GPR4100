@@ -1,0 +1,78 @@
+using System;
+
+namespace revisionweek6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            //an integer array
+            //using for loop to display the elements
+            int[] myArray = new int[4] { 20, 30, 40, 50 };
+            int len = myArray.Length;
+            Console.WriteLine(myArray[0] + "\n" + myArray[1] + "\n" +myArray[2] + "\n" + myArray[3]);
+            //(initialisation; condition; repeation)
+            for (int i = 0; i < len; i++)
+            {
+                
+                if (i == 2)
+                {
+                    continue;
+                }
+                Console.WriteLine("the value of i = " + i + " and the element is " + myArray[i]);
+            }
+
+            //string array
+            string[] cities = new string[3] { "Liverpool", "London", "Manchester" };
+            //display elements using for loop
+
+            //two dimensional array
+            int[,] twoDimensionalArray = new int[3, 2] {
+            {2,1},
+            {0,4},
+            {10,11}
+
+            };
+            for (int i = 0; i <3; i++) //for the rows
+            {
+                for (int j = 0; j<2; j++) // for the collums
+                {
+                    Console.WriteLine(twoDimensionalArray[i, j]);
+                }
+            }
+
+            Console.WriteLine("Enter the lenght of the array");
+            int length1 = Convert.ToInt32(Console.ReadLine());
+            int[] arra = new int[length1];
+            for (int i=0;i<length1;i++)
+            {
+                arra[i] = i;
+                if (i==2)
+                {
+                    arra[2] = 90;
+                }
+            }
+            square(5, 6);
+
+        }///////////////////////////????????????????/////////////////////////////
+        static void square(int num1, int num2)
+        {
+            int result = num1 * num2;
+            Console.WriteLine("the result of num1* num2 = " + result);
+        }
+
+        static void  DisplayArray(int[] newArray)
+        {
+            int len = newArray.Length;
+            Console.WriteLine(newArray[0] + "\n" + newArray[1] + "\n" + newArray[2] + "\n" + newArray[3]);
+            //(initialisation; condition; repeation)
+            for (int i = 0; i < len; i++)
+            {
+
+               
+                Console.WriteLine("the value of i = " + i + " and the element is " + newArray[i]);
+            }
+        }
+    }
+}
