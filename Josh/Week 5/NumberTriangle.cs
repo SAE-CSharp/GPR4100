@@ -36,7 +36,6 @@ namespace numberTriangle
 
             while (mainLoop)
             {
-
                 Console.WriteLine("Enter a number:");
                 var userInput = Console.ReadLine();
                 Console.WriteLine("\n");
