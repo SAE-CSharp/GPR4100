@@ -41,17 +41,20 @@ namespace methods2
             //multiple return statement
 
             int counter = 3;
-            /*while (counter > 0)
+            while (counter > 0)
             {
                 Console.WriteLine("Enter the first number: ");
                 int first = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Enter the second number: ");
-                int second = Int32.Parse(Console.ReadLine());
+                //I can use int,convert/parse in converting string to integer, both works the same
+                //if i need to convert string to double, use double.parse
+                //int second = int.Parse(Console.ReadLine());
+                int second = Convert.ToInt32(Console.ReadLine());
                 int response = multipleReturn(first, second);
                 Console.WriteLine(response);
                 counter--;
 
-            }*/
+            }
 
             //call the default parameter 
             DefaultParameters(2);
