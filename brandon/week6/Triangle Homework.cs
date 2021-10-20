@@ -1,3 +1,4 @@
+
 using System;
 
 
@@ -22,21 +23,20 @@ namespace Triangle_Homework
                     Val++;
                 }
                 Console.WriteLine("");
-
-                for (i = 1; i < End; i++)
+            }
+            for (i = 1; i <= End; i++)
+            {
+                Val = 1;
+                for (j = 1; j <= End - i; j++)
                 {
-                    Val = 1;
-                    for (j = 1; j < End - i; j++)
-                    {
-                        // Console.Write(" ");  
-                    }
-                    for (k = 1; k <= j; k++)
-                    {
-                        Console.Write(Val);
-                        Val++;
-                    }
-                    Console.WriteLine("");
+                    //Console.Write(" ");  
                 }
+                for (k = 1; k <= j; k++)
+                {
+                    Console.Write(Val);
+                    Val++;
+                }
+                Console.WriteLine("");
             }
         }
 
@@ -46,7 +46,7 @@ namespace Triangle_Homework
             Console.WriteLine("Set N");
             Console.Write("N = ");
             n = Convert.ToInt32(Console.ReadLine());
-            Triangle(n,n);
+            Triangle(n, n);
 
             Console.ReadLine();
         }
