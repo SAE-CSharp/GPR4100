@@ -1,0 +1,105 @@
+using System;
+
+namespace RevisionWk6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+            // integer array
+            int[] myArray = new int[4] { 20, 30, 40, 50 };
+            Console.WriteLine(myArray[0] + " " + myArray[1] + " " + myArray[2] + " " + myArray[3]);
+
+            int arrayLength = myArray.Length;
+
+            for (int i = 0; i < arrayLength; i++)
+            {
+                if (i == 2)
+                {
+                    myArray[2] = 3425;
+                }
+
+                Console.WriteLine("The value of I = " + i+ " and the element is " + myArray[i] );   
+            }
+
+             a string array
+
+            string[] playerNames = new string[5] { "Daisy", "Ruth", "Chelsea", "Sue", "Mark"};
+            int playerNumber = playerNames.Length;
+
+            
+
+            for (int i = 0; i < playerNumber; i++)
+            {
+                Console.WriteLine("The player value is " + i + " and the player name is " + playerNames[i]);
+                
+            }
+           
+
+            // two-dimensional array
+            int[,] twoDimensionalArray = new int[4, 7]{
+                {1, 2, 3, 4, 5, 6, 7 },
+                {2, 4, 6, 8, 10, 12, 14 },
+                {3, 6, 9, 12, 15, 18, 21 },
+                {5, 10, 15, 20, 25, 30, 35 }
+            };
+
+            for (int i = 0; i<4; i++)
+            {
+                for (int j = 0; j<7; j++)
+                {
+                    Console.WriteLine(twoDimensionalArray[i,j]);
+                }
+            }
+            
+
+            
+
+            Console.WriteLine("How long would you like the array length to be?");
+            int length = Int32.Parse(Console.ReadLine());
+
+            int[] newArray = new int[length];
+
+            for (int i=0; i<length; i++)
+            {
+                newArray[i] = i;
+                if (i == 2)
+                {
+                    newArray[2] = 50;
+                }
+            }
+
+            */
+
+
+
+            square(5, 7);
+
+            square(50, 73);
+
+            int[] passArray = new int[6] { 1, 2, 3, 5, 7, 9 };
+            DisplayArray(passArray);
+            
+
+
+        }
+
+        static void square(int num1, int num2)
+        {
+            int result = num1 * num2;
+            Console.WriteLine("The result of num1*num2 = " +result);
+        }
+
+        static void DisplayArray(int[] newArray)
+        {
+            int arrayLength = newArray.Length;
+
+            for (int i = 0; i < arrayLength; i++)
+            {
+                
+                Console.WriteLine("The value of I = " + i + " and the element is " + newArray[i]);
+            }
+        }
+    }
+}
