@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Leaderboard (quiz homework done properly)/1.0.0": {
+        "runtime": {
+          "Leaderboard (quiz homework done properly).dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Leaderboard (quiz homework done properly)/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
