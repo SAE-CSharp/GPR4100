@@ -1,0 +1,32 @@
+using System;
+
+namespace FormatingString
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //formating string
+            string str = "Hello C#";
+            Console.WriteLine("{0}", str);
+
+            OverloadingMethod(1,3);
+            OverloadingMethod(1.5, 4.6);
+            
+        }
+
+
+        //method overloading
+        static void OverloadingMethod( int x, int y)
+        {
+            int ans = x + y;
+            Console.WriteLine(ans);
+        }
+
+        static void OverloadingMethod(double x, double y)
+        {
+            double ans = x + y;
+            Console.WriteLine(ans);
+        }
+    }
+}
