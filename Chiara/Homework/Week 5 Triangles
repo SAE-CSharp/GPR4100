@@ -1,0 +1,43 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		triangle1();
+		triangle2();
+	}
+	static void triangle1() 
+	{
+		Console.WriteLine("Hello player!");
+		  Console.WriteLine("In this game you'll be able to create numbers tringles");
+		  Console.WriteLine("So we'll start with the first tringle");
+		  Console.WriteLine("Choose a number to make your first triangle");
+		
+		int num;
+		  num = Int32.Parse(Console.ReadLine());
+		  int row, column;
+	  for (row = 1;row <=num;row++) 
+	  { for (column = 1; column <= row; column++) 
+	  {
+		  Console.WriteLine(row + "");
+	  }
+	  
+	  Console.WriteLine(" ");
+	  }
+
+	  }
+	static void triangle2 () 
+	{
+		Console.WriteLine("Choose a number for the second tringle");
+		int num;
+		num = Int32.Parse(Console.ReadLine());
+		int row, column;
+		for (row =1;row <=num; row++) 
+		{ for (column =1;column <=row; column++) 
+		{ Console.WriteLine(row + "" );
+		}
+		 Console.WriteLine(" ");
+		}
+	}
+} 
