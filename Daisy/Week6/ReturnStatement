@@ -1,0 +1,45 @@
+using System;
+
+namespace ReturnStatement
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Console.WriteLine("Please enter the first number");
+            int x = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the second number");
+            int y = Int32.Parse(Console.ReadLine());
+            int userResult = userMath(x, y);
+
+            Console.WriteLine(x + " multiplied by " + y + " equals " +userResult);
+
+            int res = AddNumbers();
+            Console.WriteLine("The result of adding number one to number two is " + res);
+
+        }
+
+            
+
+
+        static int userMath (int x, int y)
+        {
+           
+            int result = x * y;
+
+            return result;
+        }
+
+        static int AddNumbers()
+        {
+            Console.WriteLine("Please enter the first number");
+            int num1 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the second number");
+            int num2 = Int32.Parse(Console.ReadLine());
+            int result = num1 + num2;
+
+            return result;
+        }
+    }
+}
