@@ -1,20 +1,21 @@
 using System;
 
-namespace ConsoleApp14
+namespace ConsoleApp13
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int n, j;
-            Console.WriteLine("Choose your number: ");
-            int count = Int32.Parse(Console.ReadLine());
-            for (j = 0; j <= count; j++)
+            Console.WriteLine("What number would you like to use?");
+            int count = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i <= count; i++)
             {
-                for (n = 1; n <= count; n++)
+                for (int j = 1; j <= i; j++)
                 {
-                    Console.WriteLine(n);
+                    Console.WriteLine(j);
                 }
                 Console.WriteLine("\n");
             }
         }
+    }
+}
