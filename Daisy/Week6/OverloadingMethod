@@ -1,0 +1,34 @@
+using System;
+
+namespace FormattedOutput
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str = "Hello C#";
+            Console.WriteLine("{0}!", str);
+
+            string name = "Daisy";
+            int age = 24;
+            string town = "Tonypandy";
+
+            Console.WriteLine("{0} is {1} years of age from {2}",name,age,town);
+        }
+
+        static void OverloadingMethod(int x, int y)
+        {
+            int answer = x + y;
+        }
+
+        static void OverloadingMethod(double x, double y)
+        {
+            double answer = x + y;
+        }
+
+        static void OverloadingMethod(double x)
+        {
+            double answer = x;
+        }
+    }
+}
