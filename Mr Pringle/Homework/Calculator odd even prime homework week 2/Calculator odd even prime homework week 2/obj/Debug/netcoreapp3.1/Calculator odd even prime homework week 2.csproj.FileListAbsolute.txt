@@ -1,0 +1,14 @@
+C:\Users\djpmi\source\repos\Calculator odd even prime homework week 2\Calculator odd even prime homework week 2\bin\Debug\netcoreapp3.1\Calculator odd even prime homework week 2.exe
+C:\Users\djpmi\source\repos\Calculator odd even prime homework week 2\Calculator odd even prime homework week 2\bin\Debug\netcoreapp3.1\Calculator odd even prime homework week 2.deps.json
+C:\Users\djpmi\source\repos\Calculator odd even prime homework week 2\Calculator odd even prime homework week 2\bin\Debug\netcoreapp3.1\Calculator odd even prime homework week 2.runtimeconfig.json
+C:\Users\djpmi\source\repos\Calculator odd even prime homework week 2\Calculator odd even prime homework week 2\bin\Debug\netcoreapp3.1\Calculator odd even prime homework week 2.runtimeconfig.dev.json
+C:\Users\djpmi\source\repos\Calculator odd even prime homework week 2\Calculator odd even prime homework week 2\bin\Debug\netcoreapp3.1\Calculator odd even prime homework week 2.dll
+C:\Users\djpmi\source\repos\Calculator odd even prime homework week 2\Calculator odd even prime homework week 2\bin\Debug\netcoreapp3.1\Calculator odd even prime homework week 2.pdb
+C:\Users\djpmi\source\repos\Calculator odd even prime homework week 2\Calculator odd even prime homework week 2\obj\Debug\netcoreapp3.1\Calculator odd even prime homework week 2.csproj.AssemblyReference.cache
+C:\Users\djpmi\source\repos\Calculator odd even prime homework week 2\Calculator odd even prime homework week 2\obj\Debug\netcoreapp3.1\Calculator odd even prime homework week 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djpmi\source\repos\Calculator odd even prime homework week 2\Calculator odd even prime homework week 2\obj\Debug\netcoreapp3.1\Calculator odd even prime homework week 2.AssemblyInfoInputs.cache
+C:\Users\djpmi\source\repos\Calculator odd even prime homework week 2\Calculator odd even prime homework week 2\obj\Debug\netcoreapp3.1\Calculator odd even prime homework week 2.AssemblyInfo.cs
+C:\Users\djpmi\source\repos\Calculator odd even prime homework week 2\Calculator odd even prime homework week 2\obj\Debug\netcoreapp3.1\Calculator odd even prime homework week 2.csproj.CoreCompileInputs.cache
+C:\Users\djpmi\source\repos\Calculator odd even prime homework week 2\Calculator odd even prime homework week 2\obj\Debug\netcoreapp3.1\Calculator odd even prime homework week 2.dll
+C:\Users\djpmi\source\repos\Calculator odd even prime homework week 2\Calculator odd even prime homework week 2\obj\Debug\netcoreapp3.1\Calculator odd even prime homework week 2.pdb
+C:\Users\djpmi\source\repos\Calculator odd even prime homework week 2\Calculator odd even prime homework week 2\obj\Debug\netcoreapp3.1\Calculator odd even prime homework week 2.genruntimeconfig.cache
