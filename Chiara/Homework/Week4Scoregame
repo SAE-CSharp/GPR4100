@@ -1,0 +1,76 @@
+using System;
+
+namespace Scorehomework
+{
+    class Program
+    { //enumerator represnts the player names
+        enum players_names { player1, player2, player3, player4 };
+
+        static void Main(string[] args)
+        {
+
+            //array represents the array scores
+
+            int player4Val =(int)players_names.player4;
+            Console.WriteLine(player4Val);
+            int[] scores = new int[(int)players_names.player4];
+
+            int arrayLenghth = scores.Length;
+
+            Console.WriteLine("//player 1 ----> " + 0);
+            Console.WriteLine("//player 2 ----> " + 0);
+            Console.WriteLine("//player 3 ----> " + 0);
+            Console.WriteLine("//player 4 ----> " + 0);
+
+            int first_player_score;
+            int second_player_score;
+            int third_player_score;
+            int forth_player_score;
+
+            for(int i=0; i< arrayLenghth; i++ )
+            {
+                if (i==0)
+                {
+                    Console.WriteLine("Enter the first score : ");
+                    //first_player_score = Convert.ToInt32(Console.ReadLine());
+                    first_player_score = Int32.Parse(Console.ReadLine());
+
+                    scores[0] = first_player_score;
+                    Console.WriteLine("//player 1 ----> " + scores[0]);
+                    Console.WriteLine("//player 2 ----> " + 0);
+                    Console.WriteLine("//player 3 ----> " + 0);
+                    Console.WriteLine("//player 4 ----> " + 0);
+
+                    Console.WriteLine("Enter the second score : ");
+                    second_player_score = Int32.Parse(Console.ReadLine());
+                    scores[1] = second_player_score;
+                    Console.WriteLine("//player 1 ----> " + scores[0]);
+                    Console.WriteLine("//player 2 ----> " + scores[1]);
+                    Console.WriteLine("//player 3 ----> " + 0);
+                    Console.WriteLine("//player 4 ----> " + 0);
+
+                    Console.WriteLine("Enter the third score : ");
+                    third_player_score = Int32.Parse(Console.ReadLine());
+                    scores[2] = third_player_score;
+                    Console.WriteLine("//player 1 ----> " + scores[0]);
+                    Console.WriteLine("//player 2 ----> " + scores[1]);
+                    Console.WriteLine("//player 3 ----> " + scores[2]);
+                    Console.WriteLine("//player 4 ----> " + 0);
+
+                    Console.WriteLine("Enter the forth score : ");
+                    forth_player_score = Int32.Parse(Console.ReadLine());
+                    scores[3] = forth_player_score;
+                    Console.WriteLine("//player 1 ----> " + scores[0]);
+                    Console.WriteLine("//player 2 ----> " + scores[1]);
+                    Console.WriteLine("//player 3 ----> " + scores[2]);
+                    Console.WriteLine("//player 4 ----> " + scores[4]);
+
+
+
+
+
+                }
+            }
+        }
+    }
+}
