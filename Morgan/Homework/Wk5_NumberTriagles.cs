@@ -19,11 +19,11 @@ namespace MCarpenter_Wk5_NumberTriangles
 
             arrayOut[1] = arrayIn[1] + arrayIn[2];
 
-            if (arrayOut[1] == 1)
+            if (arrayIn[1] + arrayIn[2] == 1)
             {
                 arrayOut[2] = 1;
             }
-            else if (arrayOut[1] == arrayIn[0])
+            else if (arrayIn[1] + arrayIn[2] == arrayIn[0])
             {
                 arrayOut[2] = -1;
             }
@@ -41,16 +41,21 @@ namespace MCarpenter_Wk5_NumberTriangles
             Console.WriteLine("Please enter a peak value for a number triangle.");
             int inputVal = Int32.Parse(Console.ReadLine());
 
+            Console.WriteLine("\nHow many peaks do you want?");
+            int numPeaks = Int32.Parse(Console.ReadLine());
+
             Console.WriteLine();
             
             int counter = 1;
             int modifier = 1;
-            int[] printTrack = {inputVal, counter, modifier};
+            int[] countTrack = {inputVal, counter, modifier};
 
-            for (int i = 0; i < (2 * inputVal) - 1; i++)
+            int loopLen = (2 * numPeaks * (inputVal - 1)) + 1;
+
+            for (int i = 0; i < loopLen; i++)
             {
-                NumLine(printTrack[1]);
-                printTrack = CountUpDown(printTrack);
+                NumLine(countTrack[1]);
+                countTrack = CountUpDown(countTrack);
             }
 
             Console.WriteLine();
