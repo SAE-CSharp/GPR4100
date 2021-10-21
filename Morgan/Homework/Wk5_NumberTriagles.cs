@@ -19,11 +19,11 @@ namespace MCarpenter_Wk5_NumberTriangles
 
             arrayOut[1] = arrayIn[1] + arrayIn[2];
 
-            if (arrayIn[1] + arrayIn[2] == 1)
+            if (arrayOut[1] == 1)
             {
                 arrayOut[2] = 1;
             }
-            else if (arrayIn[1] + arrayIn[2] == arrayIn[0])
+            else if (arrayOut[1] == arrayIn[0])
             {
                 arrayOut[2] = -1;
             }
