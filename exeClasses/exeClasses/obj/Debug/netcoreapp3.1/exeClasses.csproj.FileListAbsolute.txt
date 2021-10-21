@@ -1,0 +1,14 @@
+D:\Visual Studio\Week6\exeClasses\exeClasses\obj\Debug\netcoreapp3.1\exeClasses.csproj.AssemblyReference.cache
+D:\Visual Studio\Week6\exeClasses\exeClasses\obj\Debug\netcoreapp3.1\exeClasses.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio\Week6\exeClasses\exeClasses\obj\Debug\netcoreapp3.1\exeClasses.AssemblyInfoInputs.cache
+D:\Visual Studio\Week6\exeClasses\exeClasses\obj\Debug\netcoreapp3.1\exeClasses.AssemblyInfo.cs
+D:\Visual Studio\Week6\exeClasses\exeClasses\obj\Debug\netcoreapp3.1\exeClasses.csproj.CoreCompileInputs.cache
+D:\Visual Studio\Week6\exeClasses\exeClasses\bin\Debug\netcoreapp3.1\exeClasses.exe
+D:\Visual Studio\Week6\exeClasses\exeClasses\bin\Debug\netcoreapp3.1\exeClasses.deps.json
+D:\Visual Studio\Week6\exeClasses\exeClasses\bin\Debug\netcoreapp3.1\exeClasses.runtimeconfig.json
+D:\Visual Studio\Week6\exeClasses\exeClasses\bin\Debug\netcoreapp3.1\exeClasses.runtimeconfig.dev.json
+D:\Visual Studio\Week6\exeClasses\exeClasses\bin\Debug\netcoreapp3.1\exeClasses.dll
+D:\Visual Studio\Week6\exeClasses\exeClasses\bin\Debug\netcoreapp3.1\exeClasses.pdb
+D:\Visual Studio\Week6\exeClasses\exeClasses\obj\Debug\netcoreapp3.1\exeClasses.dll
+D:\Visual Studio\Week6\exeClasses\exeClasses\obj\Debug\netcoreapp3.1\exeClasses.pdb
+D:\Visual Studio\Week6\exeClasses\exeClasses\obj\Debug\netcoreapp3.1\exeClasses.genruntimeconfig.cache
