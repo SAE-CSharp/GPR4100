@@ -1,0 +1,41 @@
+using System;
+
+namespace Inheritance
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {//cat = object
+            Cat cat1 = new Cat();
+            cat1.setName("Kali");
+            string Catname=cat1.getName();
+            Console.WriteLine("The name of the cat is: "+Catname);
+
+            cat1.setVoice("Meow!");
+            string Catvoice = cat1.getvoice();
+            Console.WriteLine("The voice of the cat is: "+Catvoice);
+
+            Cat cat2 = new Cat();
+            cat2.setName("Catty");
+            Catname = cat2.getName();
+            Console.WriteLine(Catname);
+
+            //Animal object
+            Animal a = new Animal();
+            a.Eat();
+
+            //Triangle object 
+            Triangle t = new Triangle();
+            Console.WriteLine("Enter the width for the triangle: ");
+            t.setWidth(Convert.ToDouble(Console.ReadLine()));
+            Console.WriteLine("Enter the height for the triangle: ");
+            t.setHeight(Convert.ToDouble(Console.ReadLine()));
+            double width = t.getWidth();
+            double height = t.getHeight();
+            double area = t.getArea();
+            Console.WriteLine("The width is: "+width+" and the height is "+height+"\n The area is: "+area);
+
+
+        }
+    }
+}
