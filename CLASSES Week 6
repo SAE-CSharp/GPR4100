@@ -1,0 +1,80 @@
+using System;
+
+namespace CLASSESSSS
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("The color of your car is: ");
+            // Create(intantiate) an object of clas CaR
+            CaR car1 = new CaR();
+
+            string color = car1.getColor();
+            // I change the color to red ~ 
+            car1.setColor("Red");
+            string newColor = car1.getColor();
+            Console.WriteLine(newColor);
+            
+            string model = car1.getModel();
+            car1.setModel("Mazda");
+            string newModel = car1.getModel();
+            Console.WriteLine(newModel);
+
+            
+            
+            double price = car1.getPrice();
+            car1.setPrice(14000);
+            double newPrice = car1.getPrice();
+            Console.WriteLine(newPrice);
+            
+            int year = car1.getYear();
+            car1.setYear(2018);
+            int newYear = car1.getYear();
+            Console.WriteLine(newYear);
+
+             Console.WriteLine("****************STUDENT > CSS********************");
+             //Student class
+             int counter = 3;//give to player three tries
+             while (counter > 0)
+             {
+                 Console.WriteLine("Enter your name: ");
+                 string name = Console.ReadLine();
+                 Console.WriteLine("Student name is: " + name);
+
+                 Console.WriteLine("Enter your email: ");
+                 string email = Console.ReadLine();
+                 Console.WriteLine("Student name is: " + email);
+
+                 Console.WriteLine("Enter your student number: ");
+                 int number = Convert.ToInt32(Console.ReadLine());
+                 Console.WriteLine("Student number is: " + number);
+                 counter--;
+             }
+             //Vehicles class
+             Console.WriteLine("Enter numberr of passengers: ");
+             int passengerNumber =Convert.ToInt32(Console.ReadLine());
+             Console.WriteLine("Number of max passengers is: " + passengerNumber);
+
+             Console.WriteLine("Enter fuel capacity: ");
+             int fuelCapacity=Convert.ToInt32(Console.ReadLine());
+             Console.WriteLine("The fuel capacity is: " + fuelCapacity);
+
+             Console.WriteLine("Enter fuel consumption: ");
+             decimal fuelConsumption = Convert.ToDecimal(Console.ReadLine());
+             Console.WriteLine("The fuel consumption is: " + fuelConsumption);
+
+             Console.WriteLine("***********************VEHICLES************************");
+             VehiclesClass minivan = new VehiclesClass(passengerNumber,fuelCapacity,fuelConsumption);
+
+            CAR1 CAR1 = new CAR1();
+            CAR1.setName("Jaguar");
+            CAR1.getTopSpeed(173.0);
+            Console.WriteLine(CAR1.getName() + "Top speed in MPH is " + CAR1.getTopSpeedMPH());
+            
+            
+            //Inheritance(2) classes can share similiar funtionality and relate to each other in various ways
+            //base class }~{ child class
+        }
+    }
+}
