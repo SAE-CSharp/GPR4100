@@ -46,17 +46,32 @@ namespace MCarpenter_Wk6_Ex1
             Console.WriteLine();
 
 
-            Student student1 = new Student();
+            string studentName;
+            string studentEmail;
+            int studentID;
+
+            Console.WriteLine("Please enter your name.");
+            studentName = Console.ReadLine();
+
+            Console.WriteLine("\nPlease enter your email.");
+            studentEmail = Console.ReadLine();
+
+            Console.WriteLine("\nPlease enter your student ID.");
+            studentID = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine();
+
+            Student student1 = new Student(studentName, studentEmail, studentID);
 
             GetStudentInfo(student1);
 
-            Console.WriteLine();
+            /*Console.WriteLine();
 
             student1.setName("Chiara Carrozza");
             student1.setEmail("99043uk@saeinstitute.edu");
             student1.setID(99043);
 
-            GetStudentInfo(student1);
+            GetStudentInfo(student1);*/
 
             Console.WriteLine();
         }
