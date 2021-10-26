@@ -1,0 +1,41 @@
+using System;
+
+namespace Triangle
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int counter = 5;
+            while (counter > 0)
+            {
+                Console.Write("Enter the score of character a:  ");
+                int a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("");
+                
+                for (int i = 1; i <= a; i++)
+                {
+                    PrintLine(1, i);
+                }
+                
+                for (int line = a - 1; line >= 1; line--)
+                {
+                    PrintLine(1, line);
+                }
+
+                counter--;
+            }
+
+
+        }
+        static void PrintLine(int start, int end)
+        {
+            for (int i = start; i <= end; i++)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
+        }
+    }
+}
