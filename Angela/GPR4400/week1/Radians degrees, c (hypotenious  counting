@@ -1,0 +1,134 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class radanddeg : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {   //to convert from degrees to radians:
+        //float radians = degrees * Mathf.Deg2Rad;
+        //example: float degrees = 45; and then formula
+        //Debug.Log("radians = " + radians);
+
+
+        //to convert from radinas to degrees:
+        //float degrees = radians * Mathf.Rad2Deg;
+        //example: float radians = 2 * Matth.PI; and then formula
+        //Debug.Log("degrees = " + degrees);
+
+        //**********TASKS from slides No1 RAD to DEG**********
+
+        //float degrees1 = 3 * Mathf.PI / 2 * Mathf.Rad2Deg;
+        //Debug.Log("degrees = " + degrees1);
+
+        //float degrees2 = Mathf.PI / 2 * Mathf.Rad2Deg;
+        //Debug.Log("degrees = " + degrees2);
+
+        //float degrees3 = Mathf.PI * Mathf.Rad2Deg;
+        //Debug.Log("degrees = " + degrees3);
+
+        //float degrees4 = 9.21f * Mathf.Rad2Deg;
+        //Debug.Log("degrees = " + degrees4);
+
+        //float degrees5 = 3.14 * Mathf.Rad2Deg;
+        //Debug.Log("degrees = " + degrees5);
+
+        //foat degrees6 = 100 * Mathf.Rad2Deg;
+        //Debug.Log("degrees = " + degrees6);
+
+        //foat degrees7 = 32 * Mathf.Rad2Deg;
+        //Debug.Log("degrees = " + degrees7);
+
+        //**********TASKS from slides No2 DEG to RAD**********
+
+        //float radians1 = 30 * Mathf.Deg2Rad;
+        //Debug.Log("radians = " + radians1);
+
+        //float radians2 = 60 * Mathf.Deg2Rad;
+        //Debug.Log("radians = " + radians2);
+
+        //float radians3 = 90 * Mathf.Deg2Rad;
+        //Debug.Log("radians = " + radians3);
+
+        //float radians4 = 300 * Mathf.Deg2Rad;
+        //Debug.Log("radians = " + radians4);
+
+        //float radians5 = 9.32 * Mathf.Deg2Rad;
+        //Debug.Log("radians = " + radians5);
+
+        //float radians6 = 107.54 * Mathf.Deg2Rad;
+        //Debug.Log("radians = " + radians6);
+
+        //float radians7 = 450 * Mathf.Deg2Rad;
+        //Debug.Log("radians = " + radians7);
+
+
+
+
+
+        //example
+        /*float a = 6;
+        float b = 3;
+        float c;
+
+        c = Mathf.Sqrt(Mathf.Pow(a, 2) + Mathf.Pow(b, 2));
+        Debug.Log("c" + c);
+
+        //**********TASKS from slides No3 hyphotynious counting**********
+
+        /* float a = 3;
+         float b = 2;
+         float c;
+         c = Mathf.Sqrt(Mathf.Pow(a, 2) + Mathf.Pow(b, 2));
+         Debug.Log("c" + c);*/
+
+        /*float a1 = 5.5f;
+        float b1 = 4.5f;
+        float c1;
+        c1 = Mathf.Sqrt(Mathf.Pow(a1, 2) + Mathf.Pow(b1, 2));
+        Debug.Log("c" + c1);*/
+
+        /*float a2 = 7.1f;
+        float b2 = 4.3f;
+        float c2;
+        c2 = Mathf.Sqrt(Mathf.Pow(a2, 2) + Mathf.Pow(b2, 2));
+        Debug.Log("c" + c2);*/
+
+        /*float a3 = 2.76f;
+        float b3 = 1.34f;
+        float c3;
+        c3 = Mathf.Sqrt(Mathf.Pow(a3, 2) + Mathf.Pow(b3, 2));
+        Debug.Log("c" + c3);*/
+
+
+        /*float a4 = -3;
+        float b4 = -5;
+        float c4;
+        c4 = Mathf.Sqrt(Mathf.Pow(a4, 2) + Mathf.Pow(b4, 2));
+        Debug.Log("c" + c4);*/
+
+
+
+        /*float a5 = 4;
+        float b5 = 5;
+        float c5;
+        c5 = Mathf.Sqrt(Mathf.Pow(a5, 2) + Mathf.Pow(b5, 2));
+        Debug.Log("c" + c5);*/
+
+        /*float a6 = -4;
+        float b6 = 7;
+        float c6;
+        c6 = Mathf.Sqrt(Mathf.Pow(a6, 2) + Mathf.Pow(b6, 2));
+        Debug.Log("c" + c6);*/
+
+        /*float a6 = -4;
+        float b6 = 7;
+        float c6;
+        c6 = Mathf.Sqrt(Mathf.Pow(a6, 2) + Mathf.Pow(b6, 2));
+        Debug.Log("c" + c6);*/
+
+
+
+
+    }
