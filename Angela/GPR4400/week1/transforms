@@ -1,0 +1,58 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class transform : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        /*transform.position = new Vector3(-3, 7, 1);
+       float x = transform.position.x;
+       Debug.Log(x);
+       float y = transform.position.y;
+       Debug.Log(y);*/
+
+        /*transform.position = new Vector3(-4, 7, 1);
+        //or transform.position = new Vector3(-4, 7, transform.position.z);
+        float x = transform.position.x;
+        Debug.Log(x);
+        float y = transform.position.y;
+        Debug.Log(y);*/
+
+        /*float o;
+        float h = 5;
+        float a = 45;
+        float b = Mathf.Sin(a);
+        Debug.Log("sin= " + b);
+        //sin = o / h
+        //sin = o /5
+        //o = sin * 5
+        o = b * h;
+        Debug.Log("o" + o);*/
+
+        /*float o;
+        float a1 = 30;
+        float c = Mathf.Tan(a1);
+        Debug.Log("tan = " + c);
+        //tan = O/a
+        //c = 0/7
+        //O = c*7
+        o = c * 7;
+        Debug.Log("O" + o);*/
+
+        /*float o;
+        float h = 7;
+        float a = 25;
+        float b = Mathf.Sin(a);
+        Debug.Log("sin= " + b);
+        //sin = o / h
+        //sin = o /5
+        //o = sin * 5
+        o = b * h;
+        Debug.Log("o" + o);*/
+
+        
+
+
+    }
