@@ -1,0 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Normalisation : MonoBehaviour
+{
+    public GameObject sphere;
+    Vector3 v1;
+    // Start is called before the first frame update
+    void Start()
+    {
+        Vector3 shootDirection = (transform.position - sphere.transform.position).normalized;
+        Debug.Log(shootDirection.x +"" + shootDirection.y);
+        //+add sphere to cube sphere
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
