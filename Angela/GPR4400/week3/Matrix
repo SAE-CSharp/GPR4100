@@ -1,0 +1,63 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Matrix : MonoBehaviour
+{
+    int m = 2, n = 3, p = 3, q = 3, i, j;
+    // Start is called before the first frame update
+    void Start()
+    {
+        int[,] a = { { 1, 4, 2 }, { 2, 5, 1 } };
+        int[,] b = { { 3, 4, 2 }, { 3, 5, 7 }, { 1, 2, 1 } };
+        Debug.Log("Matrix a:");
+        for (i = 0; i < m; i++)
+        {
+            for (j = 0; j <n; j++)
+            {
+                Debug.Log(a[i, j] + "");
+            }
+            Debug.Log("");
+        }
+
+        if (n!=p)
+        {
+            Debug.Log("Matrix multiplication not possible");
+        }  
+        else
+        {
+            int[,] c = new int[m, q];
+            for (i = 0; i < m; i++)
+            {
+                for ( j = 0; j<q; j++)
+                {
+                    c[i, j] = 0;
+                    for (int k = 0; k<n;k++)
+                    {
+                        c[i, j] += a[i, k] * b[k, j];
+                    }
+                }
+            }
+
+
+
+            Debug.Log("The product of the two matrices is :");
+            for (i =0; i<m; i++)
+            {
+                for (j = 0; j < n; j++)
+                {
+                    Debug.Log(c[i, j] + "\t");
+                }
+                Debug.Log("");
+            }
+            
+        }
+       
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
