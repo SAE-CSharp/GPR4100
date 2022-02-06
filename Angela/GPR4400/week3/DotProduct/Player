@@ -1,0 +1,39 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Player : MonoBehaviour
+{
+    public Transform playerTransform;
+    public Transform enemyTransform;
+    Rigidbody rb;
+
+    Vector3 startPosition;
+    // Start is called before the first frame update
+    void Start()
+    {
+        startPosition = transform.position;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.position = startPosition + new Vector3(Mathf.Sin(Time.time), 0.0f, 0.0f);
+        //Transform. forward moves the GameObject in the blue arrow's axis(Z)
+        Vector3 Forwardplayer = playerTransform.TransformDirection(Vector3.forward);
+        Vector3 Toenemy = enemyTransform.position - playerTransform.position;
+
+        if (Vector3.Dot(Forwardplayer, Toenemy) <0)
+        {
+            Debug.Log("they're facing near opposite direction - The enemy is behind me");
+        }
+        else if (Vector3.Dot(Forwardplayer, Toenemy)>0)
+        {
+            Debug.Log("the vecttors are facing the same way");
+        }
+        else if (Vector3.Dot(Forwardplayer, Toenemy) == 0)
+        {
+            Debug.Log("they're perpendicular (vertical) to each other.");
+        }
+    }
+}
