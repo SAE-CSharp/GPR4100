@@ -1,0 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Instantiate : MonoBehaviour
+{
+    // Start is called before the first frame update
+    public GameObject myPrefab;
+    //this script will simply instatntiate the Prefab when the game starts
+    void Start()
+    {
+        //Instantiate at position (0,100,0) and zero rotation
+        Instantiate(myPrefab, new Vector3(1000, 0, 0), Quaternion.identity);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
