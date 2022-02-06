@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
         }
         else if (Vector3.Dot(Forwardplayer, Toenemy)>0)
         {
-            Debug.Log("the vecttors are facing the same way");
+            Debug.Log("the vectors are facing the same way");
         }
         else if (Vector3.Dot(Forwardplayer, Toenemy) == 0)
         {
