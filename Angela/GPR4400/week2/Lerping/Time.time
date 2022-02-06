@@ -1,0 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class T_time : MonoBehaviour
+{
+    Vector3 startPos;
+    // Start is called before the first frame update
+    void Start()
+    {
+        startPos = transform.position;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.position = startPos + new Vector3(Mathf.Cos(Time.time) * 2f, 0.0f, 0.0f);
+        //transform.position = startPos + new Vector3(0.0f, Mathf.Cos(Time.time) * 2f, 0.0f);
+        //transform.position = startPos + new Vector3(0.0f, 0.0f, Mathf.Cos(Time.time) * 2f);
+    }
+}
