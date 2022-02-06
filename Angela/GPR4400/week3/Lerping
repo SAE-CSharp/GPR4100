@@ -1,0 +1,36 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Lerping : MonoBehaviour
+{
+    [SerializeField]
+    private Transform start;
+    [SerializeField]
+    private Transform finish;
+
+    [SerializeField]
+    //[Range(0f,1f)]
+    private float delta1 = 0.0f;
+    public float speed = 0.1f;
+    private float counter = 0.0f;
+    private float starSh;
+    // Start is called before the first frame update
+    void Start()
+    {
+        starSh = transform.position.y;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        delta1 = 0.5f * Mathf.Sin(counter) + 0.5f;
+        //delta2 = 0.5f * Mathf.Cos(counter) + 0.5f;
+        float newX = (1 - delta1) * start.transform.position.x + delta1 * finish.transform.position.x;
+        float newY = (1 - delta1) * start.transform.position.y + delta1 * finish.transform.position.y;
+        newY = newY + starSh;
+        
+        transform.position = new Vector3(newX, newY, 0);
+        counter += speed * Time.deltaTime;
+    }
+}
