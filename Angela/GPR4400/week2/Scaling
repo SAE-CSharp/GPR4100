@@ -1,0 +1,19 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Scaling : MonoBehaviour
+{
+    Vector3 result;
+    // Start is called before the first frame update
+    void Start()
+    {
+        result.Set(1, 2, transform.position.z);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.position = result * 2;
+    }
+}
