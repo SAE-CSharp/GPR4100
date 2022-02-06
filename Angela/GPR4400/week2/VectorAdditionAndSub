@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class VectorAddition : MonoBehaviour
+{
+    // Start is called before the first frame update
+    Vector3 vector1, vector2, result;
+    
+    void Start()
+    {
+
+        /*//is there another way to assign the value to the vector3(vector1)
+        vector1 = new Vector3(2, 4, transform.position.z);
+        //vector1.Set(2, 4, transform.position.z); 
+        vector2.Set(1, 2, transform.position.z);
+
+        result = vector2 + vector1;*/
+        vector1.Set(2, 4, transform.position.z);
+        vector2.Set(1, 2, transform.position.z);
+        result = vector1 - vector2;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.position = result;
+    }
+}
