@@ -1,0 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Transform : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        //transform.position = Vector3.forward * Time.deltaTime;
+        //transform.position = Vector3.back * Time.deltaTime;
+        //transform.position = Vector3.left * Time.deltaTime;
+        //transform.position = Vector3.one * Time.deltaTime;
+        //transform.position = Vector3.right * Time.deltaTime;
+        //transform.position = Vector3.up * Time.deltaTime;
+        //transform.position = Vector3.down * Time.deltaTime;
+        transform.position = Vector3.zero * Time.deltaTime;
+
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
