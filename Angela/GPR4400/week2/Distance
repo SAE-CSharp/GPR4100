@@ -1,0 +1,24 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Distance : MonoBehaviour
+{
+    Vector3 v1, v2;
+    // Start is called before the first frame update
+    void Start()
+    {
+        v1 = new Vector3(2, 4, transform.position.z);
+        v2 = new Vector3(4, 6, transform.position.z);
+        float a = 4 - 2;
+        float b = 6 - 4;
+        float c = Mathf.Sqrt(Mathf.Pow(a, 2) + Mathf.Pow(b, 2));
+        Debug.Log("" + c);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
