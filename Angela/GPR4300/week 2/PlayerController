@@ -1,0 +1,56 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerController : MonoBehaviour
+{
+    // Start is called before the first frame update
+    float xThrow, yThrow;
+    [SerializeField] float controlSpeed = 20f; //101
+    [SerializeField] float xRange = 5f; //10f
+    [SerializeField] float yRange = 3.5f; //7f
+    [SerializeField] float positionPitchFactor = 0.1f; //-2f
+    [SerializeField] float controlPitchFactor = 0.1f; //-10f
+    [SerializeField] float positionYawFactor = -5f;
+    [SerializeField] float controlRollFactor = 5f;
+    /// </summary>
+
+    // Update is called once per frame
+    void Update()
+    {
+        Processtranslation();
+        ProcessRotation();
+    }
+
+    void Processtranslation()
+    {
+        xThrow = Input.GetAxis("Horizontal");
+        yThrow = Input.GetAxis("Vertical");
+
+
+        //***************** x-axis *****************//
+        float xOffset = xThrow * Time.deltaTime * controlSpeed;
+        float newXPos = transform.localPosition.x + xOffset;
+        float yOffset = yThrow * Time.deltaTime * controlSpeed;
+        float newYPos = transform.localPosition.y + yOffset;
+
+        float clampedXPos = Mathf.Clamp(newXPos, -xRange, xRange);
+        transform.localPosition = new Vector3(clampedXPos, newYPos, transform.localPosition.z);
+
+        //***************** y-axis ***************//
+        float clampedYPos = Mathf.Clamp(newYPos, -yRange, yRange);
+        transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
+
+
+    }
+
+    void ProcessRotation()
+    {
+        float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
+        float pitchDueTocontrolThrow = yThrow * controlPitchFactor;
+        float pitch = pitchDueToPosition + pitchDueTocontrolThrow;
+        float yaw = transform.localPosition.x * positionYawFactor;
+        float roll = xThrow * controlRollFactor;
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+}
