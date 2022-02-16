@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Collision : MonoBehaviour
+{
+    [SerializeField] GameObject[] myparticles;
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "River")
+        {
+            SetActiveLasers(true);
+            Debug.Log("Destroy");
+        }
+        
+    }
+    void SetActiveLasers(bool isActive)
+    {
+            foreach (GameObject elements in myparticles)
+            {
+                var emissionModule = elements.GetComponent<ParticleSystem>().emission;
+                emissionModule.enabled = isActive;
+            }
+    }
+}
