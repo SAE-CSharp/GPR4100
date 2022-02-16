@@ -1,0 +1,28 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class LookAt : MonoBehaviour
+{
+    public Transform target;
+    
+
+    
+    void Update()
+    {
+
+        //store the distance between 2 objects as a Vector3 
+        Vector3 reativePos = target.position - transform.position;
+
+        //create rotation with specified forward and upward direction
+
+        Quaternion Vec_Forward = Quaternion.LookRotation(reativePos);
+
+        //let the current localRotation
+        Quaternion current = transform.localRotation;
+
+        //use the slerp method to move between 2 Quaternions
+        transform.localRotation = Quaternion.Slerp(current, Vec_Forward, Time.deltaTime);
+        transform.Translate(0, 0, 5 *Time.deltaTime);
+    }
+}
