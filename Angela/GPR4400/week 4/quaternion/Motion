@@ -1,0 +1,52 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Motion : MonoBehaviour
+{
+    // Start is called before the first frame update
+    public float speed;
+    public float rightBoundaries;
+    public float leftBoundaries;
+    public float ceilingBoundaries;
+    public float floorBoundaries;
+
+
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        playerBoundaries();
+        float horizontalMovement = -Input.GetAxisRaw("Horizontal");
+        float verticalMovement = Input.GetAxisRaw("Vertical");
+        //transform.Translate(x,y,z);
+        transform.Translate(horizontalMovement * speed * Time.deltaTime, verticalMovement * speed * Time.deltaTime, 0);
+
+        /*if (transform.position.x >= rightBoundaries)
+        {
+            transform.position = new Vector3(rightBoundaries, transform.position.y, 0);
+        }
+        else if (transform.position.x <= leftBoundaries)
+        {
+            transform.position = new Vector3(leftBoundaries, transform.position.y, 0);
+        }
+        else if (transform.position.y >= ceilingBoundaries)
+        {
+            transform.position = new Vector3(transform.position.x, ceilingBoundaries, 0);
+        }
+        else if (transform.position.y <= floorBoundaries)
+        {
+            transform.position = new Vector3(transform.position.x, floorBoundaries, 0);
+        }*/
+    }
+
+    void playerBoundaries()
+    {
+        //Mathf.Clamp(x, minimum,maximum
+        float X_Movement = Mathf.Clamp(transform.position.x, leftBoundaries, rightBoundaries);
+        float Y_Movement = Mathf.Clamp(transform.position.y, floorBoundaries, ceilingBoundaries);
+
+        transform.position = new Vector3(X_Movement, Y_Movement, 0);
+    }
+}
