@@ -1,0 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AI;
+
+public class NPC_Script : MonoBehaviour
+{
+    // Start is called before the first frame update
+   public Transform target;
+    NavMeshAgent navmeshagent;
+    void Start()
+    {
+        navmeshagent = GetComponent<NavMeshAgent>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        navmeshagent.SetDestination(target.position);
+    }
+}
