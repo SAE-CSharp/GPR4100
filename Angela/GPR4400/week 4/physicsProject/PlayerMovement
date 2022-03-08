@@ -9,12 +9,17 @@ public class PlayerMovement : MonoBehaviour
     CharacterController controller;
     public float moveSpeed;
     public float rotationSpeed;
+    public float jumpSpeed;
+    float originalStepOffset;
+    float ySpeed;
+
     
     
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        originalStepOffset = controller.stepOffset;
     }
 
     // Update is called once per frame
@@ -26,8 +31,29 @@ public class PlayerMovement : MonoBehaviour
         Vector3 MovementDirection = new Vector3(horizontalMovement, 0, verticalMovement);
         float magnitude = Mathf.Clamp01(MovementDirection.magnitude) * moveSpeed;
         MovementDirection.Normalize();
+
+        ySpeed += Physics.gravity.y * Time.deltaTime;
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            //look at inspector
+            controller.stepOffset = originalStepOffset;
+            ySpeed = jumpSpeed;
+        }
+
+        else
+        {
+            controller.stepOffset = 0;
+        }
+
+        //Velocity is a vector that indicates displacement, timeand istance
+        Vector3 velocity = MovementDirection * magnitude;
+        velocity.y = ySpeed;
+
+        controller.Move(velocity * Time.deltaTime);
+
         //using the controller to move the player
-        controller.SimpleMove(MovementDirection * magnitude * moveSpeed * Time.deltaTime);
+        
         //vector3.zero = vector3(0,0,0)
         if (MovementDirection !=Vector3.zero)
         {
