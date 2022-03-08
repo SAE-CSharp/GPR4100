@@ -1,0 +1,56 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Player : MonoBehaviour
+{
+    public float movSpeed;
+    public float rotSpeed;
+    [SerializeField] GameObject[] mylaser; 
+
+    // Update is called once per frame
+    void Update()
+    {
+        MovementProcess();
+        ProcessFiring();
+    }
+
+    void MovementProcess()
+    {
+        float x_movement = Input.GetAxis("Horizontal");
+        float z_movement = Input.GetAxis("Vertical");
+        //create vector3
+        Vector3 movementDirection = new Vector3(x_movement, 0, z_movement);
+        transform.Translate(movementDirection * movSpeed * Time.deltaTime);
+        movementDirection.Normalize(); //to make the length of the Vector3 -1
+        transform.Translate(movementDirection * movSpeed * Time.deltaTime, Space.World);
+        if (movementDirection != Vector3.zero)
+        {
+            //lookRotation to rotate forward and upwards
+            Quaternion toRoate = Quaternion.LookRotation(movementDirection, Vector3.up);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRoate, rotSpeed * Time.deltaTime);
+        }
+    }
+
+    void ProcessFiring()
+    {
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            SetActiveLaser(true);
+        }
+        else
+        {
+            SetActiveLaser(false);
+        }
+    }
+
+    private void SetActiveLaser(bool isActive)
+    {
+        foreach (GameObject laser in mylaser)
+        {
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isActive;
+        }
+    }
+}
