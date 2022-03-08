@@ -1,0 +1,54 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AI;
+
+public class NPC : MonoBehaviour
+{
+    //space around the enemy
+    [SerializeField] float chaseRnage = 5;
+    public Transform target;
+    NavMeshAgent navmeshagent;
+    float distanceToTarget = Mathf.Infinity;
+    bool isProvoked = false;
+    void Start()
+    {
+        navmeshagent = GetComponent<NavMeshAgent>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        distanceToTarget = Vector3.Distance(target.position, transform.position);
+        if (isProvoked)
+        {
+            EngageTarget();
+        }
+
+        else if (distanceToTarget <= chaseRnage)
+        {
+            isProvoked = true;
+        }
+        //navmeshagent.SetDestination(target.position);
+    }
+
+    void EngageTarget()
+    {
+        //Change the navmeshagent.stoppingDistance = 1 in the way
+        if (distanceToTarget >= navmeshagent.stoppingDistance)
+        {
+            navmeshagent.SetDestination(target.position);
+        }
+        else if (distanceToTarget <= navmeshagent.stoppingDistance)
+        {
+            Debug.Log("the enemy has seeked and destroyed");
+            //AttackTarget();
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, chaseRnage);
+    }
+}
