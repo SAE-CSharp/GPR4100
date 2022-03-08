@@ -1,0 +1,40 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CollisionSpawn : MonoBehaviour
+{
+    [SerializeField] ParticleSystem vfx;
+    [SerializeField] Transform SpawnParent;
+    [SerializeField] GameObject target;
+
+    
+
+
+    private void OnParticleCollision(GameObject other)
+    {
+        Debug.Log("destroy");
+        Invoke("SpawningObject", 1);
+        vfx.Play();
+        Destroy(gameObject, 5);
+    }
+
+    void SpawningObject()
+    {
+        float offset = 2.0f;
+        float x = Random.Range(200, 490);
+        float y = Random.Range(50, 200);
+        for (int i = 0; i<5; i++)
+        {
+            Instantiate(target, new Vector3 (x, y,  SpawnParent.transform.position.z), Quaternion.identity);
+           
+        }
+    }
+
+    /*private void OnCollisionExit(UnityEngine.Collision collision)
+    {
+        CancelInvoke("SpawningObject");
+    }*/
+
+
+}
