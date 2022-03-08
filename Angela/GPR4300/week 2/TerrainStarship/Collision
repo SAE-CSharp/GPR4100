@@ -1,0 +1,24 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Collision : MonoBehaviour
+
+
+{
+    [SerializeField] ParticleSystem vfx;
+    
+    private void OnParticleCollision(GameObject other)
+    {
+
+
+        Debug.Log("destroy enemy");
+        vfx.Play();
+        Destroy(gameObject, 5);        
+             
+            
+        
+      
+    }
+    
+}
