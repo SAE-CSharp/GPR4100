@@ -11,9 +11,11 @@ public class Collision : MonoBehaviour
         {
             SetActiveLasers(true);
             Debug.Log("Destroy");
+            
         }
         
     }
+
     void SetActiveLasers(bool isActive)
     {
             foreach (GameObject elements in myparticles)
