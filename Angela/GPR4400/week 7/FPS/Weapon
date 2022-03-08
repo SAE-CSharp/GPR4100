@@ -1,0 +1,62 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Weapon : MonoBehaviour
+{
+
+    [SerializeField] Camera FPCamera;
+    //range to shoot the enemy
+    [SerializeField] float range = 100f;
+    [SerializeField] float damage = 30f;
+
+    [SerializeField] ParticleSystem flash;
+    //[SerializeField] GameObject hitImpact;
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Shoot();
+        }
+    }
+
+    void Shoot()
+    {
+       // PlayFlash();
+        RaycastHit hit;
+        if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range))
+        {
+            Debug.Log("I am hit" + hit.transform.name);
+            //add some hit effect for the visual player
+
+            //call a method on Enemy health that decrease the enemy's health
+            Enemy_Health target = hit.transform.GetComponent<Enemy_Health>();
+
+            //if we hit something else not the enemy
+            if (target == null) return;
+            target.TakeDamage(damage);
+        }
+        else
+        {
+            return;
+        }
+
+
+    }
+    private void PlayFlash()
+    {
+        flash.Play();
+
+    }
+
+    
+
+    /*private void CreateHitImpact(RaycastHit hit)
+    {
+        GameObject impact = Instantiate(hitImpact, hit.point, Quaternion.LookRotation(hit.normal));
+        Destroy(impact);
+    }*/
+}
