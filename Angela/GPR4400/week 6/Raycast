@@ -1,0 +1,52 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Raycast : MonoBehaviour
+{
+    public LineRenderer laserLine;
+    public float laserWidth = 0.01f;
+    public float laserMaxLength = 5f;
+
+    void Start()
+    {
+        //set position for the laser
+        Vector3[] initLaserPositions = new Vector3[2] { Vector3.zero, Vector3.zero };
+        laserLine.SetPositions(initLaserPositions);
+        laserLine.SetWidth(laserWidth, laserWidth);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ShootLaserFromTargetPosition(transform.position, Vector3.forward * 1000f, laserMaxLength);
+            laserLine.enabled = true;
+        }
+        else
+        {
+            laserLine.enabled = false;
+        }
+    }
+
+    void ShootLaserFromTargetPosition(Vector3 TargetPosition, Vector3 direction, float length)
+    {
+        //init ray to save  the start and direction values
+        Ray ray = new Ray(TargetPosition, direction);
+        RaycastHit hit;
+
+        //the end position which is default to the start position + distance
+        Vector3 endPosition = TargetPosition + (length * direction);
+
+        if (Physics.Raycast(ray, out hit, length))
+        {
+            // if we detect something 
+            endPosition = hit.point;
+            Debug.Log(" I am getting smth" + hit.transform.name);
+        }
+        laserLine.SetPosition(0, TargetPosition);
+        laserLine.SetPosition(1, endPosition);
+    }
+}
