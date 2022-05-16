@@ -1,0 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Player : MonoBehaviour
+{
+
+    public InventoryObject inventory;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        var item = other.GetComponent<Item>();
+        if (item)
+        {
+            inventory.AddItem(item.item, 1);
+            Destroy(other.gameObject);
+        }
+
+    }
+    // initialised the inventory Player everytime we run the game
+    //private void OnApplicationQuit()
+    //{
+
+    //    inventory.Container.Clear(); //to clear inventory after you stop play
+    //}
+}
