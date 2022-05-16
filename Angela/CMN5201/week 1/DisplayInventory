@@ -1,0 +1,48 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+using System;
+
+public class DisplayInventory : MonoBehaviour
+{
+    //public variable to hold the inventory item
+    public InventoryObject inventory;
+    //space between items
+    public int X_Space_between_Item;
+    public int number_of_column;
+    public int Y_Space_between_Item;
+    //create Dictionary
+    Dictionary<InventorySlot, GameObject> itemDisplayed = new Dictionary<InventorySlot, GameObject>();
+
+    private void Start()
+    {
+        CreateDisplay();
+    }
+
+    private void CreateDisplay()
+    {
+        //loop through the item of the inventory
+        for (int i = 0; i < inventory.Container.Count; i++)
+        {
+            //set up the position rotation for the prefab image
+            var obj = Instantiate(inventory.Container[i].item.prefab, Vector3.zero, Quaternion.identity, transform);
+
+            obj.GetComponent<RectTransform>().localPosition = GetPosition(i);
+
+            obj.GetComponentInChildren<TextMeshProUGUI>().text = inventory.Container[i].amount.ToString("n0");
+        }
+    }
+
+    private Vector3 GetPosition(int i)
+    {
+        return new Vector3(X_Space_between_Item * (i % number_of_column),
+        (-Y_Space_between_Item * (i / number_of_column)), 0f);
+    }
+
+    private void Update()
+    {
+        //UpdateDisplay();
+    }
+}
+
