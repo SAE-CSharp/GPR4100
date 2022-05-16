@@ -1,0 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public enum ItemType 
+{
+    Food, 
+    Equipment, 
+    Default 
+}
+public abstract class ItemObject : ScriptableObject //(abstract) unity class to store a large amount of data, you can not create an object from this class but you can use as parent for other classes
+{
+    public GameObject prefab;
+    public ItemType type;
+    [TextArea(15, 20)]
+    public string description;
+    
+}
