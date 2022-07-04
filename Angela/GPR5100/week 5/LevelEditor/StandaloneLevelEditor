@@ -1,0 +1,324 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEditor;
+
+public class StandaloneLevelEditor : EditorWindow
+{
+    public static GameObject Terrain;
+    public static GameObject GoodCol;
+    public static GameObject BadCol;
+    public static GameObject Trees;
+
+    public float ScaleFator = 1.0f;
+    public float BadCollectibleChance = 0.0f;
+    public int NumberOfCollectibles = 10;
+    public int Padding = 10;
+
+    private GameObject Level;
+    private Collider collider;
+    private GameObject terrain;
+
+    //***********************Collectibles List******************************//
+    private List<GameObject> GoodCollectibles;
+    private List<GameObject> BadCollectibles;
+    private List<GameObject> TreesList;
+
+    //************************SHOW WINDOW*******************//
+    //using this method to show your editor once you click on the menu Window menu item in unity
+    [MenuItem("Level Editor/My Level Editor")]
+    
+    public static void ShowWindow()
+    {
+        //this method will display a small window once you click on Window menu item in Unity
+        EditorWindow.GetWindow(typeof(StandaloneLevelEditor));
+    }
+
+    //All user interface elementa should be in this method(OnGUI)
+    private void OnGUI()
+    {
+        //use the Object Field to display the Game object in the small window(your editor)
+        //use true to drag and drop the prefab object in to small window(editor)
+        Terrain = EditorGUILayout.ObjectField("Terrain", Terrain, typeof(GameObject), true) as GameObject;
+        GoodCol = EditorGUILayout.ObjectField("Good Col", GoodCol, typeof(GameObject), true) as GameObject;
+        BadCol = EditorGUILayout.ObjectField("Bad Col", BadCol, typeof(GameObject), true) as GameObject;
+        Trees = EditorGUILayout.ObjectField("Trees", Trees, typeof(GameObject), true) as GameObject;
+
+
+        //**************************Sliders******************************//
+        GUILayout.Label("Rescale the Game Object", EditorStyles.boldLabel);
+
+        GUIContent content = new GUIContent();
+        //Scale factor
+        content.text = "Terrain Resize";
+        content.tooltip = "You can change the terrain dimension using this slider"; //tooltip is the description of the button
+        ScaleFator = EditorGUILayout.Slider(content, ScaleFator, 10.0f, 100.0f);
+
+        //Bad Collectibles Chance
+        content.text = "Bad Col Chance";
+        content.tooltip = "Specify the maximum total of the bad collectible chance";
+        BadCollectibleChance = EditorGUILayout.Slider(content, BadCollectibleChance, 0.0f, 10.0f);
+
+        //number of collectibles
+        content.text = "Num Of Collectibles";
+        content.tooltip = "Specify the number of collectibles";
+        NumberOfCollectibles = EditorGUILayout.IntSlider(content, NumberOfCollectibles, 10, 100);
+
+        //Padding
+        content.text = "Padding";
+        content.tooltip = "Specify the number for padding between the collectibles";
+        Padding = EditorGUILayout.IntSlider(content, Padding, 1, 40);
+
+
+        //************************BUTTONS*********************//
+        GUILayout.BeginHorizontal();
+        content.text = "Create Terrain";
+        content.tooltip = "Click the button to create the terrain";
+        if (GUILayout.Button(content))
+        {
+            //call the method
+            CreateTerrain();
+        }
+
+        content.text = "Resize the terrain";
+        content.tooltip = "Click the button to resize the terrain";
+        if (GUILayout.Button(content))
+        {
+            ResizeTerrain();
+        }
+
+        content.text = "Spawn Collectibles";
+        content.tooltip = "Click the button to spawn the collectibles";
+        if (GUILayout.Button(content))
+        {
+            SpawnCollectibles();
+        }
+
+        content.text = "Spawn Trees";
+        content.tooltip = "Click button to spawn trees";
+        if (GUILayout.Button(content))
+        {
+            SpawnTrees();
+        }
+
+        GUILayout.EndHorizontal();
+
+        GUILayout.BeginHorizontal();
+
+        content.text = "Save Config";
+        content.tooltip = "Click the button to save your configuration";
+        if (GUILayout.Button(content))
+        {
+            SaveConfig();
+        }
+
+        content.text = "Load Configuration";
+        content.tooltip = "Click the button to load a selected configuration";
+        if (GUILayout.Button(content))
+        {
+            LoadConfig();
+        }
+
+        GUILayout.EndHorizontal();
+        GUILayout.BeginHorizontal();
+
+        content.text = "Create Trees";
+        content.tooltip = "Color a selected terrain";
+        if (GUILayout.Button(content))
+        {
+
+            CreateTrees();
+
+        }
+
+        GUILayout.EndHorizontal();
+    }
+
+    private void CreateTrees()
+    {
+
+        if (collider == null)
+        {
+            Debug.Log("You haven't initialized a terrain yet!!!");
+        }
+        else
+        {
+            if (TreesList == null)
+            {
+                TreesList = new List<GameObject>();
+
+            }
+            else
+            {
+                foreach (GameObject obj in TreesList)
+                {
+                    // use it with editor
+                    GameObject.DestroyImmediate(obj);
+                }
+
+                TreesList.Clear();
+            }
+
+            float minX = collider.bounds.min.x + Padding;
+            float maxX = collider.bounds.max.x - Padding;
+            float minZ = collider.bounds.min.z + Padding;
+            float maxZ = collider.bounds.max.z - Padding;
+
+            for (int i = 0; i < NumberOfCollectibles; i++)
+            {
+                Vector3 randomSpawnPos = new Vector3(Random.Range(minX, maxX), 0.2f, Random.Range(minZ, maxZ));
+                GameObject temp = GameObject.Instantiate(Trees, randomSpawnPos, Quaternion.identity);
+                temp.transform.parent = Level.transform;
+                TreesList.Add(temp);
+            }
+        }
+
+    }
+
+    public void CreateTerrain()
+    {
+        if (terrain != null) //we already have terrain
+        {
+            //Level game object is just put all spawned collectibles inside an empty object 
+
+            if (Level == null)
+            
+            Level = new GameObject("Level");
+            GameObject.DestroyImmediate(terrain);
+            terrain = GameObject.Instantiate(Terrain, Vector3.zero, Quaternion.identity);
+            terrain.transform.parent = Level.transform;
+            terrain.transform.localScale = Vector3.one * ScaleFactor;
+            collider = terrain.GetComponent<Collider>();
+
+        }
+        else
+        {
+             if (Level == null)
+                Level = new GameObject("Level");
+                terrain = GameObject.Instantiate(Terrain, Vector3.zero, Quaternion.identity);
+                terrain.transform.parent = Level.transform;
+                terrain.transform.localScale = Vector3.one * ScaleFator;
+                collider = terrain.GetComponent<Collider>();
+        }
+    }
+
+    public void ResizeTerrain()
+    {
+        if (terrain != null)
+        {
+            terrain.transform.localScale = Vector3.one * ScaleFator;
+        }
+    }
+
+    public void SpawnCollectibles()
+    {
+        if (collider == null)
+        {
+            Debug.Log("You haven't initialised your terrain yet!");
+        }
+
+        else
+        {
+                //Good collectaible list
+                if ((GoodCollectibles == null) || (BadCollectibles == null))
+                {
+                    GoodCollectibles = new List<GameObject>();
+                    BadCollectibles = new List<GameObject>();
+                }
+                else
+                {
+                    foreach (GameObject obj in GoodCollectibles)
+                    {
+                        //use with editor
+                        GameObject.DestroyImmediate(obj);
+                    }
+                    foreach (GameObject obj in BadCollectibles)
+                    {
+                        GameObject.DestroyImmediate(obj);
+                    }
+
+                    GoodCollectibles.Clear();
+                    BadCollectibles.Clear();
+                }
+                float minX = collider.bounds.min.x + Padding;
+                float maxX = collider.bounds.max.x - Padding;
+                float minZ = collider.bounds.min.z + Padding;
+                float maxZ = collider.bounds.max.z - Padding;
+
+            for (int i = 0; i < NumberOfCollectibles; i++)
+            {
+                Vector3 randomSpawnPos = new Vector3(Random.Range(minX, maxX), 12.35f, Random.Range(minZ, maxZ));
+                //lets through the dice
+                float dice = Random.Range(0.0f, 1.0f);
+                if (dice < BadCollectibleChance)
+                {
+                    GameObject temp = GameObject.Instantiate(BadCol, randomSpawnPos, Quaternion.identity);
+                    temp.transform.parent = Level.transform;
+                    BadCollectibles.Add(temp);
+
+                }
+                else
+                {
+                    GameObject temp = GameObject.Instantiate(GoodCol, randomSpawnPos, Quaternion.identity);
+                    temp.transform.parent = Level.trasform;
+                    GoodCollectibles.Add(temp);
+                }
+            }
+
+        }
+
+        private void SpawnTrees()
+        {
+            if (collider = null)
+            {
+                Debug.Log("You have not initialised your terrain yet");
+            }
+            else
+            {
+                if (TreesList == null)
+                {
+                    TreesList = new List<GameObject>();
+                }
+                else
+                {
+                    foreach (GameObject obj in TreesList)
+                    {
+                        GameObject.DestroyImmediate(obj);
+                    }
+                    TreesList.Clear();
+                }
+                float minX = collider.bounds.min.x + Padding;
+                float maxX = collider.bounds.max.x + Padding;
+                float minZ = collider.bounds.min.z + Padding;
+                float maxZ = collider.bounds.max.z + Padding;
+
+                for (int i = 0; i < NumberOfCollectibles; i++)
+                {
+                    Vector3 TreePos = new Vector3(Random.Range(minX, maxX), 0.2f, Random.Range(minZ, maxZ));
+                    GameObject temp = GameObject.Instantiate(Trees, TreePos, Quaternion.identity);
+                    temp.transform.parent = Level.transform;
+                    TreesList.Add(temp);
+                }
+            }
+
+        }
+
+        public void SaveConfig()
+        {
+            GenData data = new GenData();
+            data.ScaleFactor = ScaleFactor;
+            data.BadCollectibleChance = BadCollectibleChance;
+            data.NumberOfCollectibles = NumberOfCollectibles;
+            data.Padding = Padding;
+
+            string jsonString = JsonUtility.ToJson(data);
+
+            string path = EditorUtility.SaveFilePanelInProject("Save configuration data", "", "json", "Pick a suitable file name for your config data");
+
+            if (!string.IsNullOrEmpty(path))
+            {
+                System.IO.File.WriteAllText(path, jsonString);
+            }
+        }
+    }
+}
